@@ -2,14 +2,16 @@ import React from "react";
 import "./MenuBar.css";
 const MenuBar = () => {
   return (
-    <div className="MenuBar">
+    <div className="flex flex-row justify-between p-4 items-center border-1 rounded-lg mt-2 mx-2">
       <div>LOGO</div>
-      <ul>
-        <li>Home</li>
-        <li>Contact</li>
-        <li>Our Ministries</li>
+      <ul className="w-1/3 flex flex-row justify-around items-center">
+        <li className="p-2 list-none border-1 rounded-md">Home</li>
+        <li className="p-2 list-none border-1 rounded-md">Contact</li>
+        <li className="p-2 list-none border-1 rounded-md">Our Ministries</li>
       </ul>
-      <button>Donate</button>
+      <button className="p-3 bg-blue-950 text-white border-none rounded-lg text-lg">
+        Donate
+      </button>
     </div>
   );
 };

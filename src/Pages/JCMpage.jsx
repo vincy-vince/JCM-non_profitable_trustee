@@ -1,5 +1,6 @@
 import React from "react";
 import MenuBar from "../components/MenuBar";
+import Footer from "../components/Footer";
 const JCMpage = () => {
   return (
     <div>
@@ -65,10 +66,10 @@ const JCMpage = () => {
           height="515"
           src="https://www.youtube.com/embed/2xcFM9CBiOE?si=9eDWDNVZlBKCr_HF"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
         ></iframe>
         <div className="flex flex-row gap-6 w-auto items-center justify-center">
           <div className="w-40 h-24 bg-slate-300 border-none rounded-sm"></div>
@@ -76,6 +77,8 @@ const JCMpage = () => {
           <div className="w-40 h-24 bg-slate-300 border-none rounded-sm"></div>
         </div>
       </div>
+
+      {/* Our Ministries */}
 
       <div>
         <h1 className="text-3xl text-extrabold mb-5 text-center">
@@ -95,17 +98,20 @@ const JCMpage = () => {
           </div>
         </div>
       </div>
+
       {/* Donate now session */}
-      <div>
-        <h1 className="text-3xl text-extrabold mb-5 text-center">Donate now</h1>
+      <div className="mt-32">
+        <h1 className="text-3xl font-extrabold mb-5 text-center mb-20">
+          Donate now
+        </h1>
         <div className="flex flex-row">
-          <div className="bg-emerald-600 w-1/2 h-fit mx-20 border-none rounded-lg text-center py-5">
+          <div className="bg-emerald-600 w-1/2 h-fit mx-20 border-none rounded-lg text-left py-5">
             <div className="text-white flex flex-col gap-3 justify-left items-center">
               <div className="font-bold text-lg">Empower her</div>
               <div>rs.2000/month</div>
               <div className="bg-white w-52 h-36 border-none rounded-lg"></div>
               <div className="font-bold">Sponser a girl child</div>
-              <ul className="flex flex-col gap-3">
+              <ul className="flex flex-col gap-3 list-disc ml-5">
                 <li>Medical care</li>
                 <li>Educational support</li>
                 <li>Health and Nutrition</li>
@@ -118,13 +124,14 @@ const JCMpage = () => {
               </button>
             </div>
           </div>
-          <div className="bg-zinc-600 w-1/2 h-fit mx-20 border-none rounded-lg text-center py-5">
+
+          <div className="bg-zinc-600 w-1/2 h-fit mx-20 border-none rounded-lg text-left py-5">
             <div className="text-white flex flex-col gap-3 justify-left items-center">
               <div className="font-bold text-lg">Empower her</div>
               <div>rs.2000/month</div>
               <div className="bg-white w-52 h-36 border-none rounded-lg"></div>
               <div className="font-bold">Sponser a girl child</div>
-              <ul className="flex flex-col gap-3">
+              <ul className="flex flex-col gap-3 list-disc ml-5">
                 <li>Medical care</li>
                 <li>Educational support</li>
                 <li>Health and Nutrition</li>
@@ -132,18 +139,19 @@ const JCMpage = () => {
                 <li>Hygene and Sanitation</li>
                 <li>Imparting ethics and values and more</li>
               </ul>
-              <button className="font-bold bg-white border-none rounded-lg w-auto p-2">
+              <button className="text-black font-bold bg-white border-none rounded-lg w-auto p-2">
                 Donate
               </button>
             </div>
           </div>
-          <div className="bg-red-800 w-1/2 h-fit mx-20 border-none rounded-lg text-center py-5">
+
+          <div className="bg-red-800 w-1/2 h-fit mx-20 border-none rounded-lg text-left py-5">
             <div className="text-white flex flex-col gap-3 justify-left items-center">
               <div className="font-bold text-lg">Empower her</div>
               <div>rs.2000/month</div>
               <div className="bg-white w-52 h-36 border-none rounded-lg"></div>
               <div className="font-bold">Sponser a girl child</div>
-              <ul className="flex flex-col gap-3">
+              <ul className="flex flex-col gap-3 list-disc ml-5">
                 <li>Medical care</li>
                 <li>Educational support</li>
                 <li>Health and Nutrition</li>
@@ -151,18 +159,171 @@ const JCMpage = () => {
                 <li>Hygene and Sanitation</li>
                 <li>Imparting ethics and values and more</li>
               </ul>
-              <button className="font-bold bg-white border-none rounded-lg w-auto p-2">
+              <button className="text-black font-bold bg-white border-none rounded-lg w-auto p-2">
                 Donate
               </button>
             </div>
           </div>
         </div>
       </div>
+
       {/* quote */}
-      <div className="w-auto mx-4 bg-gray-200 h-96 text-center pt-44 mt-10 text-extrabold text-3xl">
+
+      <div className="w-auto mx-4 bg-gray-200 h-96 text-center pt-44 mt-10 font-extrabold text-3xl mx-16 mt-30 mb-30">
         " The first time I walked into the church,
         <br /> I felt peace and i knew, i was Home "
       </div>
+
+      {/* Trustee Info */}
+      <div>
+        <h1 className="text-3xl font-extrabold mb-5 text-center mb-20">
+          Our Trustees
+        </h1>
+        <div className="flex flex-row gap-10 mx-20 ">
+          <div className="flex flex-col justify-center items-center border border-black rounded-lg p-2">
+            <img
+              className="w-1/2"
+              src="public/dummy-profile.webp"
+              alt="profile"
+            />
+            <div className="border border-gray-400 rounded-lg ">
+              <div className="text-xl text-extrabold mb-5 text-center mt-5">
+                Tijo K John
+              </div>
+              <div className="text-xl text-extrabold mb-5 text-center">
+                MSc( Electronics),MTh{" "}
+              </div>
+              <div className="text-lg text-semibold mb-5 text-center">
+                Praise the Lord! May God bless all the ministry work carried out
+                by JCM through village ministries and the Bible College. I pray
+                that JCM will be a light to many lives in darkness through its
+                ministries, bringing all glory to God in the name of Jesus
+                Christ. Amen!
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col justify-center items-center border border-black rounded-lg p-2">
+            <img
+              className="w-1/2"
+              src="public/dummy-profile.webp"
+              alt="profile"
+            />
+            <div className="border border-gray-400 rounded-lg ">
+              <div className="text-xl text-extrabold mb-5 text-center mt-5">
+                Tijo K John
+              </div>
+              <div className="text-xl text-extrabold mb-5 text-center">
+                MSc( Electronics),MTh{" "}
+              </div>
+              <div className="text-lg text-semibold mb-5 text-center">
+                Praise the Lord! May God bless all the ministry work carried out
+                by JCM through village ministries and the Bible College. I pray
+                that JCM will be a light to many lives in darkness through its
+                ministries, bringing all glory to God in the name of Jesus
+                Christ. Amen!
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col justify-center items-center border border-black rounded-lg p-2">
+            <img
+              className="w-1/2"
+              src="public/dummy-profile.webp"
+              alt="profile"
+            />
+            <div className="border border-gray-400 rounded-lg ">
+              <div className="text-xl text-extrabold mb-5 text-center mt-5">
+                Tijo K John
+              </div>
+              <div className="text-xl text-extrabold mb-5 text-center">
+                MSc( Electronics),MTh{" "}
+              </div>
+              <div className="text-lg text-semibold mb-5 text-center">
+                Praise the Lord! May God bless all the ministry work carried out
+                by JCM through village ministries and the Bible College. I pray
+                that JCM will be a light to many lives in darkness through its
+                ministries, bringing all glory to God in the name of Jesus
+                Christ. Amen!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* volunteer */}
+      <div className="flex flex-row justify-around w-auto mx-20 mt-28 bg-blue-200 h-54 p-10 items-center rounded-lg mb-20">
+        <div className="text-2xl font-extrabold">
+          Wanna Join as a volunteer ?<br></br>
+          you are Always welcome to join
+        </div>
+        <button className="font-bold text-lg bg-blue-950 text-white p-3 border-none rounded-lg">
+          Join Now
+        </button>
+      </div>
+
+      {/* location */}
+
+      <div className="mx-20 bg-[url(public/loc2.jpg)] bg-cover bg-no-repeat h-96">
+        <div className="text-right">
+          <button className="font-bold text-lg bg-blue-950 text-white p-3 border-none rounded-lg mt-10 mr-5">
+            View Location
+          </button>
+        </div>
+        <div className="font-bold text-3xl mt-44 ml-14">
+          📍 Plot no 29,sugavacharhiram, MDR 447, Kilacheri, Tamil Nadu 631402
+        </div>
+      </div>
+
+      {/* upcoming events */}
+
+      <div className="mt-40">
+        <h1 className="text-3xl font-extrabold mb-5 text-center mb-20">
+          Upcoming events
+        </h1>
+
+        <div className="flex flex-row justify-around w-auto">
+          <div className="bg-red-500 h-72 p-3 text-white rounded-lg flex flex-col justify-between">
+            <div>
+              <div className="bg-white w-52 h-36 border-none rounded-lg"></div>
+              <div className="text-lg font-bold mt-5">Womens Meeting</div>
+              <div>08:00 AM 05/08/25 Wednesday</div>
+            </div>
+            <div className="text-right">
+              <a className="underline decoration-2 " href="">
+                Register now
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-red-500 h-72 p-3 text-white rounded-lg flex flex-col justify-between">
+            <div>
+              <div className="bg-white w-52 h-36 border-none rounded-lg"></div>
+              <div className="text-lg font-bold mt-5">Womens Meeting</div>
+              <div>08:00 AM 05/08/25 Wednesday</div>
+            </div>
+            <div className="text-right">
+              <a className="underline decoration-2 " href="">
+                Register now
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-red-500 h-72 p-3 text-white rounded-lg flex flex-col justify-between">
+            <div>
+              <div className="bg-white w-52 h-36 border-none rounded-lg"></div>
+              <div className="text-lg font-bold mt-5">Womens Meeting</div>
+              <div>08:00 AM 05/08/25 Wednesday</div>
+            </div>
+            <div className="text-right">
+              <a className="underline decoration-2 " href="">
+                Register now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FOOTER */}
+      <Footer />
     </div>
   );
 };
