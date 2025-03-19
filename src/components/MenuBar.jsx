@@ -1,5 +1,5 @@
 import React from "react";
-import "./MenuBar.css";
+
 const MenuBar = () => {
   return (
     <div className="flex flex-row justify-between p-4 items-center border-1 rounded-lg mt-2 mx-2">
