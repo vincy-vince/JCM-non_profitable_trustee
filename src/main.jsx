@@ -10,3 +10,5 @@ createRoot(document.getElementById("root")).render(
     </BrowserRouter>
   </StrictMode>
 );
+
+// npm install -D tailwindcss postcss autoprefixer^C
