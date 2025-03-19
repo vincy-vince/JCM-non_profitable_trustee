@@ -2,20 +2,20 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import JCMpage from "./Pages/JCMpage";
 import Donate from "./Pages/Donate";
+import Contact from "./Pages/Contact";
+import BibleCollege from "./Pages/Ministries/BibleCollege";
+import CBS from "./Pages/Ministries/CBS";
+import WomensMinistry from "./Pages/Ministries/WomensMinistry";
 const App = () => {
   return (
-    <div>
-    
-        <Routes>
-          <Route path="/" element={<JCMpage />}>
-            <Route path="/donate" element={<Donate.jsx />} />
-            {/* <Route path="blogs" element={<Blogs />} /> */}
-            {/* <Route path="contact" element={<Contact />} />
-            <Route path="*" element={<NoPage />} /> */}
-          </Route>
-        </Routes>
-    
-    </div>
+    <Routes>
+      <Route path="/" element={<JCMpage />} />
+      <Route path="/donate" element={<Donate />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/biblecollege" element={<BibleCollege />} />
+      <Route path="/cbs" element={<CBS />} />
+      <Route path="/womensministry" element={<WomensMinistry />} />
+    </Routes>
   );
 };
 
