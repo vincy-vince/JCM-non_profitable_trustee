@@ -13,7 +13,7 @@ const JCMpage = () => {
   return (
     <div>
       <MenuBar />
-      <div className="xs: bg-[url(public/background-JCM.png)] xs: h-[400px] xs: p-10 xs: w-auto xs: bg-cover xs: bg-no-repeat xs: mt-4 xs: mx-4 ">
+      <div className="xs: bg-[url(public/background-JCM.png)] xs: h-[400px] xs: p-10 xs: w-auto xs: bg-cover xs: bg-no-repeat xs: mt-20 xs: mx-4 ">
         <h1 className="xs: text-2xl xs: font-extrabold">Judea Christ Ministries</h1>
         <button className="xs: bg-red-600 xs: text-white xs: p-1 xs: border-none xs: rounded-md xs: text-sm xs: mt-5 xs: hidden">
           Register Now
