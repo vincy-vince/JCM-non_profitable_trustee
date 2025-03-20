@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 const MenuBar = () => {
   const [toggle, setToggle] = useState(false);
-  const [menu, setMenu] = useState();
+  let [menu, setMenu] = useState(false);
   function showToggle() {
     const Ministries = document.getElementById("ministries");
 
     Ministries.style.display = "block";
-    if (!toggle) {
+    if (!toggle === false) {
       Ministries.style.display = "none";
     }
   }
@@ -16,6 +16,8 @@ const MenuBar = () => {
     const Navbar = document.getElementById("nav");
 
     menuBar.style.display = "block";
+    menubar.style.left = "0%";
+    menubar.style.transition = "all 2s";
     Navbar.style.display = "flex";
     menu = false;
   }
@@ -79,53 +81,78 @@ const MenuBar = () => {
 
         {/* for mobile design => XS size (370px)*/}
 
-        <div id="MenuBar-div" className="hidden bg-white fixed top-0 w-full h-full transition-[left] duration-3000 ease-in-out delay-0 z-10">
-          <div>
-            <svg
-              onClick={() => closeMenu(!menu)}
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="size-6"
-            >
-              <path
-               strokeLinecap="round"
-               strokeLinejoin="round"
-                d="M15.75 19.5 8.25 12l7.5-7.5"
-              />
-            </svg>
+        <div
+          id="MenuBar-div"
+          className="hidden bg-white fixed top-0 w-full h-full transition-left duration-300 ease-linear left-[-1%] delay-0 z-1000"
+        >
+          <div className="flex justify-between mx-5 mt-10">
+            <div>
+              <svg
+                onClick={() => closeMenu(!menu)}
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+            </div>
+            <div>LOGO</div>
           </div>
 
           <ul
             id="nav"
-            className=" w-full flex-col  items-left text-center  gap-3 justify-around bg-white p-10 border-none rounded-md "
+            className="ml-4 w-full flex-col items-left text-left gap-3 justify-around bg-white p-10 border-none rounded-md  "
           >
-            <li className=" p-2 list-none border-1 rounded-md">
+            <li className=" p-2 list-none border-l-2 border-blue-900 rounded-md mb-2">
               <Link to="/">Home</Link>
             </li>
-            <li className=" p-2 list-none border-1 rounded-md">
+            <li className=" p-2 list-none border-l-2 border-blue-900 rounded-md mb-2">
               <Link to="/contact">Contact</Link>
             </li>
-            <div className=" flex flex-col">
-              <li
-                onClick={() => showToggle(setToggle(!toggle))}
-                className=" p-2 list-none border-1 rounded-md"
-              >
-                Our Ministries
-              </li>
+            <div className=" flex flex-col ">
+              <div className="flex items-center">
+                <li className=" p-2 list-none border-l-2 border-blue-900 rounded-md mb-2">
+                  Our Ministries
+                </li>
+                <svg
+                  onClick={() => showToggle(setToggle(!toggle))}
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="size-4"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+
               <div id="ministries" className="hidden text-left mt-2">
-                <div className="shadow-md mt-2">
+                <div className="shadow-md mt-2 w-[120px] ml-4">
                   <Link to="/biblecollege">Bible College</Link>
                 </div>
-                <div className="shadow-md mt-2">
+                <div className="shadow-md mt-2 w-[120px] ml-4">
                   <Link to="/cbs">CBS</Link>
                 </div>
-                <div className="shadow-md mt-2">
+                <div className="shadow-md mt-2 w-[120px] ml-4">
                   <Link to="/womensministry">Womens Ministry</Link>
                 </div>
               </div>
+
+              <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10">
+                Donate
+              </button>
             </div>
           </ul>
         </div>

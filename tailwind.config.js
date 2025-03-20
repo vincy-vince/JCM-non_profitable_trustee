@@ -14,6 +14,7 @@ module.exports = {
   theme: {
     screens: {
       xs: "370px", // => @media (min-width: 370px) { ... }
+      md: "640px", // => @media (min-width: 370px)
       tablet: "1024px", // => @media (min-width: 1024px) { ... }
       laptop: "1280px", // => @media (min-width: 1280px) { ... }
       "giant-screen": "1536px", // => @media (min-width: 1536px) { ... }

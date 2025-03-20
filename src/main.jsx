@@ -8,8 +8,6 @@ createRoot(document.getElementById("root")).render(
   </BrowserRouter>
 );
 
-// npm install -D tailwindcss postcss autoprefixer^C
-
 // HOME WORK
 
 // Finish corousal

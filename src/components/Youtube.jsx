@@ -2,10 +2,10 @@ import React from "react";
 
 const Youtube = () => {
   return (
-    <div className="xs: flex xs: flex-col xs: gap-8 xs: w-[auto] xs: h-96 xs: my-18 xs: items-center ">
+    <div className="flex flex-col gap-8 h-96 my-18 items-center ">
       <iframe
-        className="xs: border-none xs: rounded-lg xs: mx-auto"
-        width="340"
+        className="w-max border-none rounded-lg mx-auto w-[300px] h-[515px] md: w-[480px] "
+        width="300"
         height="515"
         src="https://www.youtube.com/embed/2xcFM9CBiOE?si=9eDWDNVZlBKCr_HF"
         title="YouTube video player"
@@ -14,10 +14,10 @@ const Youtube = () => {
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       ></iframe>
-      <div className="xs: flex xs: flex-row xs: gap-6 xs: w-auto xs: items-center xs: justify-center">
-        <div className="xs: w-24 xs: h-16 xs: bg-slate-300 xs: border-none xs: rounded-sm"></div>
-        <div className="xs: w-24 xs: h-16 xs: bg-slate-300 xs: border-none xs: rounded-sm"></div>
-        <div className="xs: w-24 xs: h-16 xs: bg-slate-300 xs: border-none xs: rounded-sm"></div>
+      <div className="flex flex-row gap-3 w-max items-center justify-center">
+        <div className="w-16 h-10 bg-slate-300 border-none rounded-sm md: w-26 md: h-20"></div>
+        <div className="w-16 h-10 bg-slate-300 border-none rounded-sm md: w-26 md: h-20"></div>
+        <div className="w-16 h-10 bg-slate-300 border-none rounded-sm md: w-26 md: h-20"></div>
       </div>
     </div>
   );

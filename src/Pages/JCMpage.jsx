@@ -13,16 +13,16 @@ const JCMpage = () => {
   return (
     <div>
       <MenuBar />
-      <div className="xs: bg-[url(public/background-JCM.png)] xs: h-[400px] xs: p-10 xs: w-auto xs: bg-cover xs: bg-no-repeat xs: mt-20 xs: mx-4 ">
-        <h1 className="xs: text-2xl xs: font-extrabold">Judea Christ Ministries</h1>
-        <button className="xs: bg-red-600 xs: text-white xs: p-1 xs: border-none xs: rounded-md xs: text-sm xs: mt-5 xs: hidden">
+      <div className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-20  mx-4 ">
+        <h1 className=" text-2xl  font-extrabold">Judea Christ Ministries</h1>
+        <button className=" bg-red-600  text-white  p-1  border-none  rounded-md  text-sm  mt-5  hidden">
           Register Now
         </button>
-        <button className="xs: p-1 xs: bg-blue-950 xs: text-white xs: border-none xs: rounded-lg xs: text-lg">
-        Donate
-      </button>
-      </div>
-      <p className="xs: text-center xs: text-md xs: font-semibold xs: p-5">
+        <button className=" p-1  bg-blue-950  text-white  border-none  rounded-lg  text-lg">
+          Donate
+        </button>
+      </div>  
+      <p className=" text-center  text-md  font-semibold  p-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde magni
         nulla harum nesciunt a nihil laborum eum ipsam quasi fugiat. Voluptatum,
         nam. Ratione, ullam quam animi dolorum modi est accusamus! Lorem ipsum
@@ -33,9 +33,13 @@ const JCMpage = () => {
         nihil laborum eum ipsam quasi fugiat. Voluptatum, nam. Ratione, ullam
         quam animi dolorum modi est accusamus!
       </p>
-      <div className="xs: mt-4 xs: flex xs: flex-col xs: justify-evenly xs: items-center xs: p-5 xs: mb-10 xs: gap-10">
-        <img className="xs: w-auto xs: h-lg xs: mx-5" src="public/sec-2.png" alt="" />
-        <div className="xs: w-auto xs: text-md xs: text-justify">
+      <div className=" mt-4  flex  flex-col  justify-evenly  items-center  p-5  mb-10  gap-10">
+        <img
+          className="w-auto md: w-[20%] h-lg mx-5 "
+          src="public/sec-2.png"
+          alt=""
+        />
+        <div className=" w-auto  text-md  text-justify">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
           perferendis quasi eius, distinctio totam vitae fugit suscipit
           accusantium. Illum esse voluptas rem excepturi enim ducimus voluptates
@@ -51,7 +55,7 @@ const JCMpage = () => {
           ipsam, quos dolorem?
         </div>
       </div>
-      <div className="xs: text-lg xs: font-semibold xs: text-justify xs: flex xs: flex-col xs: gap-5 xs: mx-5">
+      <div className=" text-lg  font-semibold  text-justify  flex  flex-col  gap-5  mx-5">
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia,
           fugiat possimus fuga delectus ut tempora, minus nobis dolorem est

@@ -2,13 +2,13 @@ import React from "react";
 
 const Location = () => {
   return (
-    <div className="xs: w-auto xs: mx-10 xs: bg-[url(public/loc2.jpg)] xs: bg-cover xs: bg-no-repeat xs: h-96 xs: mt-20 xs: rounded-lg">
-      <div className="xs: text-right">
-        <button className="xs: font-bold xs: text-md xs: bg-blue-950 xs: text-white xs: p-2 xs: border-none xs: rounded-lg xs: mt-10 xs: mr-5">
+    <div className="w-auto mx-10 bg-[url(public/loc2.jpg)] bg-cover bg-no-repeat h-96 mt-10 rounded-lg">
+      <div className="text-right">
+        <button className="font-bold text-md bg-blue-950 text-white p-2 border-none rounded-lg mt-10 mr-5">
           View Location
         </button>
       </div>
-      <div className="xs: font-bold xs: text-xl xs: mt-28 xs: mx-4">
+      <div className="font-bold text-xl mt-28 mx-4">
         📍 Plot no 29,sugavacharhiram, MDR 447, Kilacheri, Tamil Nadu 631402
       </div>
     </div>

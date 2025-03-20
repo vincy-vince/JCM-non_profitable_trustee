@@ -6,30 +6,25 @@ const Contact = () => {
   return (
     <div>
       <MenuBar />
-      <div className="bg-[url(public/background-JCM.png)] h-[600px] p-46 w-full bg-cover bg-no-repeat mt-4 mx-4 flex flex-col justify-between gap-20">
-        <h1 className="text-5xl text-bold">Contact Us</h1>
-        <div className="w-max bg-white text-blue-950 p-3 border-none rounded-md text-lg inline-block">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-          />
-          <button className="text-white border-none shadow-lg shadow-blue-500/50 p-2 rounded-lg bg-blue-500">
-            Join now
-          </button>
-        </div>
+      <div className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-20  mx-4 ">
+        <h1 className=" text-2xl  font-extrabold">Judea Christ Ministries</h1>
+        <button className=" bg-red-600  text-white  p-1  border-none  rounded-md  text-sm  mt-5  hidden">
+          Register Now
+        </button>
+        <button className=" p-1  bg-blue-950  text-white  border-none  rounded-lg  text-lg">
+          Donate
+        </button>
       </div>
 
-      <div className="flex flex-col justify-around gap- w-[auto] h-[450px] mx-10 mt-20">
-        <div className="text-lg">
+      <div className="flex flex-col justify-around gap- w-[auto] h-[450px] mx-10 mt-10 md: mt-20">
+        <div className="text-md">
           If you have any questions, need more information, or would like to get
           involved with The Social Project, we'd love to hear from you. Whether
           you're interested in learning more about our programs, want to partner
           with us, or have a suggestion, we're here to help.
         </div>
         <div className="flex flex-col gap-5">
-          <div className="text-lg ">Please feel free to reach out if you:</div>
+          <div className="text-md ">Please feel free to reach out if you:</div>
           <ul className="list-disc ml-5 flex flex-col gap-3">
             <li>
               Wish to learn more about our initiatives and how you can support
@@ -47,24 +42,21 @@ const Contact = () => {
             <li>Have any other inquiries or feedback you'd like to share.</li>
           </ul>
         </div>
-        <div className="text-lg">
+        <div className="text-md">
           Fill out the form below, and a member of our team will get back to you
           as soon as possible. Thank you for your interest in The Social Project
           and for helping us make a difference!
         </div>
       </div>
 
-      <div className="mt-20 bg-indigo-100 h-[250px]">
-        <div
-          className="text-center
-      "
-        >
+      <div className="mt-68 md: mt-16 bg-indigo-100 h-[max] ">
+        <div className="text-center">
           <button className="font-bold text-xl bg-white p-1 rounded-b-2xl">
             Contact Us
           </button>
         </div>
-        <div className="flex flex-row w-auto justify-around items-center mt-16">
-          <div className="flex flex-row gap-3 font-bold  bg-white p-1 rounded-xl w-[400] min-w-[400] h-[60px] shadow-lg shadow-indigo-300/50">
+        <div className="flex flex-col w-auto justify-around items-center mt-14 gap-5 pb-10">
+          <div className="flex flex-row gap-3 font-bold  bg-white p-1 pt-5 rounded-xl w-1/2 h-[60px] shadow-lg shadow-indigo-300/50">
             <div>
               <svg
                 width="23"
@@ -81,7 +73,7 @@ const Contact = () => {
             </div>
             <div>+91 85694231875</div>
           </div>
-          <div className="flex flex-row gap-3 font-bold  bg-white p-1 rounded-xl w-[400] min-w-[400] h-[60px] shadow-lg shadow-indigo-300/50">
+          <div className="flex flex-row gap-3 font-bold  bg-white p-1 pt-5 rounded-xl w-1/2 h-[60px] shadow-lg shadow-indigo-300/50">
             <svg
               width="28"
               height="28"
@@ -96,7 +88,7 @@ const Contact = () => {
             </svg>
             <div>www.judeachrist.org</div>
           </div>
-          <div className="flex flex-row gap-3 font-bold  bg-white p-1 rounded-xl w-[auto] min-w-[400] h-[60px] shadow-lg shadow-indigo-300/50 ">
+          <div className="flex flex-row gap-3 font-bold  bg-white p-1 pt-2 rounded-xl w-1/2  h-[max] shadow-lg shadow-indigo-300/50 ">
             <svg
               width="28"
               height="28"
@@ -110,8 +102,9 @@ const Contact = () => {
               />
             </svg>
             <div className="text-justify">
-              Plot no 29,sugavacharhiram, MDR <br /> 447, Kilacheri, Tamil Nadu
-              631402
+              Plot no 29,
+              <br />
+              sugavacharhiram, MDR 447, Kilacheri, Tamil Nadu 631402
             </div>
           </div>
         </div>
@@ -119,9 +112,9 @@ const Contact = () => {
 
       <div>
         <svg
-          className="mx-auto relative"
-          width="600"
-          height="1031"
+          className="mx-auto"
+          width="300"
+          height="600"
           viewBox="0 0 1033 1031"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
