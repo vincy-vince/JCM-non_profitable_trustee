@@ -29,3 +29,5 @@ createRoot(document.getElementById("root")).render(
 }
 
 // Finish JCM Page
+
+// clear the bugs
