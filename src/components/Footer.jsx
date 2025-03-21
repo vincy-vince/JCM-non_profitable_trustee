@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="flex flex-col justify-around mt-30 bg-slate-300 pt-6 pb-6 wrap gap-10 w-auto lg:flex-row lg:justify-evenly">
       <div className="flex flex-row sm:mx-10 md:mx-10 gap-3 justify-around lg:flex-row lg:mx-0 lg:gap-20">
-      <div className="hidden text-sm font-bold lg:inline-block">LOGO</div>
+        <div className="hidden text-sm font-bold lg:inline-block">LOGO</div>
         <div className="flex flex-col gap-3 ">
           <div className="text-sm font-bold mb-5 ">Contact us</div>
           <div className="flex flex-row gap-3 text-sm">
@@ -69,39 +70,58 @@ const Footer = () => {
               />
             </svg>
             <div className="text-justify">
-              Plot no 29, sugavacharhiram,
+              Plot no 29, sugavachathiram,
               <br /> MDR 447, Kilacheri, Tamil Nadu
               <br />
               631402
             </div>
           </div>
         </div>
-        <div className=" text-sm font-bold mb-5 sm:inline-block md:inline-block lg:hidden">LOGO</div>
+        <div className=" text-sm font-bold mb-5 sm:inline-block md:inline-block lg:hidden">
+          LOGO
+        </div>
       </div>
 
       <div className="flex flex-row mx-3 justify-around lg:flex-row lg:gap-20 lg:mx-0">
         <div className="text-sm flex flex-col gap-3">
           <div className="font-bold ">Navigate</div>
-          <div>Home</div>
-          <div>Contact us</div>
-          <div>Our Ministries</div>
+          <div>
+            <Link to="/">Home</Link>
+          </div>
+          <div>
+            <Link to="/contact">Contact us</Link>
+          </div>
+          <div>
+            <a href="#">Our Ministries</a>
+          </div>
         </div>
         <div className=" text-sm flex flex-col gap-3">
           <div className="font-bold ">Our Ministries</div>
-          <div>Bible college</div>
           <div>
-            (CBS) children <br />
-            Bible Study
+            {" "}
+            <Link to="/biblecollege">Bible College</Link>
           </div>
-          <div>Womens Ministry</div>
+          <div>
+            <Link to="/cbs">
+              (CBS) children <br />
+              Bible Study
+            </Link>
+          </div>
+          <div>
+            <Link to="/womensministry">Womens Ministry</Link>
+          </div>
         </div>
       </div>
 
       <div className="flex flex-row mx-3 justify-around lg:flex-col lg:justify-between">
         <div className=" text-sm flex flex-col gap-3">
           <div className="font-bold ">Resources</div>
-          <div>Privacy Policy</div>
-          <div>Refund Policy</div>
+          <div>
+            <Link to="/resources">Privacy Policy</Link>
+          </div>
+          <div>
+            <Link to="/resources">Refund Policy</Link>
+          </div>
         </div>
         <div className="flex flex-row gap-5">
           <div>

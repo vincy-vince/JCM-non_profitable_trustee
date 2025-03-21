@@ -10,6 +10,9 @@ import Trustee from "../components/Trustee";
 import Volunteer from "../components/Volunteer";
 import UpcomingEvents from "../components/UpcomingEvents";
 import { Link } from "react-router-dom";
+import LgDonate from "../components/LgDonate";
+import LgTrustee from "../components/LgTrustee";
+import LgUpComEvent from "../components/LgUpComEvent";
 const JCMpage = () => {
   return (
     <div>
@@ -119,17 +122,33 @@ const JCMpage = () => {
       {/* Our Ministries */}
       <OurMinistries />
       {/* Donate now session */}
-      <DonateSess />
+      <div className="block md:block lg:hidden">
+        <DonateSess />
+      </div>
+      <div className="hidden md:hidden lg:block">
+        <LgDonate />
+      </div>
       {/* quote */}
       <Quote />
       {/* Trustee Info */}
-      <Trustee />
+      <div className="block md:block lg:hidden">
+        <Trustee />
+      </div>
+      <div className="hidden md:hidden lg:block">
+        <LgTrustee />
+      </div>
       {/* volunteer */}
       <Volunteer />
       {/* location */}
       <Location />
       {/* upcoming events */}
-      <UpcomingEvents />
+      <div className="block md:block lg:hidden">
+        <UpcomingEvents />
+      </div>
+      <div className="hidden md:hidden lg:block">
+        <LgUpComEvent />
+      </div>
+
       {/* FOOTER */}
       <Footer />
     </div>

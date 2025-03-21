@@ -22,7 +22,7 @@ const Contact = () => {
             className="text-blue-900 active:border-none w-[73%] lg:w-[80%] "
             placeholder="Enter your email"
           ></input>
-          <button className="bg-blue-950 text-white px-4 rounded-md py-2 font-bold">
+          <button className="bg-red-800 text-white px-4 rounded-md py-2 font-bold">
             Join now
           </button>
         </div>

@@ -10,10 +10,4 @@ createRoot(document.getElementById("root")).render(
 
 // HOME WORK:
 
-// no need carousel for lg screen
-
-// images collage in bible college, children ministry pages
-
-// when clicking the location component navigate to loation.
-
 // Finish the rest off the pages

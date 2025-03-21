@@ -18,7 +18,7 @@ const DonateSess = () => {
           <li>Imparting ethics and values and more</li>
         </ul>
         <button className="text-black font-bold bg-white border-none rounded-lg w-auto p-2">
-        <Link to="/donate">Donate</Link>
+          <Link to="/donate">Donate</Link>
         </button>
       </div>
     </div>,
@@ -37,7 +37,7 @@ const DonateSess = () => {
           <li>Imparting ethics and values and more</li>
         </ul>
         <button className="text-black font-bold bg-white border-none rounded-lg w-auto p-2">
-        <Link to="/donate">Donate</Link>
+          <Link to="/donate">Donate</Link>
         </button>
       </div>
     </div>,
@@ -56,7 +56,7 @@ const DonateSess = () => {
           <li>Imparting ethics and values and more</li>
         </ul>
         <button className="text-black font-bold bg-white border-none rounded-lg w-auto p-2">
-        <Link to="/donate">Donate</Link>
+          <Link to="/donate">Donate</Link>
         </button>
       </div>
     </div>,

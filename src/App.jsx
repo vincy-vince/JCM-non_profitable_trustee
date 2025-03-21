@@ -6,6 +6,7 @@ import Contact from "./Pages/Contact";
 import BibleCollege from "./Pages/Ministries/BibleCollege";
 import CBS from "./Pages/Ministries/CBS";
 import WomensMinistry from "./Pages/Ministries/WomensMinistry";
+import Resources from "./Pages/Resources";
 const App = () => {
   return (
     <Routes>
@@ -15,6 +16,7 @@ const App = () => {
       <Route path="/biblecollege" element={<BibleCollege />} />
       <Route path="/cbs" element={<CBS />} />
       <Route path="/womensministry" element={<WomensMinistry />} />
+      <Route path="/resources" element={<Resources />} />
     </Routes>
   );
 };
