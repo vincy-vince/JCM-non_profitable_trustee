@@ -6,16 +6,17 @@ const Corousal = ({ slides }) => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
   };
 
   return (
-    <div className="w-auto m-auto">
-      <div
-        className=""
-      >
+    <div className="w-[2/3] mx-auto">
+      <div className="slider-container">
         <Slider {...settings}>
           {slides.map((s) => {
             return <div> {s} </div>;

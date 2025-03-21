@@ -1,70 +1,72 @@
 import React from "react";
-
+import Corousal from "./Corousal";
+import { Link } from "react-router-dom";
 const DonateSess = () => {
+  let slides = [
+    <div className="bg-emerald-600 w-[50%] h-fit mx-auto border-none rounded-lg text-left py-5">
+      <div className="text-white flex flex-col gap-3 justify-left items-center">
+        <div className="font-bold text-lg">Empower her</div>
+        <div>rs.2000/month</div>
+        <div className="bg-white w-48 h-26 border-none rounded-lg"></div>
+        <div className="font-bold">Sponser a girl child</div>
+        <ul className="flex flex-col gap-3 list-disc ml-5 p-2">
+          <li>Medical care</li>
+          <li>Educational support</li>
+          <li>Health and Nutrition</li>
+          <li>Personal mentorship</li>
+          <li>Hygene and Sanitation</li>
+          <li>Imparting ethics and values and more</li>
+        </ul>
+        <button className="text-black font-bold bg-white border-none rounded-lg w-auto p-2">
+        <Link to="/donate">Donate</Link>
+        </button>
+      </div>
+    </div>,
+    <div className="bg-zinc-600 w-[50%] h-fit mx-auto border-none rounded-lg text-left py-5">
+      <div className="text-white flex flex-col gap-3 justify-left items-center">
+        <div className="font-bold text-lg">Empower her</div>
+        <div>rs.2000/month</div>
+        <div className="bg-white w-48 h-26 border-none rounded-lg"></div>
+        <div className="font-bold">Sponser a girl child</div>
+        <ul className="flex flex-col gap-3 list-disc ml-5 p-2">
+          <li>Medical care</li>
+          <li>Educational support</li>
+          <li>Health and Nutrition</li>
+          <li>Personal mentorship</li>
+          <li>Hygene and Sanitation</li>
+          <li>Imparting ethics and values and more</li>
+        </ul>
+        <button className="text-black font-bold bg-white border-none rounded-lg w-auto p-2">
+        <Link to="/donate">Donate</Link>
+        </button>
+      </div>
+    </div>,
+    <div className="bg-red-800 w-[50%] h-fit mx-auto border-none rounded-lg text-left py-5">
+      <div className="text-white flex flex-col gap-3 justify-left items-center">
+        <div className="font-bold text-lg">Empower her</div>
+        <div>rs.2000/month</div>
+        <div className="bg-white w-48 h-26 border-none rounded-lg"></div>
+        <div className="font-bold">Sponser a girl child</div>
+        <ul className="flex flex-col gap-3 list-disc ml-5 p-2">
+          <li>Medical care</li>
+          <li>Educational support</li>
+          <li>Health and Nutrition</li>
+          <li>Personal mentorship</li>
+          <li>Hygene and Sanitation</li>
+          <li>Imparting ethics and values and more</li>
+        </ul>
+        <button className="text-black font-bold bg-white border-none rounded-lg w-auto p-2">
+        <Link to="/donate">Donate</Link>
+        </button>
+      </div>
+    </div>,
+  ];
   return (
-    <div className="xs: mt-20">
-      <h1 className="xs: text-2xl xs: font-extrabold xs: text-center xs: mb-20">
-        Donate now
-      </h1>
-      <div className="xs: flex xs: items-center xs: flex-col xs: gap-10">
-        <div className="xs: bg-emerald-600 xs: w-auto xs: h-fit xs: mx-10 xs: border-none xs: rounded-lg xs: text-left xs: py-5">
-          <div className="xs: text-white xs: flex xs: flex-col xs: gap-3 xs: justify-left xs: items-center">
-            <div className="xs: font-bold xs: text-lg">Empower her</div>
-            <div>rs.2000/month</div>
-            <div className="xs: bg-white xs: w-48 xs: h-26 xs: border-none xs: rounded-lg"></div>
-            <div className="xs: font-bold">Sponser a girl child</div>
-            <ul className="xs: flex xs: flex-col xs: gap-3 xs: list-disc xs: ml-5 xs: p-2">
-              <li>Medical care</li>
-              <li>Educational support</li>
-              <li>Health and Nutrition</li>
-              <li>Personal mentorship</li>
-              <li>Hygene and Sanitation</li>
-              <li>Imparting ethics and values and more</li>
-            </ul>
-            <button className="xs: text-black xs: font-bold xs: bg-white xs: border-none xs: rounded-lg xs: w-auto xs: p-2">
-              Donate
-            </button>
-          </div>
-        </div>
-
-        <div className="xs: bg-zinc-600 xs: w-auto xs: h-fit xs: mx-10 xs: border-none xs: rounded-lg xs: text-left xs: py-5">
-          <div className="xs: text-white xs: flex xs: flex-col xs: gap-3 xs: justify-left xs: items-center">
-            <div className="xs: font-bold xs: text-lg">Empower her</div>
-            <div>rs.2000/month</div>
-            <div className="xs: bg-white xs: w-48 xs: h-26 xs: border-none xs: rounded-lg"></div>
-            <div className="xs: font-bold">Sponser a girl child</div>
-            <ul className="xs: flex xs: flex-col xs: gap-3 xs: list-disc xs: ml-5 xs: p-2">
-              <li>Medical care</li>
-              <li>Educational support</li>
-              <li>Health and Nutrition</li>
-              <li>Personal mentorship</li>
-              <li>Hygene and Sanitation</li>
-              <li>Imparting ethics and values and more</li>
-            </ul>
-            <button className="xs: text-black xs: font-bold xs: bg-white xs: border-none xs: rounded-lg xs: w-auto xs: p-2">
-              Donate
-            </button>
-          </div>
-        </div>
-
-        <div className="xs: bg-red-800 xs: w-auto xs: h-fit xs: mx-10 xs: border-none xs: rounded-lg xs: text-left xs: py-5">
-          <div className="xs: text-white xs: flex xs: flex-col xs: gap-3 xs: justify-left xs: items-center">
-            <div className="xs: font-bold xs: text-lg">Empower her</div>
-            <div>rs.2000/month</div>
-            <div className="xs: bg-white xs: w-48 xs: h-26 xs: border-none xs: rounded-lg"></div>
-            <div className="xs: font-bold">Sponser a girl child</div>
-            <ul className="xs: flex xs: flex-col xs: gap-3 xs: list-disc xs: ml-5 xs: p-2">
-              <li>Medical care</li>
-              <li>Educational support</li>
-              <li>Health and Nutrition</li>
-              <li>Personal mentorship</li>
-              <li>Hygene and Sanitation</li>
-              <li>Imparting ethics and values and more</li>
-            </ul>
-            <button className="xs: text-black xs: font-bold xs: bg-white xs: border-none xs: rounded-lg xs: w-auto xs: p-2">
-              Donate
-            </button>
-          </div>
+    <div className="mt-20">
+      <h1 className="text-2xl font-extrabold text-center mb-20">Donate now</h1>
+      <div className="flex items-center flex-col gap-3">
+        <div className="m-auto w-full">
+          <Corousal slides={slides} />
         </div>
       </div>
     </div>

@@ -2,21 +2,33 @@ import React from "react";
 import MenuBar from "../components/MenuBar";
 import Footer from "../components/Footer";
 import Location from "../components/Location";
+import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <div>
       <MenuBar />
-      <div className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-20  mx-4 ">
-        <h1 className=" text-2xl  font-extrabold">Judea Christ Ministries</h1>
-        <button className=" bg-red-600  text-white  p-1  border-none  rounded-md  text-sm  mt-5  hidden">
-          Register Now
-        </button>
-        <button className=" p-1  bg-blue-950  text-white  border-none  rounded-lg  text-lg">
-          Donate
-        </button>
+      <div className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-20  mx-auto flex flex-col justify-between ">
+        <div className="flex flex-col gap-3">
+          <h1 className=" text-2xl w-[60%] mx-auto font-extrabold text-center lg:text-3xl">
+            Judea Christ Ministries
+          </h1>
+
+          <button className=" p-1 bg-blue-950 text-white border-none rounded-lg text-lg w-[30%] mx-auto md:hidden lg:hidden">
+            <Link to="/donate">Donate</Link>
+          </button>
+        </div>
+        <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto">
+          <input
+            className="text-blue-900 active:border-none w-[73%] lg:w-[80%] "
+            placeholder="Enter your email"
+          ></input>
+          <button className="bg-blue-950 text-white px-4 rounded-md py-2 font-bold">
+            Join now
+          </button>
+        </div>
       </div>
 
-      <div className="flex flex-col justify-around gap- w-[auto] h-[450px] mx-10 mt-10 md: mt-20">
+      <div className="flex flex-col justify-around gap- w-[auto] h-[450px] mx-10 mt-10 md:mt-20">
         <div className="text-md">
           If you have any questions, need more information, or would like to get
           involved with The Social Project, we'd love to hear from you. Whether
@@ -49,13 +61,13 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="mt-68 md: mt-16 bg-indigo-100 h-[max] ">
+      <div className="mt-68 md:mt-16 bg-indigo-100 h-[max] ">
         <div className="text-center">
           <button className="font-bold text-xl bg-white p-1 rounded-b-2xl">
             Contact Us
           </button>
         </div>
-        <div className="flex flex-col w-auto justify-around items-center mt-14 gap-5 pb-10">
+        <div className="flex flex-col w-auto justify-around items-center mt-14 gap-5 pb-10 md:flex-row lg:flex-row md:mx-4 lg:mx-4">
           <div className="flex flex-row gap-3 font-bold  bg-white p-1 pt-5 rounded-xl w-1/2 h-[60px] shadow-lg shadow-indigo-300/50">
             <div>
               <svg
@@ -102,9 +114,7 @@ const Contact = () => {
               />
             </svg>
             <div className="text-justify">
-              Plot no 29,
-              <br />
-              sugavacharhiram, MDR 447, Kilacheri, Tamil Nadu 631402
+              Plot no 29, sugavacharhiram, MDR 447, Kilacheri, Tamil Nadu 631402
             </div>
           </div>
         </div>

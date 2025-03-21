@@ -38,7 +38,7 @@ const JCMpage = () => {
       <div className=" mt-4  flex  flex-col  justify-evenly  items-center  p-5  mb-10  gap-10 relative z-[-1]">
         <div className="flex flex-col gap-4 md:gap-10 relative ">
           <svg
-            className="mr-14 md:mr-28"
+            className="mr-14 md:mr-28 lg:mr-80"
             width="247"
             height="192"
             viewBox="0 0 247 192"
@@ -57,7 +57,7 @@ const JCMpage = () => {
           </svg>
 
           <svg
-            className="ml-47 h-[65px] w-[95px] md:ml-64"
+            className="ml-47 h-[65px] w-[95px] md:ml-64 md:mt-5 lg:ml-90 lg:mt-5"
             width="87"
             height="70"
             viewBox="0 0 87 70"
@@ -75,13 +75,12 @@ const JCMpage = () => {
             />
           </svg>
         </div>
-        /* image */
         <img
-          className="absolute w-[66%] h-[29%] top-8 left-8 md:top-10 md:left-52 md:right-2 md:w-400px rounded-lg md:w-[40%] md:h-[45%]  mx-5 "
+          className="absolute w-[66%] h-[29%] top-8 left-8 md:top-10 md:left-52 md:right-2 md:w-400px rounded-lg md:w-[40%] md:h-[45%]  mx-5 lg:left-57"
           src="public/sec-2.png"
           alt=""
         />
-        <div className=" w-auto  text-md  text-justify">
+        <div className=" w-auto text-md text-justify mx-5">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
           perferendis quasi eius, distinctio totam vitae fugit suscipit
           accusantium. Illum esse voluptas rem excepturi enim ducimus voluptates
@@ -97,7 +96,7 @@ const JCMpage = () => {
           ipsam, quos dolorem?
         </div>
       </div>
-      <div className=" text-lg  font-semibold  text-justify  flex  flex-col  gap-5  mx-5">
+      <div className=" text-lg  font-semibold  text-justify  flex  flex-col  gap-5  mx-10">
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia,
           fugiat possimus fuga delectus ut tempora, minus nobis dolorem est
@@ -126,7 +125,7 @@ const JCMpage = () => {
       {/* Trustee Info */}
       <Trustee />
       {/* volunteer */}
-      |<Volunteer />
+      <Volunteer />
       {/* location */}
       <Location />
       {/* upcoming events */}

@@ -2,11 +2,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="xs: flex xs: flex-col xs: justify-around xs: mt-30 xs: bg-slate-300 xs: pt-6 xs: pb-6 xs: wrap xs: gap-10">
-      <div className="xs: flex xs: flex-row xs: mx-10 xs: gap-3 xs: justify-around">
-        <div className="xs: flex xs: flex-col xs: gap-3 ">
-          <div className="xs: text-sm xs: font-bold xs: mb-5 ">Contact us</div>
-          <div className="xs: flex xs: flex-row xs: gap-3 xs: text-sm">
+    <div className="flex flex-col justify-around mt-30 bg-slate-300 pt-6 pb-6 wrap gap-10 w-auto lg:flex-row lg:justify-evenly">
+      <div className="flex flex-row sm:mx-10 md:mx-10 gap-3 justify-around lg:flex-row lg:mx-0 lg:gap-20">
+      <div className="hidden text-sm font-bold lg:inline-block">LOGO</div>
+        <div className="flex flex-col gap-3 ">
+          <div className="text-sm font-bold mb-5 ">Contact us</div>
+          <div className="flex flex-row gap-3 text-sm">
             <div>
               <svg
                 width="20"
@@ -23,7 +24,7 @@ const Footer = () => {
             </div>
             <div>+91 85694231875</div>
           </div>
-          <div className="xs: flex xs: flex-row xs: gap-3 xs: text-sm">
+          <div className="flex flex-row gap-3 text-sm">
             <svg
               width="20"
               height="28"
@@ -38,7 +39,7 @@ const Footer = () => {
             </svg>
             <div>contact@judeachrist.org</div>
           </div>
-          <div className="xs: flex xs: flex-row xs: gap-3 xs: text-sm">
+          <div className="flex flex-row gap-3 text-sm">
             <svg
               width="20"
               height="28"
@@ -54,7 +55,7 @@ const Footer = () => {
             <div>www.judeachrist.org</div>
           </div>
 
-          <div className="xs: flex xs: flex-row xs: gap-3 xs: text-sm">
+          <div className="flex flex-row gap-3 text-sm">
             <svg
               width="20"
               height="28"
@@ -67,7 +68,7 @@ const Footer = () => {
                 fill="black"
               />
             </svg>
-            <div className="xs: text-justify">
+            <div className="text-justify">
               Plot no 29, sugavacharhiram,
               <br /> MDR 447, Kilacheri, Tamil Nadu
               <br />
@@ -75,31 +76,34 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="xs: text-sm xs: font-bold xs: mb-5">LOGO</div>
+        <div className=" text-sm font-bold mb-5 sm:inline-block md:inline-block lg:hidden">LOGO</div>
       </div>
 
-      <div className="xs: flex xs:flex-row xs: mx-3 xs: justify-around">
-        <div className="xs: text-sm xs: flex xs: flex-col xs: gap-3">
+      <div className="flex flex-row mx-3 justify-around lg:flex-row lg:gap-20 lg:mx-0">
+        <div className="text-sm flex flex-col gap-3">
           <div className="font-bold ">Navigate</div>
           <div>Home</div>
           <div>Contact us</div>
           <div>Our Ministries</div>
         </div>
-        <div className=" xs: text-sm xs: flex xs: flex-col xs: gap-3">
+        <div className=" text-sm flex flex-col gap-3">
           <div className="font-bold ">Our Ministries</div>
           <div>Bible college</div>
-          <div>(CBS) children <br />Bible Study</div>
+          <div>
+            (CBS) children <br />
+            Bible Study
+          </div>
           <div>Womens Ministry</div>
         </div>
       </div>
 
-      <div className="xs: flex xs: flex-row xs: mx-3 xs: justify-around ">
-        <div className=" xs: text-sm xs: flex xs: flex-col xs: gap-3">
+      <div className="flex flex-row mx-3 justify-around lg:flex-col lg:justify-between">
+        <div className=" text-sm flex flex-col gap-3">
           <div className="font-bold ">Resources</div>
           <div>Privacy Policy</div>
           <div>Refund Policy</div>
         </div>
-        <div className="xs: flex xs: flex-row xs: gap-5">
+        <div className="flex flex-row gap-5">
           <div>
             <svg
               width="28"
