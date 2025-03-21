@@ -9,19 +9,20 @@ import Quote from "../components/Quote";
 import Trustee from "../components/Trustee";
 import Volunteer from "../components/Volunteer";
 import UpcomingEvents from "../components/UpcomingEvents";
+import { Link } from "react-router-dom";
 const JCMpage = () => {
   return (
     <div>
       <MenuBar />
-      <div className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-20  mx-4 ">
+      <div className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 ">
         <h1 className=" text-2xl  font-extrabold">Judea Christ Ministries</h1>
         <button className=" bg-red-600  text-white  p-1  border-none  rounded-md  text-sm  mt-5  hidden">
           Register Now
         </button>
-        <button className=" p-1  bg-blue-950  text-white  border-none  rounded-lg  text-lg">
-          Donate
+        <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors">
+          <Link to="/donate"> Donate </Link>
         </button>
-      </div>  
+      </div>
       <p className=" text-center  text-md  font-semibold  p-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde magni
         nulla harum nesciunt a nihil laborum eum ipsam quasi fugiat. Voluptatum,
@@ -33,9 +34,50 @@ const JCMpage = () => {
         nihil laborum eum ipsam quasi fugiat. Voluptatum, nam. Ratione, ullam
         quam animi dolorum modi est accusamus!
       </p>
-      <div className=" mt-4  flex  flex-col  justify-evenly  items-center  p-5  mb-10  gap-10">
+      {/* About and Founder's Image */}
+      <div className=" mt-4  flex  flex-col  justify-evenly  items-center  p-5  mb-10  gap-10 relative z-[-1]">
+        <div className="flex flex-col gap-4 md:gap-10 relative ">
+          <svg
+            className="mr-14 md:mr-28"
+            width="247"
+            height="192"
+            viewBox="0 0 247 192"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="2"
+              y="2"
+              width="243"
+              height="188"
+              rx="6"
+              stroke="#010E54"
+              strokeWidth="4"
+            />
+          </svg>
+
+          <svg
+            className="ml-47 h-[65px] w-[95px] md:ml-64"
+            width="87"
+            height="70"
+            viewBox="0 0 87 70"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="2"
+              y="2"
+              width="83"
+              height="66"
+              rx="6"
+              stroke="#010E54"
+              strokeWidth="4"
+            />
+          </svg>
+        </div>
+        /* image */
         <img
-          className="w-auto md: w-[20%] h-lg mx-5 "
+          className="absolute w-[66%] h-[29%] top-8 left-8 md:top-10 md:left-52 md:right-2 md:w-400px rounded-lg md:w-[40%] md:h-[45%]  mx-5 "
           src="public/sec-2.png"
           alt=""
         />

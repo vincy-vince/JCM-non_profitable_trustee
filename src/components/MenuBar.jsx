@@ -16,10 +16,18 @@ const MenuBar = () => {
     const Navbar = document.getElementById("nav");
 
     menuBar.style.display = "block";
-    menubar.style.left = "0%";
-    menubar.style.transition = "all 2s";
+
     Navbar.style.display = "flex";
     menu = false;
+  }
+
+  function openMenubig() {
+    const Navbar = document.getElementById("nav");
+    if (!toggle !== false) {
+      Navbar.style.display = "flex";
+    } else {
+      Navbar.style.display = "none";
+    }
   }
 
   function closeMenu() {
@@ -31,8 +39,8 @@ const MenuBar = () => {
   return (
     <div className="relative">
       <div className=" w-auto mx-2 ">
-        <div className=" fixed top-0 right-0 left-0 flex flex-row w-auto justify-between p-4 items-center border-1 rounded-lg mt-2 mx-2 gap-4 bg-white">
-          <div>
+        <div className=" fixed top-0 right-0 left-0 flex flex-row w-auto justify-between p-4 items-center border-1 rounded-lg mt-2 mx-2 gap-4 bg-white z-[10]">
+          <div className=" block md:hidden lg:hidden">
             <svg
               onClick={() => openMenu()}
               className=" w-6 h-6"
@@ -46,27 +54,35 @@ const MenuBar = () => {
               <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
             </svg>
           </div>
-          <div>LOGO</div>
+          <div>
+            <a href="/">LOGO</a>
+          </div>
 
-          <ul className=" flex-row  items-center justify-around hidden">
-            <li className="xs: p-2 list-none border-1 rounded-md">
+          <ul className=" flex-row  items-center justify-around hidden md:flex lg:flex md:gap-3 lg:gap-4">
+            <li className=" p-2 list-none border-1 rounded-md">
               <Link to="/">Home</Link>
             </li>
-            <li className="xs: p-2 list-none border-1 rounded-md">
+            <li className=" p-2 list-none border-1 rounded-md">
               <Link to="/contact">Contact</Link>
             </li>
-            <div className="xs: flex flex-col">
-              <li className="xs: p-2 list-none border-1 rounded-md">
+            <div className=" flex flex-col">
+              <li
+                onClick={() => openMenubig(setToggle(!toggle))}
+                className=" p-2 list-none border-1 rounded-md"
+              >
                 Our Ministries
               </li>
-              <div className="hidden">
-                <div>
+              <div
+                id="nav"
+                className="hidden flex-col absolute top-19 text-md bg-white rounded-b-md border-blue-950 border-x-2 border-b-2 "
+              >
+                <div className="p-2 hover:bg-blue-900 hover:text-white transition-all">
                   <Link to="/biblecollege">Bible College</Link>
                 </div>
-                <div>
+                <div className="p-2 hover:bg-blue-900 hover:text-white transition-all">
                   <Link to="/cbs">CBS</Link>
                 </div>
-                <div>
+                <div className="p-2 hover:bg-blue-900 hover:text-white transition-all">
                   <Link to="/womensministry">Womens Ministry</Link>
                 </div>
               </div>
@@ -74,8 +90,8 @@ const MenuBar = () => {
           </ul>
 
           {/* For Xs screen (370px) */}
-          <button className="xs: p-1 bg-blue-950 text-white border-none rounded-lg text-lg hidden">
-            Donate
+          <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg hover:bg-blue-900 transition-colors hidden md:inline-block lg:inline-block">
+            <Link to="/donate"> Donate </Link>
           </button>
         </div>
 
@@ -103,7 +119,9 @@ const MenuBar = () => {
                 />
               </svg>
             </div>
-            <div>LOGO</div>
+            <div>
+              <a href="/">LOGO</a>
+            </div>
           </div>
 
           <ul
@@ -113,7 +131,7 @@ const MenuBar = () => {
             <li className=" p-2 list-none border-l-2 border-blue-900 rounded-md mb-2">
               <Link to="/">Home</Link>
             </li>
-            <li className=" p-2 list-none border-l-2 border-blue-900 rounded-md mb-2">
+            <li className=" p-2 list-none border-l-2 border-blue-900 rounded-md mb-2 md:hidden">
               <Link to="/contact">Contact</Link>
             </li>
             <div className=" flex flex-col ">
@@ -139,19 +157,19 @@ const MenuBar = () => {
               </div>
 
               <div id="ministries" className="hidden text-left mt-2">
-                <div className="shadow-md mt-2 w-[120px] ml-4">
+                <div className="shadow-md mt-2 w-[120px] ml-4 hover:bg-blue-900 rounded-sm p-2 hover:text-white transition-all">
                   <Link to="/biblecollege">Bible College</Link>
                 </div>
-                <div className="shadow-md mt-2 w-[120px] ml-4">
+                <div className="shadow-md mt-2 w-[120px] ml-4 hover:bg-blue-900 rounded-sm p-2 hover:text-white transition-all">
                   <Link to="/cbs">CBS</Link>
                 </div>
-                <div className="shadow-md mt-2 w-[120px] ml-4">
+                <div className="shadow-md mt-2 w-[120px] ml-4 hover:bg-blue-900 rounded-sm p-2 hover:text-white transition-all">
                   <Link to="/womensministry">Womens Ministry</Link>
                 </div>
               </div>
 
-              <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10">
-                Donate
+              <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors">
+                <Link to="/donate"> Donate </Link>
               </button>
             </div>
           </ul>

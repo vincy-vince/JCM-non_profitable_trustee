@@ -1,21 +1,26 @@
 import React from "react";
-import { FaArrowCircleRight } from "react-icons/fa";
-import { FaArrowCircleLeft } from "react-icons/fa";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const Corousal = ({ slides }) => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
-    <div className="overflow-hidden relative">
-      <div className="flex">
-        {slides.map((s) => {
-          return s;
-        })}
-      </div>
-      <div className="absolute top-0 h-full w-full justify-between items-center">
-        <button>
-          <FaArrowCircleRight></FaArrowCircleRight>
-        </button>
-        <button>
-          <FaArrowCircleLeft></FaArrowCircleLeft>
-        </button>
+    <div className="w-auto m-auto">
+      <div
+        className=""
+      >
+        <Slider {...settings}>
+          {slides.map((s) => {
+            return <div> {s} </div>;
+          })}
+        </Slider>
       </div>
     </div>
   );
