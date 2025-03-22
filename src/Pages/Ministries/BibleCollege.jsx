@@ -8,6 +8,8 @@ import Volunteer from "../../components/Volunteer";
 import Courses from "../../components/Courses";
 import LgCourses from "../../components/LgCourses";
 import LgFaculty from "../../components/LgFaculty";
+import StudentTestimonial from "../../components/StudentTestimonial";
+import LgStudentTest from "../../components/LgStudentTest";
 const BibleCollege = () => {
   return (
     <div>
@@ -72,48 +74,38 @@ const BibleCollege = () => {
       <div className="hidden md:hidden lg:block">
         <LgFaculty />
       </div>
-      <div className=" relative w-[50%] mx-auto mt-20">
-        <svg
-          width="224"
-          height="230"
-          viewBox="0 0 224 230"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.23416 105.629C4.85247 27.0214 -3.10548 4.5585 97.9025 0.580374C208.87 -3.79003 226.633 17.4971 223.116 115.805C219.84 207.406 219.032 214.122 126.448 220.854C33.8637 227.586 -6.13118 265.641 1.23416 105.629Z"
-            fill="#A08BEA"
-          />
-        </svg>
-        <p className="absolute text-sm top-15 left-3 right-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius
-          quos doloremque ad perferendis laboriosam ut fugiat! Pariatur labore
-          <br />
-          {"  "}
-          <span className="font-bold">Students Name</span>
-        </p>
+
+      {/* student testimonials */}
+
+      <div className="block md:block lg:hidden">
+        <StudentTestimonial />
       </div>
+      <div className="hidden md:hidden lg:block">
+        <LgStudentTest />
+      </div>
+
       {/* graduation */}
+
       <div className="flex flex-col gap-6">
         <p className="text-xl md:2xl lg:3xl text-center mt-15 font-extrabold ">
           Batch 2019 Graduation
         </p>
         <img className="w-[80%] mx-auto " src="public/graduate.webp" alt="" />
 
-        <p className="text-justify mx-10">
+        <p className="text-center mx-10 lg:mx-20">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
           obcaecati suscipit minima Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Similique obcaecati suscipit minima
         </p>
       </div>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 mb-8">
         <p className="text-xl md:2xl lg:3xl text-center mt-15 font-extrabold">
           Batch 2023 Graduation
         </p>
         <img className="w-[80%] mx-auto " src="public/graduate.webp" alt="" />
 
-        <p className="text-center mx-10">
+        <p className="text-center mx-10 lg:mx-20">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
           obcaecati suscipit minima Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Similique obcaecati suscipit minima
