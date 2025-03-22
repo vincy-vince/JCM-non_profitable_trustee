@@ -25,7 +25,11 @@ const MenuBar = () => {
     const Navbar = document.getElementById("nav");
     if (!toggle !== false) {
       Navbar.style.display = "flex";
-    } else {
+    }
+  }
+  function closeMenubig() {
+    const Navbar = document.getElementById("nav");
+    if (!toggle == false) {
       Navbar.style.display = "none";
     }
   }
@@ -37,7 +41,10 @@ const MenuBar = () => {
     }
   }
   return (
-    <div className="relative">
+    <div
+      onMouseDown={() => closeMenubig(setToggle(!toggle))}
+      className="relative "
+    >
       <div className=" w-auto mx-2 ">
         <div className=" fixed top-0 right-0 left-0 flex flex-row w-auto justify-between p-4 items-center border-1 rounded-lg mt-2 mx-2 gap-4 bg-white z-[10]">
           <div className=" block md:hidden lg:hidden">
@@ -67,7 +74,7 @@ const MenuBar = () => {
             </li>
             <div className=" flex flex-col">
               <li
-                onClick={() => openMenubig(setToggle(!toggle))}
+                onMouseEnter={() => openMenubig(setToggle(!toggle))}
                 className=" p-2 list-none border-1 rounded-md"
               >
                 Our Ministries

@@ -11,3 +11,7 @@ createRoot(document.getElementById("root")).render(
 // HOME WORK:
 
 // Finish the rest off the pages
+
+// when clicking donate popup showing up
+
+// everything should be exactly like the gn design
