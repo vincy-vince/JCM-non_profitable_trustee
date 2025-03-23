@@ -66,16 +66,17 @@ const MenuBar = () => {
           </div>
 
           <ul className=" flex-row  items-center justify-around hidden md:flex lg:flex md:gap-3 lg:gap-4">
-            <li className=" p-2 list-none border-1 rounded-md">
+            <li className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md">
               <Link to="/">Home</Link>
             </li>
-            <li className=" p-2 list-none border-1 rounded-md">
+            <li className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md">
               <Link to="/contact">Contact</Link>
             </li>
             <div className=" flex flex-col">
               <li
                 onMouseEnter={() => openMenubig(setToggle(!toggle))}
-                className=" p-2 list-none border-1 rounded-md"
+                onClick={() => closeMenubig(setToggle(!toggle))}
+                className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md"
               >
                 Our Ministries
               </li>
