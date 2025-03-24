@@ -10,11 +10,11 @@ const LgDonate = () => {
           Donate now
         </h1>
         <div className="flex items-center flex-row gap-3 w-[90%] mx-auto">
-          <div className="bg-emerald-600 w-[50%] h-fit mx-auto border-none rounded-lg text-left py-5">
+          <div className="bg-emerald-600 w-[25%] h-fit mx-auto border-none rounded-lg text-left py-5">
             <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
               <div className="font-bold text-lg">Empower her</div>
               <div>rs.2000/month</div>
-              <div className="bg-white w-48 h-26 border-none rounded-lg"></div>
+              <div className="bg-white h-30 border-none rounded-lg"></div>
               <div className="font-bold">Sponser a girl child</div>
               <ul className="flex flex-col gap-3 list-disc ml-5 p-2">
                 <li>Medical care</li>
@@ -26,7 +26,7 @@ const LgDonate = () => {
               </ul>
               <button
                 onClick={() => setShowModal(true)}
-                className="text-emerald-600 font-bold bg-white border-none rounded-lg w-auto p-2"
+                className="text-emerald-600 font-bold bg-white border-none rounded-lg w-max p-2 mx-auto"
               >
                 Donate
               </button>
@@ -69,11 +69,11 @@ const LgDonate = () => {
               )}
             </div>
           </div>
-          <div className="bg-zinc-600 w-[50%] h-fit mx-auto border-none rounded-lg text-left py-5">
-            <div className="text-white flex flex-col gap-3 justify-left items-center">
+          <div className="bg-zinc-600 w-[25%] h-fit mx-auto border-none rounded-lg text-left py-5">
+            <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
               <div className="font-bold text-lg">Empower her</div>
               <div>rs.2000/month</div>
-              <div className="bg-white w-48 h-26 border-none rounded-lg"></div>
+              <div className="bg-white h-30 border-none rounded-lg"></div>
               <div className="font-bold">Sponser a girl child</div>
               <ul className="flex flex-col gap-3 list-disc ml-5 p-2">
                 <li>Medical care</li>
@@ -85,16 +85,17 @@ const LgDonate = () => {
               </ul>
               <button
                 onClick={() => setShowModal(true)}
-                className="text-zinc-600 font-bold bg-white border-none rounded-lg w-auto p-2"
+                className="text-zinc-600 font-bold bg-white border-none rounded-lg w-max p-2 mx-auto"
               >
                 Donate
               </button>
               {ShowModal && (
                 <div className="fixed bg-black/50 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0">
                   <div className="bg-white py-16 px-10 pb-5 rounded-md relative">
-                    <div className="absolute right-2 top-2 cursor-pointer">
+                    <div className="absolute right-2 top-2 cursor-pointer ">
                       {" "}
                       <IoClose
+                        fill="black"
                         onClick={() => {
                           setShowModal(false);
                         }}
@@ -127,11 +128,11 @@ const LgDonate = () => {
               )}
             </div>
           </div>
-          <div className="bg-red-800 w-[50%] h-fit mx-auto border-none rounded-lg text-left py-5">
-            <div className="text-white flex flex-col gap-3 justify-left items-center">
+          <div className="bg-red-800 w-[25%] h-fit mx-auto border-none rounded-lg text-left py-5">
+            <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
               <div className="font-bold text-lg">Empower her</div>
               <div>rs.2000/month</div>
-              <div className="bg-white w-48 h-26 border-none rounded-lg"></div>
+              <div className="bg-white h-30 border-none rounded-lg"></div>
               <div className="font-bold">Sponser a girl child</div>
               <ul className="flex flex-col gap-3 list-disc ml-5 p-2">
                 <li>Medical care</li>
@@ -143,16 +144,17 @@ const LgDonate = () => {
               </ul>
               <button
                 onClick={() => setShowModal(true)}
-                className="text-red-800 font-bold bg-white border-none rounded-lg w-auto p-2"
+                className="text-red-800 font-bold bg-white border-none rounded-lg w-max p-2 mx-auto"
               >
                 Donate
               </button>
               {ShowModal && (
                 <div className="fixed bg-black/50 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0">
-                  <div className="bg-white py-16 px-10 pb-5 rounded-md relative text-black">
-                    <div className="absolute right-2 top-2 cursor-pointer">
+                  <div className="bg-white py-16 px-10 pb-5 rounded-md relative">
+                    <div className="absolute right-2 top-2 cursor-pointer ">
                       {" "}
                       <IoClose
+                        fill="black"
                         onClick={() => {
                           setShowModal(false);
                         }}

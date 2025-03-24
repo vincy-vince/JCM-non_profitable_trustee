@@ -43,9 +43,9 @@ const MenuBar = () => {
     }
   }
   return (
-    <div className="relative ">
+    <div className="relative">
       <div className=" w-auto mx-2 ">
-        <div className=" fixed top-0 right-0 left-0 flex flex-row w-auto justify-between p-4 items-center border-1 rounded-lg mt-2 mx-2 gap-4 bg-white z-[10]">
+        <div className=" fixed top-0 right-0 left-0 flex flex-row w-auto justify-between p-4 items-center gap-4 bg-white z-[10]">
           <div className=" block md:hidden lg:hidden">
             <svg
               onClick={() => openMenu()}
@@ -82,7 +82,7 @@ const MenuBar = () => {
               </li>
               <div
                 id="nav"
-                className="hidden flex-col absolute top-19 text-md bg-white rounded-b-md border-blue-950 border-x-2 border-b-2 "
+                className="hidden flex-col absolute top-15  text-md bg-white rounded-b-md border-b-2 "
               >
                 <div className="p-2 hover:bg-blue-900 hover:text-white transition-all">
                   <Link to="/biblecollege">Bible College</Link>
@@ -90,7 +90,7 @@ const MenuBar = () => {
                 <div className="p-2 hover:bg-blue-900 hover:text-white transition-all">
                   <Link to="/cbs">CBS</Link>
                 </div>
-                <div className="p-2 hover:bg-blue-900 hover:text-white transition-all">
+                <div className="p-2 hover:bg-blue-900 hover:text-white transition-all rounded-b-md">
                   <Link to="/womensministry">Womens Ministry</Link>
                 </div>
               </div>
@@ -100,7 +100,7 @@ const MenuBar = () => {
           {/* For Xs screen (370px) */}
           <button
             onClick={() => setShowModal(true)}
-            className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg hover:bg-blue-900 transition-colors hidden md:inline-block lg:inline-block"
+            className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 md:inline-block lg:inline-block"
           >
             Donate
           </button>

@@ -4,9 +4,9 @@ const Youtube = () => {
   return (
     <div className="flex flex-col gap-8 h-96 my-18 items-center ">
       <iframe
-        className="w-max border-none rounded-lg mx-auto h-[515px] md:w-[480px] lg:w-[600px]"
-        width="300"
-        height="515"
+        className="w-max border-none rounded-lg mx-auto h-[515px] md:w-[480px] lg:w-[800px] lg:h-full mb-5"
+        // width="300"
+        // height="515"
         src="https://www.youtube.com/embed/2xcFM9CBiOE?si=9eDWDNVZlBKCr_HF"
         title="YouTube video player"
         frameBorder="0"

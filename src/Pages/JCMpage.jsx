@@ -119,11 +119,11 @@ const JCMpage = () => {
           </svg> */}
         </div>
         <img
-          className=" w-[66%] h-[29%] top-8 md:w-400px rounded-lg md:w-[40%] md:h-[45%]  mx-5"
-          src="public/sec-2.png"
+          className=" w-1/2 h-[50%] top-8 rounded-lg md:w-1/2 md:h-[50%]  mx-5"
+          src="public/stGirlpf.jpeg"
           alt=""
         />
-        <div className=" w-auto text-md text-justify mx-5">
+        <div className=" w-1/2 text-md text-justify md:mx-10 lg:mx-20">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
           perferendis quasi eius, distinctio totam vitae fugit suscipit
           accusantium.
