@@ -5,7 +5,7 @@ const LgTrustee = () => {
     <div className="flex  gap-10  mx-10 flex-row">
       <div
         key={1}
-        className="flex flex-col items-center rounded-lg mx-auto w-[50%] h-[30%] shadow-[0px_0px_20px_3px_rgba(04,02,73.5,_0.5)]"
+        className="flex flex-col items-center rounded-lg mx-auto w-[50%] h-[30%] shadow-[0px_0px_20px_3px_rgba(0,0,0,_0.3)]"
       >
         <img
           className="w-full h-[40%] rounded-t-lg"
@@ -31,7 +31,7 @@ const LgTrustee = () => {
 
       <div
         key={2}
-        className="flex flex-col items-center rounded-lg mx-auto w-[50%] h-[30%] shadow-[0px_0px_20px_3px_rgba(04,02,73.5,_0.5)]"
+        className="flex flex-col items-center rounded-lg mx-auto w-[50%] h-[30%] shadow-[0px_0px_20px_3px_rgba(0,0,0,_0.3)]"
       >
         <img
           className="w-full h-[40%] rounded-t-lg"
@@ -57,7 +57,7 @@ const LgTrustee = () => {
 
       <div
         key={3}
-        className="flex flex-col items-center rounded-lg mx-auto w-[50%] h-[30%] shadow-[0px_0px_20px_3px_rgba(04,02,73.5,_0.5)]"
+        className="flex flex-col items-center rounded-lg mx-auto w-[50%] h-[30%] shadow-[0px_0px_20px_3px_rgba(0,0,0,_0.3)]"
       >
         <img
           className="w-full h-[40%] rounded-t-lg"

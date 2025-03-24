@@ -111,12 +111,13 @@ const BibleCollege = () => {
           adipisicing elit. Similique obcaecati suscipit minima
         </p>
       </div>
+
       {/* Mode of teaching */}
 
       <div className="flex flex-col gap-4 mx-10 md:flex-row lg:flex-row">
         <div className="flex flex-col bg-green-800 h-[200px] w-[80%] mx-auto mt-10 rounded-lg justify-around text-white md:w-1/2">
           <p className="text-center">Online Mode</p>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 md:text-center lg:text-center">
             <div className="ml-5">08:00 AM - 10:00 AM Monday</div>
             <div className="ml-5">08:00 AM - 10:00 AM Wednesday</div>
             <div className="ml-5">08:00 AM - 10:00 AM Friday</div>
@@ -125,7 +126,7 @@ const BibleCollege = () => {
 
         <div className="flex flex-col bg-cyan-800 h-[200px] w-[80%] mx-auto mt-10 rounded-lg justify-around text-white md:w-1/2">
           <p className="text-center">Offline Mode</p>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 md:text-center lg:text-center">
             <div className="ml-5">08:00 AM - 10:00 AM Monday</div>
             <div className="ml-5">08:00 AM - 10:00 AM Wednesday</div>
             <div className="ml-5">08:00 AM - 10:00 AM Friday</div>

@@ -11,7 +11,7 @@ const WomensMinistry = () => {
     <div>
       <MenuBar />
 
-      <div className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 ">
+      <div className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px]">
         <h1 className=" text-2xl  font-extrabold">JCM Bible College</h1>
         <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors">
           <Link to="/donate"> Donate </Link>

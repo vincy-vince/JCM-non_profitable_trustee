@@ -9,7 +9,7 @@ const CBS = () => {
     <div>
       <MenuBar />
 
-      <div className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 ">
+      <div className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px]">
         <h1 className=" text-2xl  font-extrabold">JCM Bible College</h1>
         <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors">
           <Link to="/donate"> Donate </Link>
@@ -51,7 +51,7 @@ const CBS = () => {
       </div>
 
       {/* Text */}
-      <div className="mt-5 text-center text-sm md:text-lg mx-8 lg:text-xl">
+      <div className="mt-5 text-center text-sm md:text-lg mx-8 lg:text-xl md:mx-10 lg:mx-15 mb-10">
         As the next phase of its growth, JCM Theological College was started in
         2019. With excellent professors, this institution is operating in a
         great manner. In addition, special youth gatherings, special sister’s
@@ -59,7 +59,7 @@ const CBS = () => {
         and medical camps are also being conducted.
       </div>
 
-      <div className="mt-5 text-center text-sm md:text-lg mx-8 lg:text-xl">
+      <div className="mt-5 text-center text-sm md:text-lg mx-8 lg:text-xl md:mx-10 lg:mx-15">
         In May 2024, this institution was registered under the name “Religious
         and Charitable Trust.” This institution has been operating effectively
         for the past 31 years, and many have benefitted through it. God has
@@ -73,7 +73,7 @@ const CBS = () => {
         </p>
         <img className="w-[80%] mx-auto " src="public/graduate.webp" alt="" />
 
-        <p className="text-justify mx-10">
+        <p className="text-center mx-10 md:mx-20 lg:mx-20">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
           obcaecati suscipit minima Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Similique obcaecati suscipit minima
@@ -86,7 +86,7 @@ const CBS = () => {
         </p>
         <img className="w-[80%] mx-auto " src="public/graduate.webp" alt="" />
 
-        <p className="text-center mx-10">
+        <p className="text-center mx-10 md:mx-20 lg:mx-20">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
           obcaecati suscipit minima Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Similique obcaecati suscipit minima
