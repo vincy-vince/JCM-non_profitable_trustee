@@ -12,6 +12,8 @@ const Corousal = ({ slides }) => {
     speed: 500,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    centerMode: true,
+    centerPadding: "90px",
   };
 
   return (

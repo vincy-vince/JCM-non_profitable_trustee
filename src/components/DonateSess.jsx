@@ -3,13 +3,13 @@ import Corousal from "./Corousal";
 import { Link } from "react-router-dom";
 const DonateSess = () => {
   let slides = [
-    <div className="bg-emerald-600 w-[50%] h-fit mx-auto border-none rounded-lg text-left py-5">
-      <div className="text-white flex flex-col gap-4 justify-left items-left mx-4">
+    <div className="bg-emerald-600 w-[90%] h-fit mx-auto border-none rounded-lg text-left py-5 md:w-[60%]">
+      <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
         <div className="font-bold text-lg text-left">Empower her</div>
         <div>rs.2000/month</div>
         <div className="bg-white w-[100%] h-40 border-none rounded-lg mx-auto mb-3"></div>
         <div className="font-bold">Sponser a girl child</div>
-        <ul className="flex flex-col gap-3 list-disc ml-5 p-2">
+        <ul className="flex flex-col gap-3 list-disc ml-5 p-2 text-sm">
           <li>Medical care</li>
           <li>Educational support</li>
           <li>Health and Nutrition</li>
@@ -22,13 +22,13 @@ const DonateSess = () => {
         </button>
       </div>
     </div>,
-    <div className="bg-zinc-600 w-[50%] h-fit mx-auto border-none rounded-lg text-left py-5">
-      <div className="text-white flex flex-col gap-4 justify-left items-left mx-4">
+    <div className="bg-zinc-600 w-[90%] h-fit mx-auto border-none rounded-lg text-left py-5 md:w-[60%]">
+      <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
         <div className="font-bold text-lg text-left">Empower her</div>
         <div>rs.2000/month</div>
         <div className="bg-white w-[100%] h-40 border-none rounded-lg mx-auto mb-3"></div>
         <div className="font-bold">Sponser a girl child</div>
-        <ul className="flex flex-col gap-3 list-disc ml-5 p-2 h-max">
+        <ul className="flex flex-col gap-3 list-disc ml-5 p-2 h-max text-sm">
           <li>Medical care</li>
           <li>Educational support</li>
           <li>Health and Nutrition</li>
@@ -41,13 +41,13 @@ const DonateSess = () => {
         </button>
       </div>
     </div>,
-    <div className="bg-red-800 w-[50%] h-fit mx-auto border-none rounded-lg text-left py-5">
-      <div className="text-white flex flex-col gap-4 justify-left items-left mx-4">
+    <div className="bg-red-800 w-[90%] h-fit mx-auto border-none rounded-lg text-left py-5 md:w-[60%]">
+      <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
         <div className="font-bold text-lg text-left">Empower her</div>
         <div>rs.2000/month</div>
         <div className="bg-white w-[100%] h-40 border-none rounded-lg mx-auto mb-3"></div>
         <div className="font-bold">Sponser a girl child</div>
-        <ul className="flex flex-col gap-3 list-disc ml-5 p-2">
+        <ul className="flex flex-col gap-3 list-disc ml-5 p-2 text-sm">
           <li>Medical care</li>
           <li>Educational support</li>
           <li>Health and Nutrition</li>
