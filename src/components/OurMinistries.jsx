@@ -11,11 +11,11 @@ const OurMinistries = () => {
         <div className="bg-sky-300 w-auto h-54 border-none rounded-lg text-center mx-10 pt-5 md:h-64 lg:h-80">
           Bible Colledge
         </div>
-        <div className="flex flex-col justify-around mb-10 xs :w-auto mx-10 gap-5 lg:flex-row ">
-          <div className="bg-pink-300 w-auto h-54 border-none rounded-lg text-center pt-5 md:h-64 lg:mx-0 lg:w-1/2">
+        <div className="flex flex-col justify-around mb-10 w-auto mx-10 gap-5 md:flex-row lg:flex-row ">
+          <div className="bg-pink-300 w-auto h-54 border-none rounded-lg text-center pt-5 md:h-64 lg:mx-0 lg:w-1/2 md:mx-0 md:w-1/2">
             Children Bible Study
           </div>
-          <div className="bg-slate-300 w-auto h-54 border-none rounded-lg text-center pt-5 md:h-64 lg:mx-0 lg:w-1/2">
+          <div className="bg-slate-300 w-auto h-54 border-none rounded-lg text-center pt-5 md:h-64 lg:mx-0 lg:w-1/2 md:mx-0 md:w-1/2">
             Womens Fellowship
           </div>
         </div>

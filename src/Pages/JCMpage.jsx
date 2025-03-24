@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 import LgDonate from "../components/LgDonate";
 import LgTrustee from "../components/LgTrustee";
 import LgUpComEvent from "../components/LgUpComEvent";
+
 const JCMpage = () => {
   return (
     <div>
@@ -40,9 +41,9 @@ const JCMpage = () => {
         quam animi dolorum modi est accusamus!
       </p>
       {/* About and Founder's Image */}
-      <div className=" mt-4  flex  flex-col  justify-evenly  items-center  p-5  mb-10  gap-10 relative z-[-1]">
+      <div className=" mt-4  flex  flex-col  justify-evenly  items-center  p-5  mb-10  gap-10 md:flex-row lg:flex-row  relative z-[-1]">
         <div className="flex flex-col gap-4 md:gap-10 relative ">
-          <svg
+          {/* <svg
             className="mr-14 md:mr-28 lg:mr-80"
             width="247"
             height="192"
@@ -78,20 +79,17 @@ const JCMpage = () => {
               stroke="#010E54"
               strokeWidth="4"
             />
-          </svg>
+          </svg> */}
         </div>
         <img
-          className="absolute w-[66%] h-[29%] top-8 left-8 md:top-10 md:left-52 md:right-2 md:w-400px rounded-lg md:w-[40%] md:h-[45%]  mx-5 lg:left-57"
+          className=" w-[66%] h-[29%] top-8 md:w-400px rounded-lg md:w-[40%] md:h-[45%]  mx-5"
           src="public/sec-2.png"
           alt=""
         />
         <div className=" w-auto text-md text-justify mx-5">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
           perferendis quasi eius, distinctio totam vitae fugit suscipit
-          accusantium. Illum esse voluptas rem excepturi enim ducimus voluptates
-          voluptate voluptatum, quasi cumque eos, quo recusandae temporibus
-          tenetur adipisci culpa doloremque ipsam aut odit distinctio. Maxime,
-          nemo ea! Temporibus non ipsa provident nobis.
+          accusantium. 
           <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
           quasi illum fuga delectus, dignissimos vitae rerum, assumenda in ipsa
           quibusdam iste asperiores ex fugiat suscipit eaque, provident nobis
