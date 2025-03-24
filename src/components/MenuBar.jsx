@@ -25,7 +25,11 @@ const MenuBar = () => {
     const Navbar = document.getElementById("nav");
     if (!toggle !== false) {
       Navbar.style.display = "flex";
-    } else {
+    }
+  }
+  function closeMenubig() {
+    const Navbar = document.getElementById("nav");
+    if (!toggle == false) {
       Navbar.style.display = "none";
     }
   }
@@ -37,7 +41,10 @@ const MenuBar = () => {
     }
   }
   return (
-    <div className="relative">
+    <div
+      onMouseDown={() => closeMenubig(setToggle(!toggle))}
+      className="relative "
+    >
       <div className=" w-auto mx-2 ">
         <div className=" fixed top-0 right-0 left-0 flex flex-row w-auto justify-between p-4 items-center border-1 rounded-lg mt-2 mx-2 gap-4 bg-white z-[10]">
           <div className=" block md:hidden lg:hidden">
@@ -59,16 +66,17 @@ const MenuBar = () => {
           </div>
 
           <ul className=" flex-row  items-center justify-around hidden md:flex lg:flex md:gap-3 lg:gap-4">
-            <li className=" p-2 list-none border-1 rounded-md">
+            <li className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md">
               <Link to="/">Home</Link>
             </li>
-            <li className=" p-2 list-none border-1 rounded-md">
+            <li className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md">
               <Link to="/contact">Contact</Link>
             </li>
             <div className=" flex flex-col">
               <li
-                onClick={() => openMenubig(setToggle(!toggle))}
-                className=" p-2 list-none border-1 rounded-md"
+                onMouseEnter={() => openMenubig(setToggle(!toggle))}
+                onClick={() => closeMenubig(setToggle(!toggle))}
+                className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md"
               >
                 Our Ministries
               </li>
