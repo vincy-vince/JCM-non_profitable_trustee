@@ -41,11 +41,13 @@ const Contact = () => {
                   <div className="flex flex-col gap-4">
                     <div className="border-2 border-blue-950 bg-blue-950 rounded-sm p-3 text-white text-center">
                       {" "}
-                      Yes, I'm a donar from India
+                      <Link to="/contact"> Yes, I'm a donar from India</Link>
                     </div>
                     <div className="border-2 text-blue-950 border-blue-950 bg-blue-50 rounded-sm p-3 text-center">
                       {" "}
-                      No, I'm a foreigner donor outside India
+                      <Link to="/contact">
+                        No, I'm a foreigner donor outside India
+                      </Link>
                     </div>
                   </div>
                 </div>

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import MenuBar from "../components/MenuBar";
 import Location from "../components/Location";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import { IoClose } from "react-icons/io5";
 const Resources = () => {
+  const [ShowModal, setShowModal] = useState(false);
   return (
     <div>
       <MenuBar />
@@ -13,9 +15,45 @@ const Resources = () => {
             Judea Christ Ministries
           </h1>
 
-          <button className=" p-1 bg-blue-950 text-white border-none rounded-lg text-lg w-[30%] mx-auto md:hidden lg:hidden">
-            <Link to="/donate">Donate</Link>
+          <button
+            onClick={() => setShowModal(true)}
+            className=" p-1 bg-blue-950 text-white border-none rounded-lg text-lg w-[30%] mx-auto md:hidden lg:hidden"
+          >
+            Donate
           </button>
+          {ShowModal && (
+            <div className="fixed bg-black/50 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0">
+              <div className="bg-white py-16 px-10 pb-5 rounded-md relative">
+                <div className="absolute right-2 top-2 cursor-pointer">
+                  {" "}
+                  <IoClose
+                    onClick={() => {
+                      setShowModal(false);
+                    }}
+                    size={30}
+                  ></IoClose>
+                </div>
+                <div className=" flex flex-col gap-3">
+                  <div className="text-center mt-5">
+                    {" "}
+                    Are you a donar donating from India?
+                  </div>
+                  <div className="flex flex-col gap-4">
+                    <div className="border-2 border-blue-950 bg-blue-950 rounded-sm p-3 text-white text-center">
+                      {" "}
+                      <Link to="/contact"> Yes, I'm a donar from India</Link>
+                    </div>
+                    <div className="border-2 text-blue-950 border-blue-950 bg-blue-50 rounded-sm p-3 text-center">
+                      {" "}
+                      <Link to="/contact">
+                        No, I'm a foreigner donor outside India
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
         <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto">
           <input

@@ -43,10 +43,7 @@ const MenuBar = () => {
     }
   }
   return (
-    <div
-      onMouseDown={() => closeMenubig(setToggle(!toggle))}
-      className="relative "
-    >
+    <div className="relative ">
       <div className=" w-auto mx-2 ">
         <div className=" fixed top-0 right-0 left-0 flex flex-row w-auto justify-between p-4 items-center border-1 rounded-lg mt-2 mx-2 gap-4 bg-white z-[10]">
           <div className=" block md:hidden lg:hidden">
@@ -76,6 +73,7 @@ const MenuBar = () => {
             </li>
             <div className=" flex flex-col">
               <li
+                id="our-Mini"
                 onMouseEnter={() => openMenubig(setToggle(!toggle))}
                 onClick={() => closeMenubig(setToggle(!toggle))}
                 className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md"
@@ -127,11 +125,13 @@ const MenuBar = () => {
                 <div className="flex flex-col gap-4">
                   <div className="border-2 border-blue-950 bg-blue-950 rounded-sm p-3 text-white text-center">
                     {" "}
-                    Yes, I'm a donar from India
+                    <Link to="/contact"> Yes, I'm a donar from India</Link>
                   </div>
                   <div className="border-2 text-blue-950 border-blue-950 bg-blue-50 rounded-sm p-3 text-center">
                     {" "}
-                    No, I'm a foreigner donor outside India
+                    <Link to="/contact">
+                      No, I'm a foreigner donor outside India
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -182,21 +182,39 @@ const MenuBar = () => {
                 <li className=" p-2 list-none border-l-2 border-blue-900 rounded-md mb-2">
                   Our Ministries
                 </li>
-                <svg
-                  onClick={() => showToggle(setToggle(!toggle))}
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="size-4"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                  />
-                </svg>
+                {!toggle ? (
+                  <svg
+                    onClick={() => showToggle(setToggle(!toggle))}
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="size-4"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    onClick={() => showToggle(setToggle(!toggle))}
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                    />
+                  </svg>
+                )}
               </div>
 
               <div id="ministries" className="hidden text-left mt-2">
@@ -237,11 +255,16 @@ const MenuBar = () => {
                       <div className="flex flex-col gap-4">
                         <div className="border-2 border-blue-950 bg-blue-950 rounded-sm p-3 text-white text-center">
                           {" "}
-                          Yes, I'm a donar from India
+                          <Link to="/contact">
+                            {" "}
+                            Yes, I'm a donar from India
+                          </Link>
                         </div>
                         <div className="border-2 text-blue-950 border-blue-950 bg-blue-50 rounded-sm p-3 text-center">
                           {" "}
-                          No, I'm a foreigner donor outside India
+                          <Link to="/contact">
+                            No, I'm a foreigner donor outside India
+                          </Link>
                         </div>
                       </div>
                     </div>

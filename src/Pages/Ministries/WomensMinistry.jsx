@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MenuBar from "../../components/MenuBar";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
@@ -6,16 +6,57 @@ import Location from "../../components/Location";
 import Volunteer from "../../components/Volunteer";
 import UpcomingEvents from "../../components/UpcomingEvents";
 import LgUpComEvent from "../../components/LgUpComEvent";
+import { IoClose } from "react-icons/io5";
 const WomensMinistry = () => {
+  const [ShowModal, setShowModal] = useState(false);
   return (
     <div>
       <MenuBar />
 
       <div className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px]">
-        <h1 className=" text-2xl  font-extrabold">JCM Bible College</h1>
-        <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors">
-          <Link to="/donate"> Donate </Link>
+        <h1 className=" text-2xl md:text-3xl lg:text-5xl font-extrabold">
+          {" "}
+          Women's Ministry
+        </h1>
+        <button
+          onClick={() => setShowModal(true)}
+          className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors"
+        >
+          Donate
         </button>
+        {ShowModal && (
+          <div className="fixed bg-black/50 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0">
+            <div className="bg-white py-16 px-10 pb-5 rounded-md relative">
+              <div className="absolute right-2 top-2 cursor-pointer">
+                {" "}
+                <IoClose
+                  onClick={() => {
+                    setShowModal(false);
+                  }}
+                  size={30}
+                ></IoClose>
+              </div>
+              <div className=" flex flex-col gap-3">
+                <div className="text-center mt-5">
+                  {" "}
+                  Are you a donar donating from India?
+                </div>
+                <div className="flex flex-col gap-4">
+                  <div className="border-2 border-blue-950 bg-blue-950 rounded-sm p-3 text-white text-center">
+                    {" "}
+                    <Link to="/contact"> Yes, I'm a donar from India</Link>
+                  </div>
+                  <div className="border-2 text-blue-950 border-blue-950 bg-blue-50 rounded-sm p-3 text-center">
+                    {" "}
+                    <Link to="/contact">
+                      No, I'm a foreigner donor outside India
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       <div className="mx-10 text-center mt-15">

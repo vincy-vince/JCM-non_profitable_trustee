@@ -30,7 +30,7 @@ const Courses = () => {
     <div className="bg-sky-500 h-72 p-3 text-white rounded-lg flex flex-col justify-between w-[70%] mx-auto lg:w-[30%] md:w-[50%]">
       <div className="flex xs: flex-col xs: items-center xs: justify-center">
         <div className="xs: bg-white xs: w-40 xs: h-28 xs: border-none xs: rounded-lg"></div>
-        <div className="xs: text-lg xs: font-bold xs: mt-5"> diploma</div>
+        <div className="xs: text-lg xs: font-bold xs: mt-5"> Cth</div>
         <div>08:00 AM 05/08/25 Wednesday</div>
       </div>
       <div className=" xs: text-right">

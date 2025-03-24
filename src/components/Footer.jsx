@@ -96,7 +96,9 @@ const Footer = () => {
           </div>
         </div>
         <div className=" text-sm flex flex-col gap-3">
-          <div className="font-bold ">Our Ministries</div>
+          <div className="font-bold">
+            <a href="#our-Mini">Our Ministries</a>
+          </div>
           <div>
             {" "}
             <Link to="/biblecollege">Bible College</Link>
