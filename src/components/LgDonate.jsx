@@ -10,7 +10,7 @@ const LgDonate = () => {
           Donate now
         </h1>
         <div className="flex items-center flex-row gap-3 w-[90%] mx-auto">
-          <div className="bg-emerald-600 w-[25%] h-fit mx-auto border-none rounded-lg text-left py-5">
+          <div className="bg-emerald-600 w-[60%] h-fit mx-4 border-none rounded-lg text-left py-5">
             <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
               <div className="font-bold text-lg">Empower her</div>
               <div>rs.2000/month</div>
@@ -69,7 +69,7 @@ const LgDonate = () => {
               )}
             </div>
           </div>
-          <div className="bg-zinc-600 w-[25%] h-fit mx-auto border-none rounded-lg text-left py-5">
+          <div className="bg-zinc-600 w-[60%] h-fit mx-4 border-none rounded-lg text-left py-5">
             <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
               <div className="font-bold text-lg">Empower her</div>
               <div>rs.2000/month</div>
@@ -128,7 +128,7 @@ const LgDonate = () => {
               )}
             </div>
           </div>
-          <div className="bg-red-800 w-[25%] h-fit mx-auto border-none rounded-lg text-left py-5">
+          <div className="bg-red-800 w-[60%] h-fit mx-4 border-none rounded-lg text-left py-5">
             <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
               <div className="font-bold text-lg">Empower her</div>
               <div>rs.2000/month</div>
@@ -187,6 +187,7 @@ const LgDonate = () => {
               )}
             </div>
           </div>
+          
         </div>
       </div>
     </div>

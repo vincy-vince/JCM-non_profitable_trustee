@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import MenuBar from "../components/MenuBar";
 import Footer from "../components/Footer";
 import Location from "../components/Location";
@@ -9,13 +9,11 @@ import Quote from "../components/Quote";
 import Trustee from "../components/Trustee";
 import Volunteer from "../components/Volunteer";
 import UpcomingEvents from "../components/UpcomingEvents";
-import { Link } from "react-router-dom";
 import LgDonate from "../components/LgDonate";
 import LgTrustee from "../components/LgTrustee";
 import LgUpComEvent from "../components/LgUpComEvent";
-import { IoClose } from "react-icons/io5";
+import { HashLink } from "react-router-hash-link";
 const JCMpage = () => {
-  const [ShowModal, setShowModal] = useState(false);
   return (
     <div>
       <MenuBar />
@@ -26,45 +24,12 @@ const JCMpage = () => {
         <button className=" bg-red-600  text-white  p-1  border-none  rounded-md  text-sm  mt-5  hidden">
           Register Now
         </button>
-        <button
-          onClick={() => setShowModal(true)}
-          className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors"
-        >
-          Donate
+        <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors lg:hidden">
+          <HashLink to={"#home"}>Donate</HashLink>
         </button>
-        {ShowModal && (
-          <div className="fixed bg-black/50 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0">
-            <div className="bg-white py-16 px-10 pb-5 rounded-md relative">
-              <div className="absolute right-2 top-2 cursor-pointer">
-                {" "}
-                <IoClose
-                  onClick={() => {
-                    setShowModal(false);
-                  }}
-                  size={30}
-                ></IoClose>
-              </div>
-              <div className=" flex flex-col gap-3">
-                <div className="text-center mt-5">
-                  {" "}
-                  Are you a donar donating from India?
-                </div>
-                <div className="flex flex-col gap-4">
-                  <div className="border-2 border-blue-950 bg-blue-950 rounded-sm p-3 text-white text-center">
-                    {" "}
-                    <Link to="/contact"> Yes, I'm a donar from India</Link>
-                  </div>
-                  <div className="border-2 text-blue-950 border-blue-950 bg-blue-50 rounded-sm p-3 text-center">
-                    {" "}
-                    <Link to="/contact">
-                      No, I'm a foreigner donor outside India
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+        <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors hidden md:hidden lg:block">
+          <HashLink to={"#lghome"}>Donate</HashLink>
+        </button>
       </div>
       <p className=" text-center  text-md  font-semibold  p-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde magni
@@ -159,10 +124,10 @@ const JCMpage = () => {
       {/* Our Ministries */}
       <OurMinistries />
       {/* Donate now session */}
-      <div className="block md:block lg:hidden">
+      <div id="home" className="block md:block lg:hidden">
         <DonateSess />
       </div>
-      <div className="hidden md:hidden lg:block">
+      <div id="lghome" className="hidden md:hidden lg:block">
         <LgDonate />
       </div>
       {/* quote */}

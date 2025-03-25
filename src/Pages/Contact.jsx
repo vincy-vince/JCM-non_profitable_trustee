@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Location from "../components/Location";
 import { Link } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
+import { HashLink } from "react-router-hash-link";
 const Contact = () => {
   const [ShowModal, setShowModal] = useState(false);
   return (
@@ -12,61 +13,28 @@ const Contact = () => {
       <div className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-20  mx-auto flex flex-col justify-between md:h-[500px] lg:h-[600px]">
         <div className="flex flex-col gap-3">
           <h1 className=" text-2xl w-[60%] mx-auto font-extrabold text-center lg:text-3xl">
-            Judea Christ Ministries
+            Contact Us
           </h1>
 
           <button
             onClick={() => setShowModal(true)}
             className=" p-1 bg-blue-950 text-white border-none rounded-lg text-lg w-[30%] mx-auto md:hidden lg:hidden"
           >
-            Donate
+            <HashLink to={"/#home"}>Donate</HashLink>
           </button>
-          {ShowModal && (
-            <div className="fixed bg-black/50 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0">
-              <div className="bg-white py-16 px-10 pb-5 rounded-md relative">
-                <div className="absolute right-2 top-2 cursor-pointer">
-                  {" "}
-                  <IoClose
-                    onClick={() => {
-                      setShowModal(false);
-                    }}
-                    size={30}
-                  ></IoClose>
-                </div>
-                <div className=" flex flex-col gap-3">
-                  <div className="text-center mt-5">
-                    {" "}
-                    Are you a donar donating from India?
-                  </div>
-                  <div className="flex flex-col gap-4">
-                    <div className="border-2 border-blue-950 bg-blue-950 rounded-sm p-3 text-white text-center">
-                      {" "}
-                      <Link to="/contact"> Yes, I'm a donar from India</Link>
-                    </div>
-                    <div className="border-2 text-blue-950 border-blue-950 bg-blue-50 rounded-sm p-3 text-center">
-                      {" "}
-                      <Link to="/contact">
-                        No, I'm a foreigner donor outside India
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
         </div>
-        <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto">
+        <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto mt-54 shadow-lg md:mt-89 lg:mt-[460px]">
           <input
-            className="text-blue-900 active:border-none w-[73%] lg:w-[80%] "
+            className="text-blue-900 active:border-none md:w-[73%] lg:w-[80%] "
             placeholder="Enter your email"
           ></input>
-          <button className="bg-red-800 text-white px-4 rounded-md py-2 font-bold">
+          <button className="bg-red-800 text-white px-4 ml-4 rounded-md py-2 font-bold md:ml-0">
             Join now
           </button>
         </div>
       </div>
 
-      <div className="flex flex-col justify-around gap- w-[auto] h-[450px] mx-10 mt-10 md:mt-20">
+      <div className="flex flex-col justify-around gap- w-[auto] h-[450px] mx-10 mt-15 md:mt-20">
         <div className="text-md">
           If you have any questions, need more information, or would like to get
           involved with The Social Project, we'd love to hear from you. Whether
@@ -99,18 +67,19 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="mt-68 md:mt-16 bg-indigo-100 h-[max] ">
+      <div className="mt-68 md:mt-16 bg-indigo-100 h-[max] mx-0 pb-13 md:mx-10 lg:mx-10">
         <div className="text-center">
           <button className="font-bold text-xl bg-white p-1 rounded-b-2xl">
             Contact Us
           </button>
         </div>
         <div className="flex flex-col w-auto justify-around items-center mt-14 gap-5 pb-10 md:flex-row lg:flex-row md:mx-4 lg:mx-4">
-          <div className="flex flex-row gap-3 font-bold  bg-white p-1 pt-5 rounded-xl w-1/2 h-[60px] shadow-lg shadow-indigo-300/50">
+          <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-1/2 h-[60px] shadow-lg shadow-indigo-300/50">
             <div>
               <svg
-                width="23"
-                height="23"
+                className="text-sm w-[20px]"
+                // width="23"
+                // height="23"
                 viewBox="0 0 23 23"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -121,12 +90,13 @@ const Contact = () => {
                 />
               </svg>
             </div>
-            <div>+91 85694231875</div>
+            <div className="text-sm">+91 85694231875</div>
           </div>
-          <div className="flex flex-row gap-3 font-bold  bg-white p-1 pt-5 rounded-xl w-1/2 h-[60px] shadow-lg shadow-indigo-300/50">
+          <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-1/2 h-[60px] shadow-lg shadow-indigo-300/50">
             <svg
-              width="28"
-              height="28"
+              className="text-sm w-[20px]"
+              // width="28"
+              // height="28"
               viewBox="0 0 28 28"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -136,12 +106,13 @@ const Contact = () => {
                 fill="black"
               />
             </svg>
-            <div>www.judeachrist.org</div>
+            <div className="text-sm">www.judeachrist.org</div>
           </div>
-          <div className="flex flex-row gap-3 font-bold  bg-white p-1 pt-2 rounded-xl w-1/2  h-[max] shadow-lg shadow-indigo-300/50 ">
+          <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-1/2  h-[max] shadow-lg shadow-indigo-300/50 ">
             <svg
-              width="28"
-              height="28"
+              className="text-sm w-[50px]"
+              // width="28"
+              // height="28"
               viewBox="0 0 28 28"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +122,7 @@ const Contact = () => {
                 fill="black"
               />
             </svg>
-            <div className="text-justify">
+            <div className="text-justify text-sm">
               Plot no 29, sugavacharhiram, MDR 447, Kilacheri, Tamil Nadu 631402
             </div>
           </div>

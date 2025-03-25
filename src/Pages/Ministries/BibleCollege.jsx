@@ -10,53 +10,19 @@ import LgCourses from "../../components/LgCourses";
 import LgFaculty from "../../components/LgFaculty";
 import StudentTestimonial from "../../components/StudentTestimonial";
 import LgStudentTest from "../../components/LgStudentTest";
-import { IoClose } from "react-icons/io5";
+import { HashLink } from "react-router-hash-link";
 const BibleCollege = () => {
-  const [ShowModal, setShowModal] = useState(false);
   return (
     <div>
       <MenuBar />
       <div className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 ">
         <h1 className=" text-2xl  font-extrabold">JCM Bible College</h1>
-        <button
-          onClick={() => setShowModal(true)}
-          className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors"
-        >
-          Donate
+        <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors lg:hidden">
+          <HashLink to={"/#home"}>Donate</HashLink>
         </button>
-        {ShowModal && (
-          <div className="fixed bg-black/50 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0">
-            <div className="bg-white py-16 px-10 pb-5 rounded-md relative">
-              <div className="absolute right-2 top-2 cursor-pointer">
-                {" "}
-                <IoClose
-                  onClick={() => {
-                    setShowModal(false);
-                  }}
-                  size={30}
-                ></IoClose>
-              </div>
-              <div className=" flex flex-col gap-3">
-                <div className="text-center mt-5">
-                  {" "}
-                  Are you a donar donating from India?
-                </div>
-                <div className="flex flex-col gap-4">
-                  <div className="border-2 border-blue-950 bg-blue-950 rounded-sm p-3 text-white text-center">
-                    {" "}
-                    <Link to="/contact"> Yes, I'm a donar from India</Link>
-                  </div>
-                  <div className="border-2 text-blue-950 border-blue-950 bg-blue-50 rounded-sm p-3 text-center">
-                    {" "}
-                    <Link to="/contact">
-                      No, I'm a foreigner donor outside India
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+        <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors hidden md:hidden lg:block">
+          <HashLink to={"/#lghome"}>Donate</HashLink>
+        </button>
       </div>
       <div className="text-center mt-10">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima itaque

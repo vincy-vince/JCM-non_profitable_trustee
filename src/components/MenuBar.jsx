@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { IoClose } from "react-icons/io5";
+import { HashLink } from "react-router-hash-link";
 const MenuBar = () => {
-  const [ShowModal, setShowModal] = useState(false);
   const [toggle, setToggle] = useState(false);
   let [menu, setMenu] = useState(false);
   function showToggle() {
@@ -98,46 +97,14 @@ const MenuBar = () => {
           </ul>
 
           {/* For Xs screen (370px) */}
-          <button
-            onClick={() => setShowModal(true)}
-            className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 md:inline-block lg:inline-block"
-          >
-            Donate
+          <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 md:inline-block lg:hidden">
+            <HashLink to={"/#home"}>Donate</HashLink>
+          </button>
+          <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 hidden md:hidden lg:block">
+            <HashLink to={"/#lghome"}>Donate</HashLink>
           </button>
         </div>
-        {ShowModal && (
-          <div className="fixed bg-black/50 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0">
-            <div className="bg-white py-16 px-10 pb-5 rounded-md relative">
-              <div className="absolute right-2 top-2 cursor-pointer">
-                {" "}
-                <IoClose
-                  onClick={() => {
-                    setShowModal(false);
-                  }}
-                  size={30}
-                ></IoClose>
-              </div>
-              <div className=" flex flex-col gap-3">
-                <div className="text-center mt-5">
-                  {" "}
-                  Are you a donar donating from India?
-                </div>
-                <div className="flex flex-col gap-4">
-                  <div className="border-2 border-blue-950 bg-blue-950 rounded-sm p-3 text-white text-center">
-                    {" "}
-                    <Link to="/contact"> Yes, I'm a donar from India</Link>
-                  </div>
-                  <div className="border-2 text-blue-950 border-blue-950 bg-blue-50 rounded-sm p-3 text-center">
-                    {" "}
-                    <Link to="/contact">
-                      No, I'm a foreigner donor outside India
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+
         {/* for mobile design => XS size (370px)*/}
 
         <div
@@ -204,13 +171,13 @@ const MenuBar = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     stroke="currentColor"
-                    class="size-4"
+                    className="size-4"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="m4.5 15.75 7.5-7.5 7.5 7.5"
                     />
                   </svg>
@@ -229,48 +196,9 @@ const MenuBar = () => {
                 </div>
               </div>
 
-              <button
-                onClick={() => setShowModal(true)}
-                className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors"
-              >
-                Donate
+              <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors">
+                <HashLink to={"/#home"}>Donate</HashLink>
               </button>
-              {ShowModal && (
-                <div className="fixed bg-black/50 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0">
-                  <div className="bg-white py-16 px-10 pb-5 rounded-md relative">
-                    <div className="absolute right-2 top-2 cursor-pointer">
-                      {" "}
-                      <IoClose
-                        onClick={() => {
-                          setShowModal(false);
-                        }}
-                        size={30}
-                      ></IoClose>
-                    </div>
-                    <div className=" flex flex-col gap-3">
-                      <div className="text-center mt-5">
-                        {" "}
-                        Are you a donar donating from India?
-                      </div>
-                      <div className="flex flex-col gap-4">
-                        <div className="border-2 border-blue-950 bg-blue-950 rounded-sm p-3 text-white text-center">
-                          {" "}
-                          <Link to="/contact">
-                            {" "}
-                            Yes, I'm a donar from India
-                          </Link>
-                        </div>
-                        <div className="border-2 text-blue-950 border-blue-950 bg-blue-50 rounded-sm p-3 text-center">
-                          {" "}
-                          <Link to="/contact">
-                            No, I'm a foreigner donor outside India
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
             </div>
           </ul>
         </div>

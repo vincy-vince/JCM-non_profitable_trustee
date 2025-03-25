@@ -13,15 +13,15 @@ const Corousal = ({ slides }) => {
     autoplaySpeed: 2000,
     cssEase: "linear",
     centerMode: true,
-    centerPadding: "90px",
+    centerPadding: "40px",
   };
 
   return (
     <div className="w-[2/3] mx-auto">
       <div className="slider-container">
         <Slider {...settings}>
-          {slides.map((s) => {
-            return <div> {s} </div>;
+          {slides.map((s,index) => {
+            return <div key={index}> {s} </div>;
           })}
         </Slider>
       </div>
