@@ -127,7 +127,7 @@ const JCMpage = () => {
       <div id="home" className="block md:block lg:hidden">
         <DonateSess />
       </div>
-      <div id="lghome" className="hidden md:hidden lg:block">
+      <div id="lghome" className="hidden md:hidden lg:block xl:block">
         <LgDonate />
       </div>
       {/* quote */}
