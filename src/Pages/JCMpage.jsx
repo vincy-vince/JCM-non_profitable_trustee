@@ -44,7 +44,7 @@ const JCMpage = () => {
       </p>
       {/* About and Founder's Image */}
       <div className=" mt-4  flex  flex-col  justify-evenly  items-center  p-5  mb-10  gap-10 md:flex-row lg:flex-row  relative z-[-1]">
-        <div className="flex flex-col gap-4 md:gap-10 relative ">
+        <div className="flex flex-col gap-4 md:gap-5 relative ">
           {/* <svg
             className="mr-14 md:mr-28 lg:mr-80"
             width="247"
@@ -84,11 +84,11 @@ const JCMpage = () => {
           </svg> */}
         </div>
         <img
-          className=" w-1/2 h-[50%] top-8 rounded-lg md:w-1/2 md:h-[50%]  mx-5"
+          className=" w-1/2 h-[50%] top-8 rounded-lg md:w-[40%] md:h-[50%] lg:w-[30%] mx-5"
           src="public/stGirlpf.jpeg"
           alt=""
         />
-        <div className=" w-1/2 text-md text-justify md:mx-10 lg:mx-20">
+        <div className=" w-1/2 text-md text-justify md:mx-5 lg:mx-10">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
           perferendis quasi eius, distinctio totam vitae fugit suscipit
           accusantium.

@@ -9,7 +9,10 @@ const Resources = () => {
   return (
     <div>
       <MenuBar />
-      <div className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-auto flex flex-col justify-between ">
+      <div
+        id="resources"
+        className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-auto flex flex-col justify-between "
+      >
         <div className="flex flex-col gap-3">
           <h1 className=" text-2xl w-[60%] mx-auto font-extrabold text-center lg:text-3xl">
             Judea Christ Ministries
@@ -57,16 +60,16 @@ const Resources = () => {
         </div>
         <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto">
           <input
-            className="text-blue-900 active:border-none w-[73%] lg:w-[80%] "
+            className="text-blue-900 w-[70%] lg:w-[80%] "
             placeholder="Enter your email"
           ></input>
-          <button className="bg-red-800 text-white px-4 rounded-md py-2 font-bold">
+          <button className="bg-red-800 text-white px-4 rounded-md py-2 ml-2 font-bold md:ml-4 lg:ml-2 xl:ml-13">
             Join now
           </button>
         </div>
       </div>
 
-      <div>
+      <div className="mx-20 flex flex-col gap-5">
         <div className="text-lg font-extrabold md:text-xl lg:text-2xl text-center mt-10 mb-10">
           Privacy Policy
         </div>

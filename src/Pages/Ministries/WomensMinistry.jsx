@@ -11,7 +11,7 @@ const WomensMinistry = () => {
     <div>
       <MenuBar />
 
-      <div className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px]">
+      <div id="womens-min" className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px]">
         <h1 className=" text-2xl md:text-3xl lg:text-5xl font-extrabold">
           {" "}
           Women's Ministry

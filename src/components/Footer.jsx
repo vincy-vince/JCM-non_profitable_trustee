@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -89,7 +90,7 @@ const Footer = () => {
             <Link to="/">Home</Link>
           </div>
           <div>
-            <Link to="/contact">Contact us</Link>
+            <HashLink to="/contact#contact">Contact us</HashLink>
           </div>
           <div>
             <a href="#">Our Ministries</a>
@@ -101,16 +102,16 @@ const Footer = () => {
           </div>
           <div>
             {" "}
-            <Link to="/biblecollege">Bible College</Link>
+            <HashLink to="/biblecollege#bible-coll">Bible College</HashLink>
           </div>
           <div>
-            <Link to="/cbs">
+            <HashLink to="/cbs#cbs">
               (CBS) children <br />
               Bible Study
-            </Link>
+            </HashLink>
           </div>
           <div>
-            <Link to="/womensministry">Womens Ministry</Link>
+            <HashLink to="/womensministry#womens-min">Womens Ministry</HashLink>
           </div>
         </div>
       </div>
@@ -119,10 +120,10 @@ const Footer = () => {
         <div className=" text-sm flex flex-col gap-3">
           <div className="font-bold ">Resources</div>
           <div>
-            <Link to="/resources">Privacy Policy</Link>
+            <HashLink to="/resources#resources">Privacy Policy</HashLink>
           </div>
           <div>
-            <Link to="/resources">Refund Policy</Link>
+            <HashLink to="/resources#resources">Refund Policy</HashLink>
           </div>
         </div>
         <div className="flex flex-row gap-5">
