@@ -10,9 +10,12 @@ const Contact = () => {
   return (
     <div>
       <MenuBar />
-      <div id="contact" className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-20  mx-auto flex flex-col justify-between md:h-[500px] lg:h-[600px]">
+      <div
+        id="contact"
+        className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-20  mx-auto flex flex-col justify-between md:h-[500px] lg:h-[600px]"
+      >
         <div className="flex flex-col gap-3">
-          <h1 className=" text-2xl w-[60%] mx-auto font-extrabold text-center lg:text-3xl">
+          <h1 className=" text-2xl w-[60%] mx-auto font-extrabold text-center lg:text-3xl xl:text-5xl">
             Contact Us
           </h1>
 
@@ -23,7 +26,7 @@ const Contact = () => {
             <HashLink to={"/#home"}>Donate</HashLink>
           </button>
         </div>
-        <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto mt-54 shadow-lg md:mt-89 lg:mt-[460px]">
+        <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto mt-54 shadow-lg md:mt-89 lg:mt-[460px] xl:mt-[400px]">
           <input
             className="text-blue-900 active:border-none md:w-[73%] lg:w-[80%] "
             placeholder="Enter your email"

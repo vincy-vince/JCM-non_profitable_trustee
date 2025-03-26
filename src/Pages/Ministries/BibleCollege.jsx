@@ -15,7 +15,10 @@ const BibleCollege = () => {
   return (
     <div>
       <MenuBar />
-      <div id="bible-coll" className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 ">
+      <div
+        id="bible-coll"
+        className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 "
+      >
         <h1 className=" text-2xl  font-extrabold">JCM Bible College</h1>
         <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors lg:hidden">
           <HashLink to={"/#home"}>Donate</HashLink>
@@ -25,9 +28,24 @@ const BibleCollege = () => {
         </button>
       </div>
       <div className="text-center mt-10">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima itaque
-        voluptatibus in, aliquid vel laborum laudantium libero nam! Odit labore
-        nemo sint porro totam modi eaque itaque repudiandae unde.
+        The Lord redirected our focus, which was solely on the children's Bible
+        school, and inspired us to start a Bible college. Following the Lord's
+        prompting, we established JCM Bible College in January 2020.
+        <br></br>
+        The college, which initially began with three teachers and 11 students,
+        has now seen three batches successfully graduate. Many who studied in
+        this college are now being powerfully used by the Lord. In collaboration
+        with Build International, we continue to offer Bible courses. The
+        curriculum is designed to be simple and easy to understand, and we are
+        effectively implementing it. The classes are conducted in an engaging
+        manner through discussions, making them very interesting.
+        <br></br>
+        The college currently operates with five professors, offering flexible
+        schedules for those who wish to study while working. Both in-person and
+        online classes are available. The courses are taught in Tamil,
+        Malayalam, and English. We are working with the vision of raising an
+        army for the Lord. We humbly seek your prayers for this mission. May the
+        Lord Himself bless everyone. Amen.
       </div>
       {/* collage */}
 
@@ -59,11 +77,13 @@ const BibleCollege = () => {
       </div>
 
       <div className="mt-5 text-center text-sm md:text-lg mx-8 lg:text-xl">
-        As the next phase of its growth, JCM Theological College was started in
-        2019. With excellent professors, this institution is operating in a
-        great manner. In addition, special youth gatherings, special sister’s
-        gatherings, Sunday schools, holiday Bible schools, village ministries,
-        and medical camps are also being conducted.
+        JCM Bible College emphasizes simple and clear learning exercises,
+        encourages interactive classroom discussions, and fosters spiritual
+        growth. The college focuses on understanding the mysteries of God's
+        Word, recognizing the importance of the anointing, and cultivating
+        strong leadership skills. With a commitment to raising excellent
+        leaders, it adopts modern biblical teaching methods to effectively equip
+        students for ministry.
       </div>
 
       <div className="mt-5 text-center text-sm md:text-lg mx-8 lg:text-xl">

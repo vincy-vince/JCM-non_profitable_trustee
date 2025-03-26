@@ -31,19 +31,9 @@ const JCMpage = () => {
           <HashLink to={"#lghome"}>Donate</HashLink>
         </button>
       </div>
-      <p className=" text-center  text-md  font-semibold  p-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde magni
-        nulla harum nesciunt a nihil laborum eum ipsam quasi fugiat. Voluptatum,
-        nam. Ratione, ullam quam animi dolorum modi est accusamus! Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Unde magni nulla harum
-        nesciunt a nihil laborum eum ipsam quasi fugiat. Voluptatum, nam.
-        Ratione, ullam quam animi dolorum modi est accusamus! Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Unde magni nulla harum nesciunt a
-        nihil laborum eum ipsam quasi fugiat. Voluptatum, nam. Ratione, ullam
-        quam animi dolorum modi est accusamus!
-      </p>
+
       {/* About and Founder's Image */}
-      <div className=" mt-4  flex  flex-col  justify-evenly  items-center  p-5  mb-10  gap-10 md:flex-row lg:flex-row  relative z-[-1]">
+      <div className=" mt-7  flex  flex-col  justify-evenly  items-center  p-5  mb-10  gap-10 md:flex-row lg:flex-row  relative z-[-1]">
         <div className="flex flex-col gap-4 md:gap-5 relative ">
           {/* <svg
             className="mr-14 md:mr-28 lg:mr-80"
@@ -103,20 +93,23 @@ const JCMpage = () => {
       </div>
       <div className=" text-lg  font-semibold  text-justify  flex  flex-col  gap-5  mx-10">
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia,
-          fugiat possimus fuga delectus ut tempora, minus nobis dolorem est
-          cumque repudiandae, numquam iure veritatis provident officiis
-          assumenda tempore quae eaque? Molestias nisi asperiores dicta magnam
-          reiciendis eaque? Sed, minus suscipit? Consectetur officiis ut
-          obcaecati nesciunt totam cupiditate dicta perspiciatis amet?
+          JCM Bible College is committed to proclaiming the Gospel, making
+          disciples of Christ, and guiding the younger generation in the right
+          path. The college strives to help the poor and underprivileged by
+          implementing programs aimed at their economic upliftment and
+          conducting special training sessions for them. It is dedicated to
+          raising up devoted ministers, leading young people towards God,
+          addressing the needs of the community, and teaching the Word of God
+          effectively.
         </p>{" "}
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia,
-          fugiat possimus fuga delectus ut tempora, minus nobis dolorem est
-          cumque repudiandae, numquam iure veritatis provident officiis
-          assumenda tempore quae eaque? Molestias nisi asperiores dicta magnam
-          reiciendis eaque? Sed, minus suscipit? Consectetur officiis ut
-          obcaecati nesciunt totam cupiditate dicta perspiciatis amet?
+          JCM Bible College is dedicated to proclaiming the Gospel through
+          village ministries and fulfilling God’s plan by planting churches. The
+          college offers specialized training for individuals seeking to start
+          their own businesses and conducts vacation Bible schools. It also
+          organizes medical camps and promotes community awareness programs to
+          cultivate good values and enhance the quality of life. Through its
+          Bible school, JCM effectively teaches the Word of God with excellence.
         </p>
       </div>
       {/* youtube-session */}
@@ -133,9 +126,12 @@ const JCMpage = () => {
       {/* quote */}
       <Quote />
       {/* Trustee Info */}
-      <div className="block md:block lg:hidden">
+      <div className="block md:hidden lg:hidden">
         <Trustee />
       </div>
+      {/* <div>
+        <TrusteeMd className="hidden md:block lg:hidden"/>
+      </div> */}
       <div className="hidden md:hidden lg:block">
         <LgTrustee />
       </div>

@@ -1,8 +1,12 @@
 import React from "react";
 
 const Youtube = () => {
+  const Video1 = document.getElementById("bigvid");
+  function swapVideo(val) {
+    Video1.innerHTML = val;
+  }
   return (
-    <div className="flex flex-col gap-8 h-96 my-18 items-center ">
+    <div id="bigvid" className="flex flex-col gap-8 h-96 my-18 items-center ">
       <iframe
         className="w-max border-none rounded-lg mx-auto h-[515px] md:w-[480px] lg:w-[800px] lg:h-full mb-5"
         // width="300"
@@ -15,9 +19,22 @@ const Youtube = () => {
         allowFullScreen
       ></iframe>
       <div className="flex flex-row gap-3 w-max items-center justify-center">
-        <div className="w-16 h-10 bg-slate-300 border-none rounded-sm md:w-36 md:h-20"></div>
-        <div className="w-16 h-10 bg-slate-300 border-none rounded-sm md:w-36 md:h-20"></div>
-        <div className="w-16 h-10 bg-slate-300 border-none rounded-sm md:w-36 md:h-20"></div>
+        <div
+          onClick={(e) => {
+            swapVideo(e.currentTarget.innerHTML);
+            e.currentTarget.innerHTML = Video1.innerHTML;
+            Video1.innerText = val;
+          }}
+          className="w-16 h-10 bg-slate-300 border-none rounded-sm md:w-36 md:h-20"
+        >
+          video
+        </div>
+        <div className="w-16 h-10 bg-slate-300 border-none rounded-sm md:w-36 md:h-20">
+          video
+        </div>
+        <div className="w-16 h-10 bg-slate-300 border-none rounded-sm md:w-36 md:h-20">
+          video
+        </div>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ const Location = () => {
             View Location
           </button>
         </div>
-        <div className="text-5xl w-[40px] h-[30px] ml-3">
+        <div className="text-5xl pt-4 w-[20px] md:w-[40px] md:h-[30px] ml-3">
           <svg
             fill="#D21F3C"
             version="1.1"

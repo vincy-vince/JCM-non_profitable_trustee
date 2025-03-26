@@ -9,7 +9,7 @@ const LgFaculty = () => {
       >
         <img
           className="w-full h-[40%] rounded-t-lg"
-          src="public/boy2.png"
+          src="public/Mr.Tom.jpeg"
           alt="profile"
         />
         <div className="absolute bottom-2 left-2 right-2 bg-white rounded-lg">

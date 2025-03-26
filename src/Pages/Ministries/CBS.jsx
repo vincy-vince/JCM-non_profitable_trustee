@@ -10,7 +10,10 @@ const CBS = () => {
     <div>
       <MenuBar />
 
-      <div id="cbs" className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px]">
+      <div
+        id="cbs"
+        className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px]"
+      >
         <h1 className=" text-2xl md:text-3xl lg:text-5xl font-extrabold">
           Children Bible Studies
         </h1>
@@ -23,9 +26,22 @@ const CBS = () => {
       </div>
 
       <div className="mx-10 text-center mt-15">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, cum?
-        Molestiae, molestias in! Vel magni fugit expedita ea consequuntur
-        debitis quidem eos omnis, quae, facilis libero aliquam vero ut placeat?
+        With the thought that we have the responsibility to guide today’s
+        generation in the way they should go, as the scripture says, "Train up a
+        child in the way he should go," we have been working in children’s
+        ministry since 1994.
+        <br></br>
+        We provide well-structured curricula in our children’s Bible schools,
+        teaching in simple ways that suit the children's language skills.
+        Through songs and dances, we make sure they understand and learn with
+        enthusiasm. Competitions and year-end exams are conducted, and prizes
+        are given to encourage the children. Through this curriculum, we help
+        nurture good character in our younger generation, guiding them to build
+        a godly life.
+        <br></br>
+        We are committed to praying for and striving to protect the generation
+        that is heading towards destruction. May the Lord Himself bless us in
+        this mission! Amen.
       </div>
       {/* collage */}
 
