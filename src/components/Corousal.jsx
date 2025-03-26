@@ -20,7 +20,7 @@ const Corousal = ({ slides }) => {
     <div className="w-[2/3] mx-auto">
       <div className="slider-container">
         <Slider {...settings}>
-          {slides.map((s,index) => {
+          {slides.map((s, index) => {
             return <div key={index}> {s} </div>;
           })}
         </Slider>
