@@ -10,8 +10,8 @@ createRoot(document.getElementById("root")).render(
 
 // HOME WORK:
 
-// Finish the rest off the pages
-
-// when clicking donate popup showing up
-
 // everything should be exactly like the gn design
+
+// trustee-hover
+// location width decrease as per the design
+// youtube onclick
