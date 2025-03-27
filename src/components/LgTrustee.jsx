@@ -18,7 +18,7 @@ const LgTrustee = () => {
     >
       <img
         className=" w-full h-[550px] rounded-lg"
-        src="public/boy2.png"
+        src="boy2.png"
         alt="profile"
       />
       {/* {display && ( */}
@@ -38,7 +38,7 @@ const LgTrustee = () => {
     <div className=" relative flex flex-col justify-center items-center mx-auto w-[100%] ">
       <img
         className=" w-full h-[550px] rounded-lg"
-        src="public/Mr.Tijo.jpeg"
+        src="Mr.Tijo.jpeg"
         alt="profile"
       />
       <div
@@ -56,7 +56,7 @@ const LgTrustee = () => {
     <div className=" relative flex flex-col justify-center items-center mx-auto w-[100%] ">
       <img
         className=" w-full h-[550px] rounded-lg"
-        src="public/boy2.png"
+        src="boy2.png"
         alt="profile"
       />
       <div

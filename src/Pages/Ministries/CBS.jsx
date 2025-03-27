@@ -12,7 +12,7 @@ const CBS = () => {
 
       <div
         id="cbs"
-        className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px]"
+        className=" bg-[url(background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px] xl:h-[800px]"
       >
         <h1 className=" text-2xl md:text-3xl lg:text-5xl font-extrabold">
           Children Bible Studies
@@ -39,27 +39,27 @@ const CBS = () => {
       <div className="flex flex-row w-[80%] mx-auto gap-4 justify-between mt-15">
         <img
           className="rounded-lg w-1/2 mx-auto"
-          src="public/graduate.webp"
+          src="graduate.webp"
         ></img>
         <img
           className="rounded-lg w-1/2 mx-auto"
-          src="public/graduate.webp"
+          src="graduate.webp"
         ></img>
       </div>
 
       <img
         className="rounded-lg w-[80%] mx-auto h-[300px] my-4"
-        src="public/graduate.webp"
+        src="graduate.webp"
       ></img>
 
       <div className="flex flex-row w-[80%] mx-auto gap-4 mb-15">
         <img
           className="rounded-lg w-1/2 mx-auto"
-          src="public/graduate.webp"
+          src="graduate.webp"
         ></img>
         <img
           className="rounded-lg w-1/2 mx-auto"
-          src="public/graduate.webp"
+          src="graduate.webp"
         ></img>
       </div>
       <div className="mx-10 text-center mt-15">
@@ -87,14 +87,14 @@ const CBS = () => {
         <p className="text-xl md:2xl lg:3xl text-center mt-15 font-extrabold ">
           CBS students in kizma Nagar 2016
         </p>
-        <img className="w-[80%] mx-auto " src="public/graduate.webp" alt="" />
+        <img className="w-[80%] mx-auto " src="graduate.webp" alt="" />
       </div>
 
       <div className="flex flex-col gap-6">
         <p className="text-xl md:2xl lg:3xl text-center mt-15 font-extrabold">
           CBS students in Thiruvallur 2016
         </p>
-        <img className="w-[80%] mx-auto " src="public/graduate.webp" alt="" />
+        <img className="w-[80%] mx-auto " src="graduate.webp" alt="" />
       </div>
       <Location />
       <Footer />

@@ -9,7 +9,7 @@
 //     >
 //       <img
 //         className=" w-90% md:w-[60%] h-[500px] rounded-lg"
-//         src="public/boy2.png"
+//         src="boy2.png"
 //         alt="profile"
 //       />
 //       <div className="absolute left-2 right-2 bottom-2 bg-white rounded-lg p-2 h-fit w-[80%] md:w-[55%] mx-auto">
@@ -33,7 +33,7 @@
 //     >
 //       <img
 //         className=" w-90% md:w-[60%] h-[500px] rounded-lg"
-//         src="public/Mr.Tom.jpeg"
+//         src="Mr.Tom.jpeg"
 //         alt="profile"
 //       />
 //       <div className="absolute left-2 right-2 bottom-2 bg-white rounded-lg p-2 h-fit w-[80%] md:w-[55%] mx-auto">
@@ -57,7 +57,7 @@
 //     >
 //       <img
 //         className=" w-90% md:w-[60%] h-[500px] rounded-lg"
-//         src="public/boy2.png"
+//         src="boy2.png"
 //         alt="profile"
 //       />
 //       <div className="absolute left-2 right-2 bottom-2 bg-white rounded-lg p-2 h-fit w-[80%] md:w-[55%] mx-auto">

@@ -15,9 +15,9 @@ import LgUpComEvent from "../components/LgUpComEvent";
 import { HashLink } from "react-router-hash-link";
 const JCMpage = () => {
   return (
-    <div>
+    <div id="home">
       <MenuBar />
-      <div className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 lg:h-[600px]">
+      <div className=" bg-[url(background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 lg:h-[600px] xl:h-[800px]">
         <h1 className=" text-2xl lg:text-6xl lg:font-semibold font-extrabold">
           Judea Christ Ministries
         </h1>
@@ -75,7 +75,7 @@ const JCMpage = () => {
         </div>
         <img
           className=" w-1/2 h-[50%] top-8 rounded-lg md:w-[40%] md:h-[50%] lg:w-[30%] mx-5"
-          src="public/stGirlpf.jpeg"
+          src="stGirlpf.jpeg"
           alt=""
         />
         <div className=" w-[100%] md:w-1/2 text-md text-justify md:mx-5 lg:mx-10">

@@ -9,7 +9,7 @@ const LgFaculty = () => {
       >
         <img
           className="w-full h-[40%] rounded-t-lg"
-          src="public/Mr.Tijo.jpeg"
+          src="Mr.Tijo.jpeg"
           alt="profile"
         />
         <div className="absolute bottom-2 left-2 right-2 bg-white rounded-lg">
@@ -28,7 +28,7 @@ const LgFaculty = () => {
       >
         <img
           className="w-full h-[40%] rounded-t-lg"
-          src="public/dummy-prof2.webp"
+          src="dummy-prof2.webp"
           alt="profile"
         />
         <div className="absolute bottom-2 left-2 right-2 bg-white rounded-lg">
@@ -45,7 +45,7 @@ const LgFaculty = () => {
       >
         <img
           className="w-full h-[40%] rounded-t-lg"
-          src="public/boy2.png"
+          src="boy2.png"
           alt="profile"
         />
         <div className="absolute bottom-2 left-2 right-2 bg-white rounded-lg">

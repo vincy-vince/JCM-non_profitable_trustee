@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview --port ${X_ZOHO_CATALYST_LISTEN_PORT}"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.14",

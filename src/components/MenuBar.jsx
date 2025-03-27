@@ -42,7 +42,10 @@ const MenuBar = () => {
     }
   }
   return (
-    <div className="relative"  onMouseLeave={() => closeMenubig(setToggle(!toggle))}>
+    <div
+      className="relative"
+      onMouseLeave={() => closeMenubig(setToggle(!toggle))}
+    >
       <div className=" w-auto mx-2 ">
         <div className=" fixed top-0 right-0 left-0 flex flex-row w-auto justify-between p-4 items-center gap-4 bg-white z-[10]">
           <div className=" block md:hidden lg:hidden">
@@ -75,7 +78,6 @@ const MenuBar = () => {
                 id="our-Mini"
                 onMouseEnter={() => openMenubig(setToggle(!toggle))}
                 onClick={() => closeMenubig(setToggle(!toggle))}
-               
                 className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md"
               >
                 Our Ministries
@@ -85,22 +87,27 @@ const MenuBar = () => {
                 onMouseLeave={() => closeMenubig(setToggle(!toggle))}
                 className="hidden flex-col absolute top-15  text-md bg-white rounded-b-md border-b-2 "
               >
-                <div className="p-2 hover:bg-blue-900 hover:text-white transition-all">
+               
+                  <div className="p-2 hover:bg-blue-900 hover:text-white transition-all ">
                   <HashLink to="/biblecollege#bible-coll">
                     Bible College
-                  </HashLink>
-                </div>
-                <div className="p-2 hover:bg-blue-900 hover:text-white transition-all">
-                  <HashLink to="/cbs#cbs">
+                    </HashLink>
+                  </div>
+              
+
+                <HashLink to="/cbs#cbs">
+                  {" "}
+                  <div className="p-2 hover:bg-blue-900 hover:text-white transition-all ">
                     (CBS) children <br />
                     Bible Study
-                  </HashLink>
-                </div>
-                <div className="p-2 hover:bg-blue-900 hover:text-white transition-all rounded-b-md">
-                  <HashLink to="/womensministry#womens-min">
+                  </div>
+                </HashLink>
+
+                <HashLink to="/womensministry#womens-min">
+                  <div className="p-2 hover:bg-blue-900 hover:text-white transition-all  rounded-b-md">
                     Womens Ministry
-                  </HashLink>
-                </div>
+                  </div>
+                </HashLink>
               </div>
             </div>
           </ul>
@@ -194,13 +201,13 @@ const MenuBar = () => {
               </div>
 
               <div id="ministries" className="hidden text-left mt-2">
-                <div className="shadow-md mt-2 w-[120px] ml-4 hover:bg-blue-900 rounded-sm p-2 hover:text-white transition-all">
+                <div className="shadow-md mt-1 w-[30%] hover:bg-blue-900 rounded-sm p-2 hover:text-white transition-all">
                   <Link to="/biblecollege">Bible College</Link>
                 </div>
-                <div className="shadow-md mt-2 w-[120px] ml-4 hover:bg-blue-900 rounded-sm p-2 hover:text-white transition-all">
-                  <Link to="/cbs">CBS</Link>
+                <div className="shadow-md mt-1 w-[30%] hover:bg-blue-900 rounded-sm p-2 hover:text-white transition-all">
+                  <Link to="/cbs">(CBS) Children Bible Study</Link>
                 </div>
-                <div className="shadow-md mt-2 w-[120px] ml-4 hover:bg-blue-900 rounded-sm p-2 hover:text-white transition-all">
+                <div className="shadow-md mt-1 w-[30%] hover:bg-blue-900 rounded-sm p-2 hover:text-white transition-all">
                   <Link to="/womensministry">Womens Ministry</Link>
                 </div>
               </div>

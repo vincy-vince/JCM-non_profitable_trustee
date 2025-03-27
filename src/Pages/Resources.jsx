@@ -11,7 +11,7 @@ const Resources = () => {
       <MenuBar />
       <div
         id="resources"
-        className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-auto flex flex-col justify-between "
+        className=" bg-[url(background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-auto flex flex-col justify-between xl:h-[800px]"
       >
         <div className="flex flex-col gap-3">
           <h1 className=" text-2xl w-[60%] mx-auto font-extrabold text-center lg:text-3xl">

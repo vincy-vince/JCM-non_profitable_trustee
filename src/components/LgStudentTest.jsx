@@ -7,7 +7,7 @@ const LgStudentTest = () => {
         <div>
           <img
             className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
-            src="public/StdedumyProf.jpg"
+            src="StdedumyProf.jpg"
             alt="student"
           ></img>
         </div>
@@ -31,7 +31,7 @@ const LgStudentTest = () => {
         <div>
           <img
             className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
-            src="public/stGirlpf.jpeg"
+            src="stGirlpf.jpeg"
             alt="student"
           ></img>
         </div>
@@ -55,7 +55,7 @@ const LgStudentTest = () => {
         <div>
           <img
             className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
-            src="public/StdedumyProf.jpg"
+            src="StdedumyProf.jpg"
             alt="student"
           ></img>
         </div>
@@ -79,7 +79,7 @@ const LgStudentTest = () => {
         <div>
           <img
             className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
-            src="public/stGirlpf.jpeg"
+            src="stGirlpf.jpeg"
             alt="student"
           ></img>
         </div>
@@ -103,7 +103,7 @@ const LgStudentTest = () => {
         <div>
           <img
             className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
-            src="public/StdedumyProf.jpg"
+            src="StdedumyProf.jpg"
             alt="student"
           ></img>
         </div>
@@ -127,7 +127,7 @@ const LgStudentTest = () => {
         <div>
           <img
             className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
-            src="public/stGirlpf.jpeg"
+            src="stGirlpf.jpeg"
             alt="student"
           ></img>
         </div>

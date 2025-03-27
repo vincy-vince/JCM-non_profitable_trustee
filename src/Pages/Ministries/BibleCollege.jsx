@@ -17,7 +17,7 @@ const BibleCollege = () => {
       <MenuBar />
       <div
         id="bible-coll"
-        className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 "
+        className=" bg-[url(background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 xl:h-[800px]"
       >
         <h1 className=" text-2xl  font-extrabold md:text-3xl lg:text-5xl ">
           JCM Bible College
@@ -58,27 +58,27 @@ const BibleCollege = () => {
       <div className="flex flex-row w-[80%] mx-auto gap-4 justify-between mt-15">
         <img
           className="rounded-lg w-1/2 mx-auto"
-          src="public/graduate.webp"
+          src="graduate.webp"
         ></img>
         <img
           className="rounded-lg w-1/2 mx-auto"
-          src="public/graduate.webp"
+          src="graduate.webp"
         ></img>
       </div>
 
       <img
         className="rounded-lg w-[80%] mx-auto h-[300px] my-4"
-        src="public/graduate.webp"
+        src="graduate.webp"
       ></img>
 
       <div className="flex flex-row w-[80%] mx-auto gap-4 mb-15">
         <img
           className="rounded-lg w-1/2 mx-auto"
-          src="public/graduate.webp"
+          src="graduate.webp"
         ></img>
         <img
           className="rounded-lg w-1/2 mx-auto"
-          src="public/graduate.webp"
+          src="graduate.webp"
         ></img>
       </div>
 
@@ -120,21 +120,23 @@ const BibleCollege = () => {
         <p className="text-xl md:text-2xl lg:text-3xl text-center mt-15 font-extrabold ">
           Batch 2019 Graduation
         </p>
-        <img className="w-[80%] mx-auto " src="public/graduate.webp" alt="" />
+        <img className="w-[80%] mx-auto " src="graduate.webp" alt="" />
       </div>
 
       <div className="flex flex-col gap-6 mb-8">
         <p className="text-xl md:text-2xl lg:text-3xl text-center mt-15 font-extrabold">
           Batch 2023 Graduation
         </p>
-        <img className="w-[80%] mx-auto " src="public/graduate.webp" alt="" />
+        <img className="w-[80%] mx-auto " src="graduate.webp" alt="" />
       </div>
 
       {/* Mode of teaching */}
 
       <div className="flex flex-col gap-4 mx-10 md:flex-row lg:flex-row xl:w-[70%] xl:mx-auto">
         <div className="flex flex-col bg-green-800 h-[200px] w-[80%] mx-auto mt-10 rounded-lg justify-around text-white md:w-1/2 lg:justify-evenly lg:h-[300px] xl:w-[50%] xl:h-[250px] xl:mx-3">
-          <p className="text-center text-lg font-bold md:text-xl lg:text-2xl">Online Mode</p>
+          <p className="text-center text-lg font-bold md:text-xl lg:text-2xl">
+            Online Mode
+          </p>
           <div className="flex flex-col gap-3 md:text-center lg:text-center lg:text-lg xl:text-xl">
             <div className="ml-5">08:00 AM - 10:00 AM Monday</div>
             <div className="ml-5">08:00 AM - 10:00 AM Wednesday</div>
@@ -143,7 +145,9 @@ const BibleCollege = () => {
         </div>
 
         <div className="flex flex-col bg-cyan-800 h-[200px] w-[80%] mx-auto mt-10 rounded-lg justify-around text-white md:w-1/2 lg:justify-evenly lg:h-[300px] xl:w-[50%] xl:h-[250px] xl:mx-3">
-          <p className="text-center text-lg font-bold md:text-xl lg:text-2xl">Offline Mode</p>
+          <p className="text-center text-lg font-bold md:text-xl lg:text-2xl">
+            Offline Mode
+          </p>
           <div className="flex flex-col gap-3 md:text-center lg:text-center lg:text-lg xl:text-xl">
             <div className="ml-5">08:00 AM - 10:00 AM Monday</div>
             <div className="ml-5">08:00 AM - 10:00 AM Wednesday</div>
