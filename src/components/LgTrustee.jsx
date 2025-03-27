@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
 const LgTrustee = () => {
-  const [display, setDisplay] = useState(false);
-  const handleMouseEnter = () => {
-    setDisplay(true);
-  };
+  // const [display, setDisplay] = useState(false);
+  // const handleMouseEnter = () => {
+  //   setDisplay(true);
+  // };
 
-  const handleMouseLeave = () => {
-    setDisplay(false);
-  };
+  // const handleMouseLeave = () => {
+  //   setDisplay(false);
+  // };
 
   const trusty = [
     <div
@@ -78,7 +78,7 @@ const LgTrustee = () => {
     <div>
       <div className="flex  gap-10  mx-10 flex-row">
         {trustydiv}{" "}
-        {display && (
+        {/* {display && (
           <div
             id="hover"
             className="absolute left-2 right-2 bottom-2 bg-white rounded-lg p-2 h-fit "
@@ -97,7 +97,7 @@ const LgTrustee = () => {
               Amen!
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

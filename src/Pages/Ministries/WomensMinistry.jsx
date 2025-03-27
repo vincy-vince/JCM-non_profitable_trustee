@@ -11,7 +11,10 @@ const WomensMinistry = () => {
     <div>
       <MenuBar />
 
-      <div id="womens-min" className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px]">
+      <div
+        id="womens-min"
+        className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px]"
+      >
         <h1 className=" text-2xl md:text-3xl lg:text-5xl font-extrabold">
           {" "}
           Women's Ministry
@@ -49,6 +52,7 @@ const WomensMinistry = () => {
 
       {/* Text */}
       <div className="mt-5 text-center text-sm md:text-lg mx-8 lg:text-xl">
+        <div className="font-bold text-lg md:text-xl lg:text-2xl mb-5">Village Ministry</div>
         As the next phase of its growth, JCM Theological College was started in
         2019. With excellent professors, this institution is operating in a
         great manner. In addition, special youth gatherings, special sister’s

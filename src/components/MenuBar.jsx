@@ -42,7 +42,7 @@ const MenuBar = () => {
     }
   }
   return (
-    <div className="relative">
+    <div className="relative"  onMouseLeave={() => closeMenubig(setToggle(!toggle))}>
       <div className=" w-auto mx-2 ">
         <div className=" fixed top-0 right-0 left-0 flex flex-row w-auto justify-between p-4 items-center gap-4 bg-white z-[10]">
           <div className=" block md:hidden lg:hidden">
@@ -68,29 +68,38 @@ const MenuBar = () => {
               <Link to="/">Home</Link>
             </li>
             <li className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md">
-              <Link to="/contact">Contact</Link>
+              <HashLink to="/contact#contact">Contact us</HashLink>
             </li>
             <div className=" flex flex-col">
               <li
                 id="our-Mini"
                 onMouseEnter={() => openMenubig(setToggle(!toggle))}
                 onClick={() => closeMenubig(setToggle(!toggle))}
+               
                 className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md"
               >
                 Our Ministries
               </li>
               <div
                 id="nav"
+                onMouseLeave={() => closeMenubig(setToggle(!toggle))}
                 className="hidden flex-col absolute top-15  text-md bg-white rounded-b-md border-b-2 "
               >
                 <div className="p-2 hover:bg-blue-900 hover:text-white transition-all">
-                  <Link to="/biblecollege">Bible College</Link>
+                  <HashLink to="/biblecollege#bible-coll">
+                    Bible College
+                  </HashLink>
                 </div>
                 <div className="p-2 hover:bg-blue-900 hover:text-white transition-all">
-                  <Link to="/cbs">CBS</Link>
+                  <HashLink to="/cbs#cbs">
+                    (CBS) children <br />
+                    Bible Study
+                  </HashLink>
                 </div>
                 <div className="p-2 hover:bg-blue-900 hover:text-white transition-all rounded-b-md">
-                  <Link to="/womensministry">Womens Ministry</Link>
+                  <HashLink to="/womensministry#womens-min">
+                    Womens Ministry
+                  </HashLink>
                 </div>
               </div>
             </div>
@@ -100,7 +109,7 @@ const MenuBar = () => {
           <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 md:inline-block lg:hidden">
             <HashLink to={"/#home"}>Donate</HashLink>
           </button>
-          <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 hidden md:hidden lg:block">
+          <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 md:hidden lg:block ">
             <HashLink to={"/#lghome"}>Donate</HashLink>
           </button>
         </div>

@@ -19,7 +19,9 @@ const BibleCollege = () => {
         id="bible-coll"
         className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 "
       >
-        <h1 className=" text-2xl  font-extrabold">JCM Bible College</h1>
+        <h1 className=" text-2xl  font-extrabold md:text-3xl lg:text-5xl ">
+          JCM Bible College
+        </h1>
         <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors lg:hidden">
           <HashLink to={"/#home"}>Donate</HashLink>
         </button>
@@ -115,14 +117,14 @@ const BibleCollege = () => {
       {/* graduation */}
 
       <div className="flex flex-col gap-6">
-        <p className="text-xl md:2xl lg:3xl text-center mt-15 font-extrabold ">
+        <p className="text-xl md:text-2xl lg:text-3xl text-center mt-15 font-extrabold ">
           Batch 2019 Graduation
         </p>
         <img className="w-[80%] mx-auto " src="public/graduate.webp" alt="" />
       </div>
 
       <div className="flex flex-col gap-6 mb-8">
-        <p className="text-xl md:2xl lg:3xl text-center mt-15 font-extrabold">
+        <p className="text-xl md:text-2xl lg:text-3xl text-center mt-15 font-extrabold">
           Batch 2023 Graduation
         </p>
         <img className="w-[80%] mx-auto " src="public/graduate.webp" alt="" />
@@ -130,19 +132,19 @@ const BibleCollege = () => {
 
       {/* Mode of teaching */}
 
-      <div className="flex flex-col gap-4 mx-10 md:flex-row lg:flex-row">
-        <div className="flex flex-col bg-green-800 h-[200px] w-[80%] mx-auto mt-10 rounded-lg justify-around text-white md:w-1/2">
-          <p className="text-center">Online Mode</p>
-          <div className="flex flex-col gap-3 md:text-center lg:text-center">
+      <div className="flex flex-col gap-4 mx-10 md:flex-row lg:flex-row xl:w-[70%] xl:mx-auto">
+        <div className="flex flex-col bg-green-800 h-[200px] w-[80%] mx-auto mt-10 rounded-lg justify-around text-white md:w-1/2 lg:justify-evenly lg:h-[300px] xl:w-[50%] xl:h-[250px] xl:mx-3">
+          <p className="text-center text-lg font-bold md:text-xl lg:text-2xl">Online Mode</p>
+          <div className="flex flex-col gap-3 md:text-center lg:text-center lg:text-lg xl:text-xl">
             <div className="ml-5">08:00 AM - 10:00 AM Monday</div>
             <div className="ml-5">08:00 AM - 10:00 AM Wednesday</div>
             <div className="ml-5">08:00 AM - 10:00 AM Friday</div>
           </div>
         </div>
 
-        <div className="flex flex-col bg-cyan-800 h-[200px] w-[80%] mx-auto mt-10 rounded-lg justify-around text-white md:w-1/2">
-          <p className="text-center">Offline Mode</p>
-          <div className="flex flex-col gap-3 md:text-center lg:text-center">
+        <div className="flex flex-col bg-cyan-800 h-[200px] w-[80%] mx-auto mt-10 rounded-lg justify-around text-white md:w-1/2 lg:justify-evenly lg:h-[300px] xl:w-[50%] xl:h-[250px] xl:mx-3">
+          <p className="text-center text-lg font-bold md:text-xl lg:text-2xl">Offline Mode</p>
+          <div className="flex flex-col gap-3 md:text-center lg:text-center lg:text-lg xl:text-xl">
             <div className="ml-5">08:00 AM - 10:00 AM Monday</div>
             <div className="ml-5">08:00 AM - 10:00 AM Wednesday</div>
             <div className="ml-5">08:00 AM - 10:00 AM Friday</div>

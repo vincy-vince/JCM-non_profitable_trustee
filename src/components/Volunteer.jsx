@@ -2,7 +2,7 @@ import React from "react";
 
 const Volunteer = () => {
   return (
-    <div className="relative flex flex-col md:flex-row md:justify-around gap-4 w-auto mx-10 mt-16 bg-indigo-50 border-2 border-indigo-200 h-36 p-5 items-center rounded-lg mb-20 md:h-54 ">
+    <div className="relative flex flex-col md:flex-row md:justify-around gap-4 w-auto mx-10 mt-16 bg-indigo-50 border-2 border-indigo-200 h-36 p-5 items-center rounded-lg mb-20 md:h-54 xl:mx-75">
       <div className="text-md md:text-xl lg:text-2xl font-extrabold xl:text-3xl">
         Wanna Join as a volunteer ?<br></br>
         you are Always welcome to join

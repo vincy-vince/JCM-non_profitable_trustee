@@ -1,60 +1,28 @@
 import React from "react";
-import { FacultyInfo } from "../js/facultiesInfo";
+
 const LgFaculty = () => {
-  const Faculty = FacultyInfo.map((info) => {
-    return info;
-  });
-  function faculty() {
-    let facul
-    for (let i = 0; i <= Faculty.length - 1; i++) {
-       facul = Faculty[i];
-      console.log(facul);
-      return (
-        <div
-          key={facul.id}
-          className="relative flex flex-col justify-center items-center border border-black rounded-lg mx-auto w-[50%] h-max"
-        >
-          <img
-            className="w-full h-[40%] rounded-t-lg"
-            src={facul.img}
-            alt="profile"
-          />
-          <div className="absolute bottom-2 left-2 right-2 bg-white rounded-lg">
-            <div className="text-xl font-extrabold mb-5 text-center mt-5">
-              {facul.name}
-            </div>
-            <div className="text-lg font-extrabold mb-5 text-center">
-              {facul.educationalStatus}{" "}
-            </div>
-          </div>
-        </div>
-      );
-    }
-    
-  }
   return (
     <div className="flex flex-row gap-6 mt-15 mx-10">
-      {faculty()}
-      {/* <div
-        key={faculty().id}
+      <div
+        key={1}
         className="relative flex flex-col justify-center items-center border border-black rounded-lg mx-auto w-[50%] h-max"
       >
         <img
           className="w-full h-[40%] rounded-t-lg"
-          src={faculty().img}
+          src="public/Mr.Tijo.jpeg"
           alt="profile"
         />
         <div className="absolute bottom-2 left-2 right-2 bg-white rounded-lg">
           <div className="text-xl font-extrabold mb-5 text-center mt-5">
-            {faculty().name}
+            Tijo K John
           </div>
           <div className="text-lg font-extrabold mb-5 text-center">
-            {faculty().educationalStatus}{" "}
+            MSc( Electronics),MTh{" "}
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div
+      <div
         key={2}
         className="relative flex flex-col justify-center items-center border border-black rounded-lg mx-auto w-[50%] h-max"
       >
@@ -65,11 +33,9 @@ const LgFaculty = () => {
         />
         <div className="absolute bottom-2 left-2 right-2 bg-white rounded-lg">
           <div className="text-xl font-extrabold mb-5 text-center mt-5">
-            Tijo K John
+            Sis. Suma Thomas
           </div>
-          <div className="text-lg font-extrabold mb-5 text-center">
-            MSc( Electronics),MTh{" "}
-          </div>
+          <div className="text-lg font-extrabold mb-5 text-center">M.Div</div>
         </div>
       </div>
 
@@ -84,13 +50,13 @@ const LgFaculty = () => {
         />
         <div className="absolute bottom-2 left-2 right-2 bg-white rounded-lg">
           <div className="text-xl font-extrabold mb-5 text-center mt-5">
-            Tijo K John
+            Pr. Robbin Devadas
           </div>
           <div className="text-lg font-extrabold mb-5 text-center">
-            MSc( Electronics),MTh{" "}
+            Bca
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

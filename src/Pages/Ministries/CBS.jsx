@@ -85,26 +85,16 @@ const CBS = () => {
       <Quote />
       <div className="flex flex-col gap-6">
         <p className="text-xl md:2xl lg:3xl text-center mt-15 font-extrabold ">
-          CBS in kizma Nagar
+          CBS students in kizma Nagar 2016
         </p>
         <img className="w-[80%] mx-auto " src="public/graduate.webp" alt="" />
-
-        <p className="text-center mx-10 md:mx-20 lg:mx-20">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-          obcaecati suscipit minima Lorem ipsum dolor sit amet consectetur
-        </p>
       </div>
 
       <div className="flex flex-col gap-6">
         <p className="text-xl md:2xl lg:3xl text-center mt-15 font-extrabold">
-          CBS in Thiruvallur
+          CBS students in Thiruvallur 2016
         </p>
         <img className="w-[80%] mx-auto " src="public/graduate.webp" alt="" />
-
-        <p className="text-center mx-10 md:mx-20 lg:mx-20">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-          obcaecati suscipit minima Lorem ipsum dolor sit amet consectetur
-        </p>
       </div>
       <Location />
       <Footer />
