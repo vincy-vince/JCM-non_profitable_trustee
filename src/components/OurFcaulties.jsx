@@ -8,7 +8,7 @@ const OurFaculties = () => {
     >
       <img
         className="w-full h-[40%] rounded-t-lg"
-        src="public/Mr.Tom.jpeg"
+        src="public/Mr.Tijo.jpeg"
         alt="profile"
       />
       <div className="absolute bottom-2 left-2 right-2 bg-white rounded-lg">
@@ -59,6 +59,7 @@ const OurFaculties = () => {
   ];
   return (
     <div className="m-auto w-full mt-15">
+      <div className="text-center mb-10 text-lg font-bold md:text-xl lg:text-2xl">Our Faculties</div>
       <Corousal slides={slides} />
     </div>
   );

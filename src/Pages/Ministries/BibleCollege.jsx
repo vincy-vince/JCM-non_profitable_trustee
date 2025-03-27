@@ -27,18 +27,22 @@ const BibleCollege = () => {
           <HashLink to={"/#lghome"}>Donate</HashLink>
         </button>
       </div>
-      <div className="text-center mt-10">
+      <div className="text-center mt-10 mx-5 md:mx-10 md:text-lg lg:text-xl">
         The Lord redirected our focus, which was solely on the children's Bible
         school, and inspired us to start a Bible college. Following the Lord's
         prompting, we established JCM Bible College in January 2020.
         <br></br>
-        The college, which initially began with three teachers and 11 students,
-        has now seen three batches successfully graduate. Many who studied in
-        this college are now being powerfully used by the Lord. In collaboration
-        with Build International, we continue to offer Bible courses. The
-        curriculum is designed to be simple and easy to understand, and we are
-        effectively implementing it. The classes are conducted in an engaging
-        manner through discussions, making them very interesting.
+        <div className="mt-5">
+          {" "}
+          The college, which initially began with three teachers and 11
+          students, has now seen three batches successfully graduate. Many who
+          studied in this college are now being powerfully used by the Lord. In
+          collaboration with Build International, we continue to offer Bible
+          courses. The curriculum is designed to be simple and easy to
+          understand, and we are effectively implementing it. The classes are
+          conducted in an engaging manner through discussions, making them very
+          interesting.
+        </div>
         <br></br>
         The college currently operates with five professors, offering flexible
         schedules for those who wish to study while working. Both in-person and
@@ -115,12 +119,6 @@ const BibleCollege = () => {
           Batch 2019 Graduation
         </p>
         <img className="w-[80%] mx-auto " src="public/graduate.webp" alt="" />
-
-        <p className="text-center mx-10 lg:mx-20">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-          obcaecati suscipit minima Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Similique obcaecati suscipit minima
-        </p>
       </div>
 
       <div className="flex flex-col gap-6 mb-8">
@@ -128,12 +126,6 @@ const BibleCollege = () => {
           Batch 2023 Graduation
         </p>
         <img className="w-[80%] mx-auto " src="public/graduate.webp" alt="" />
-
-        <p className="text-center mx-10 lg:mx-20">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-          obcaecati suscipit minima Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Similique obcaecati suscipit minima
-        </p>
       </div>
 
       {/* Mode of teaching */}

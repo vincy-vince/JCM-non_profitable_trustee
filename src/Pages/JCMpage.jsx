@@ -78,7 +78,7 @@ const JCMpage = () => {
           src="public/stGirlpf.jpeg"
           alt=""
         />
-        <div className=" w-1/2 text-md text-justify md:mx-5 lg:mx-10">
+        <div className=" w-[100%] md:w-1/2 text-md text-justify md:mx-5 lg:mx-10">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
           perferendis quasi eius, distinctio totam vitae fugit suscipit
           accusantium.

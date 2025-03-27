@@ -2,7 +2,7 @@ import React from "react";
 import Corousal from "./Corousal";
 const StudentTestimonial = () => {
   let slides = [
-    <div className="h-[60%] w-[70%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
+    <div className="h-[40%] w-[90%] md:w-[60%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
       <div className="flex flex-col gap-10">
         <div>
           <img
@@ -26,7 +26,7 @@ const StudentTestimonial = () => {
         <div className="text-center">Degree</div>
       </div>
     </div>,
-    <div className="h-[60%] w-[70%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
+    <div className="h-[40%] w-[90%] md:w-[60%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
       <div className="flex flex-col gap-10">
         <div>
           <img
@@ -50,7 +50,7 @@ const StudentTestimonial = () => {
         <div className="text-center">Degree</div>
       </div>
     </div>,
-    <div className="h-[60%] w-[70%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
+    <div className="h-[40%] w-[90%] md:w-[60%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
       <div className="flex flex-col gap-10">
         <div>
           <img
@@ -74,7 +74,7 @@ const StudentTestimonial = () => {
         <div className="text-center">Degree</div>
       </div>
     </div>,
-    <div className="h-[60%] w-[70%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
+    <div className="h-[40%] w-[90%] md:w-[60%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
       <div className="flex flex-col gap-10">
         <div>
           <img
@@ -98,7 +98,7 @@ const StudentTestimonial = () => {
         <div className="text-center">Degree</div>
       </div>
     </div>,
-    <div className="h-[60%] w-[70%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
+    <div className="h-[40%] w-[90%] md:w-[60%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
       <div className="flex flex-col gap-10">
         <div>
           <img
@@ -122,7 +122,7 @@ const StudentTestimonial = () => {
         <div className="text-center">Degree</div>
       </div>
     </div>,
-    <div className="h-[60%] w-[70%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
+    <div className="h-[40%] w-[90%] md:w-[60%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
       <div className="flex flex-col gap-10">
         <div>
           <img

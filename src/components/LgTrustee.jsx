@@ -38,7 +38,7 @@ const LgTrustee = () => {
     <div className=" relative flex flex-col justify-center items-center mx-auto w-[100%] ">
       <img
         className=" w-full h-[550px] rounded-lg"
-        src="public/Mr.Tom.jpeg"
+        src="public/Mr.Tijo.jpeg"
         alt="profile"
       />
       <div

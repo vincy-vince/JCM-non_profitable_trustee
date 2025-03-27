@@ -26,22 +26,13 @@ const CBS = () => {
       </div>
 
       <div className="mx-10 text-center mt-15">
-        With the thought that we have the responsibility to guide today’s
-        generation in the way they should go, as the scripture says, "Train up a
-        child in the way he should go," we have been working in children’s
-        ministry since 1994.
+        Dear beloved in Christ! When Jesus Christ came to the land of Judea, He
+        instructed His disciples to bring the children to Him, so that He could
+        touch them. Based on this, I began children’s ministry in 1994. Over
+        time, God expanded this ministry, helping to establish Sunday schools
+        for children in many places. Through this, many children have been led
+        to the Lord.
         <br></br>
-        We provide well-structured curricula in our children’s Bible schools,
-        teaching in simple ways that suit the children's language skills.
-        Through songs and dances, we make sure they understand and learn with
-        enthusiasm. Competitions and year-end exams are conducted, and prizes
-        are given to encourage the children. Through this curriculum, we help
-        nurture good character in our younger generation, guiding them to build
-        a godly life.
-        <br></br>
-        We are committed to praying for and striving to protect the generation
-        that is heading towards destruction. May the Lord Himself bless us in
-        this mission! Amen.
       </div>
       {/* collage */}
 
@@ -71,23 +62,26 @@ const CBS = () => {
           src="public/graduate.webp"
         ></img>
       </div>
-
-      {/* Text */}
-      <div className="mt-5 text-center text-sm md:text-lg mx-8 lg:text-xl md:mx-10 lg:mx-15 mb-10">
-        As the next phase of its growth, JCM Theological College was started in
-        2019. With excellent professors, this institution is operating in a
-        great manner. In addition, special youth gatherings, special sister’s
-        gatherings, Sunday schools, holiday Bible schools, village ministries,
-        and medical camps are also being conducted.
+      <div className="mx-10 text-center mt-15">
+        With the thought that we have the responsibility to guide today’s
+        generation in the way they should go, as the scripture says, "Train up a
+        child in the way he should go," we have been working in children’s
+        ministry since 1994.
+        <br></br>
       </div>
-
-      <div className="mt-5 text-center text-sm md:text-lg mx-8 lg:text-xl md:mx-10 lg:mx-15">
-        In May 2024, this institution was registered under the name “Religious
-        and Charitable Trust.” This institution has been operating effectively
-        for the past 31 years, and many have benefitted through it. God has
-        raised many workers for this ministry.
+      <div className="mx-10 text-center mt-15">
+        We provide well-structured curricula in our children’s Bible schools,
+        teaching in simple ways that suit the children's language skills.
+        Through songs and dances, we make sure they understand and learn with
+        enthusiasm. Competitions and year-end exams are conducted, and prizes
+        are given to encourage the children. Through this curriculum, we help
+        nurture good character in our younger generation, guiding them to build
+        a godly life.
+        <br></br>
+        We are committed to praying for and striving to protect the generation
+        that is heading towards destruction. May the Lord Himself bless us in
+        this mission! Amen.
       </div>
-
       <Quote />
       <div className="flex flex-col gap-6">
         <p className="text-xl md:2xl lg:3xl text-center mt-15 font-extrabold ">
@@ -98,7 +92,6 @@ const CBS = () => {
         <p className="text-center mx-10 md:mx-20 lg:mx-20">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
           obcaecati suscipit minima Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Similique obcaecati suscipit minima
         </p>
       </div>
 
@@ -111,7 +104,6 @@ const CBS = () => {
         <p className="text-center mx-10 md:mx-20 lg:mx-20">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
           obcaecati suscipit minima Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Similique obcaecati suscipit minima
         </p>
       </div>
       <Location />
