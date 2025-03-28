@@ -41,6 +41,10 @@ const MenuBar = () => {
       menuBar.style.display = "none";
     }
   }
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
   return (
     <div
       className="relative"
@@ -67,18 +71,22 @@ const MenuBar = () => {
           </div>
 
           <ul className=" flex-row  items-center justify-around hidden md:flex lg:flex md:gap-3 lg:gap-4">
-            <li className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md">
-              <Link to="/">Home</Link>
+            <li className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md xl:text-xl">
+              <Link onClick={scrollToTop} to="/#home">
+                Home
+              </Link>
             </li>
-            <li className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md">
-              <HashLink to="/contact#contact">Contact us</HashLink>
+            <li className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md xl:text-xl">
+              <Link onClick={scrollToTop} to="/contact#contact">
+                Contact us
+              </Link>
             </li>
             <div className=" flex flex-col">
               <li
                 id="our-Mini"
                 onMouseEnter={() => openMenubig(setToggle(!toggle))}
-                onClick={() => closeMenubig(setToggle(!toggle))}
-                className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md"
+                // onClick={() => closeMenubig(setToggle(!toggle))}
+                className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md xl:text-xl"
               >
                 Our Ministries
               </li>
@@ -87,38 +95,38 @@ const MenuBar = () => {
                 onMouseLeave={() => closeMenubig(setToggle(!toggle))}
                 className="hidden flex-col absolute top-15  text-md bg-white rounded-b-md border-b-2 "
               >
-               
-                  <div className="p-2 hover:bg-blue-900 hover:text-white transition-all ">
-                  <HashLink to="/biblecollege#bible-coll">
+                <div className="p-2 hover:bg-blue-900 hover:text-white transition-all lg:text-lg xl:text-xl">
+                  <Link onClick={scrollToTop} to="/biblecollege#bible-coll">
                     Bible College
-                    </HashLink>
-                  </div>
-              
+                  </Link>
+                </div>
 
-                <HashLink to="/cbs#cbs">
+                <Link onClick={scrollToTop} to="/cbs#cbs">
                   {" "}
-                  <div className="p-2 hover:bg-blue-900 hover:text-white transition-all ">
+                  <div className="p-2 hover:bg-blue-900 hover:text-white transition-all lg:text-lg xl:text-xl">
                     (CBS) children <br />
                     Bible Study
                   </div>
-                </HashLink>
+                </Link>
 
-                <HashLink to="/womensministry#womens-min">
-                  <div className="p-2 hover:bg-blue-900 hover:text-white transition-all  rounded-b-md">
+                <Link onClick={scrollToTop} to="/womensministry#womens-min">
+                  <div className="p-2 hover:bg-blue-900 hover:text-white transition-all lg:text-lg xl:text-xl rounded-b-md">
                     Womens Ministry
                   </div>
-                </HashLink>
+                </Link>
               </div>
             </div>
           </ul>
 
           {/* For Xs screen (370px) */}
-          <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 md:inline-block lg:hidden">
+          <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg font-bold hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 md:inline-block lg:hidden">
             <HashLink to={"/#home"}>Donate</HashLink>
           </button>
-          <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 md:hidden lg:block ">
-            <HashLink to={"/#lghome"}>Donate</HashLink>
-          </button>
+          <HashLink to={"/#lghome"}>
+            <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg font-bold hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 md:hidden lg:block lg:text-lg xl:text-xl">
+              Donate
+            </button>
+          </HashLink>
         </div>
 
         {/* for mobile design => XS size (370px)*/}

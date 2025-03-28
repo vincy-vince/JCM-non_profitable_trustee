@@ -4,9 +4,9 @@ import { IoClose } from "react-icons/io5";
 const LgDonate = () => {
   const [ShowModal, setShowModal] = useState(false);
   return (
-    <div>
+    <div className="xl:mx-40">
       <div className="mt-20">
-        <h1 className="text-2xl font-extrabold text-center mb-20">
+        <h1 className="text-2xl font-extrabold text-center mb-20 xl:text-3xl">
           Donate now
         </h1>
         <div className="flex items-center flex-row gap-3 w-[90%] xl:w-[75%] xl:mx-auto mx-auto">

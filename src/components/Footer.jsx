@@ -4,12 +4,14 @@ import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col justify-around mt-30 bg-slate-300 pt-6 pb-6 wrap gap-10 w-auto lg:flex-row lg:justify-evenly">
-      <div className="flex flex-row sm:mx-10 md:mx-10 gap-3 justify-around lg:flex-row lg:mx-0 lg:gap-20">
+    <div className="flex flex-col justify-around mt-30 bg-slate-300 pt-6 pb-6 wrap gap-10 w-auto lg:flex-row lg:justify-evenly xl:justify-evenly">
+      <div className="flex flex-row sm:mx-10 md:mx-10 gap-3 justify-around lg:flex-row lg:mx-0 lg:gap-20 xl:gap-50">
         <div className="hidden text-sm font-bold lg:inline-block">LOGO</div>
         <div className="flex flex-col gap-3 ">
-          <div className="text-sm font-bold mb-5 ">Contact us</div>
-          <div className="flex flex-row gap-3 text-sm">
+          <div className="text-sm font-bold mb-5 lg:text-lg xl:text-xl">
+            Contact us
+          </div>
+          <div className="flex flex-row gap-3 text-sm lg:text-lg ">
             <div>
               <svg
                 width="20"
@@ -26,7 +28,7 @@ const Footer = () => {
             </div>
             <div>+91 85694231875</div>
           </div>
-          <div className="flex flex-row gap-3 text-sm">
+          <div className="flex flex-row gap-3 text-sm lg:text-lg ">
             <svg
               width="20"
               height="28"
@@ -41,7 +43,7 @@ const Footer = () => {
             </svg>
             <div>contact@judeachrist.org</div>
           </div>
-          <div className="flex flex-row gap-3 text-sm">
+          <div className="flex flex-row gap-3 text-sm lg:text-lg ">
             <svg
               width="20"
               height="28"
@@ -57,7 +59,7 @@ const Footer = () => {
             <div>www.judeachrist.org</div>
           </div>
 
-          <div className="flex flex-row gap-3 text-sm">
+          <div className="flex flex-row gap-3 text-sm lg:text-lg ">
             <svg
               width="20"
               height="28"
@@ -83,34 +85,34 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-row mx-3 justify-around lg:flex-row lg:gap-20 lg:mx-0">
+      <div className="flex flex-row mx-3 justify-around lg:flex-row lg:gap-20 lg:mx-0 xl:gap-50">
         <div className="text-sm flex flex-col gap-3">
-          <div className="font-bold ">Navigate</div>
-          <div>
+          <div className="font-bold lg:text-lg xl:text-xl">Navigate</div>
+          <div className="text-sm lg:text-lg ">
             <Link to="/">Home</Link>
           </div>
-          <div>
+          <div className="text-sm lg:text-lg ">
             <HashLink to="/contact#contact">Contact us</HashLink>
           </div>
-          <div>
+          <div className="text-sm lg:text-lg ">
             <a href="#">Our Ministries</a>
           </div>
         </div>
         <div className=" text-sm flex flex-col gap-3">
-          <div className="font-bold">
+          <div className="font-bold lg:text-lg xl:text-xl">
             <a href="#our-Mini">Our Ministries</a>
           </div>
-          <div>
+          <div className="text-sm lg:text-lg ">
             {" "}
             <HashLink to="/biblecollege#bible-coll">Bible College</HashLink>
           </div>
-          <div>
+          <div className="text-sm lg:text-lg ">
             <HashLink to="/cbs#cbs">
               (CBS) children <br />
               Bible Study
             </HashLink>
           </div>
-          <div>
+          <div className="text-sm lg:text-lg ">
             <HashLink to="/womensministry#womens-min">Womens Ministry</HashLink>
           </div>
         </div>
@@ -118,11 +120,11 @@ const Footer = () => {
 
       <div className="flex flex-row mx-3 justify-around lg:flex-col lg:justify-between">
         <div className=" text-sm flex flex-col gap-3">
-          <div className="font-bold ">Resources</div>
-          <div>
+          <div className="font-bold lg:text-lg xl:text-xl">Resources</div>
+          <div className="text-sm lg:text-lg ">
             <HashLink to="/resources#resources">Privacy Policy</HashLink>
           </div>
-          <div>
+          <div className="text-sm lg:text-lg ">
             <HashLink to="/resources#resources">Refund Policy</HashLink>
           </div>
         </div>

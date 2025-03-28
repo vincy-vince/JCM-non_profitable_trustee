@@ -148,7 +148,7 @@ const LgStudentTest = () => {
     </div>,
   ];
   return (
-    <div>
+    <div className="xl:mx-50">
       <p className="text-center text-xl md:text-2xl lg:text-2xl font-extrabold mt-20 mb-8">
         Student Testimonials
       </p>

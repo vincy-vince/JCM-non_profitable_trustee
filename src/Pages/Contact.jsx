@@ -5,6 +5,7 @@ import Location from "../components/Location";
 import { HashLink } from "react-router-hash-link";
 const Contact = () => {
   const [ShowModal, setShowModal] = useState(false);
+
   return (
     <div>
       <MenuBar />
@@ -29,13 +30,13 @@ const Contact = () => {
             className="text-blue-900 active:border-none md:w-[73%] lg:w-[80%] "
             placeholder="Enter your email"
           ></input>
-          <button className="bg-red-800 text-white px-4 ml-4 rounded-md py-2 font-bold md:ml-0">
+          <button className="bg-red-800 text-white px-4 ml-4 rounded-md py-2 font-bold md:ml-0 xl:ml-13 shadow-md shadow-red-800">
             Join now
           </button>
         </div>
       </div>
 
-      <div className="flex flex-col justify-around gap- w-[auto] h-[450px] mx-10 mt-15 md:mt-20">
+      <div className="flex flex-col justify-around gap- w-[auto] h-[450px] mx-10 mt-15 md:mt-20 lg:text-lg xl:text-xl xl:mx-40">
         <div className="text-md">
           If you have any questions, need more information, or would like to get
           involved with The Social Project, we'd love to hear from you. Whether
@@ -68,13 +69,14 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="mt-68 md:mt-16 bg-indigo-100 h-[max] mx-0 pb-13 md:mx-10 lg:mx-10">
+      <div className="relative mt-68 md:mt-16 bg-indigo-100 h-[max] mx-0 pb-13 md:mx-10 lg:mx-10 xl:mx-40 rounded-lg px-5">
         <div className="text-center">
-          <button className="font-bold text-xl bg-white p-1 rounded-b-2xl">
+          <button className="font-bold text-xl bg-white p-1 rounded-b-2xl px-2">
             Contact Us
           </button>
         </div>
-        <div className="flex flex-col w-auto justify-around items-center mt-14 gap-5 pb-10 md:flex-row lg:flex-row md:mx-4 lg:mx-4">
+        <div className=" flex flex-col w-auto justify-around items-center mt-14 gap-5 pb-10 md:flex-row lg:flex-row md:mx-4 lg:mx-4">
+          <div className="absolute w-[50px]  bg-white h-[50px] rounded-full right-[-7%] top-7 md:right-[-3%] md:top-4 xl:right-[-1%]"></div>
           <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-1/2 h-[60px] shadow-lg shadow-indigo-300/50">
             <div>
               <svg
@@ -111,7 +113,7 @@ const Contact = () => {
           </div>
           <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-1/2  h-[max] shadow-lg shadow-indigo-300/50 ">
             <svg
-              className="text-sm w-[50px]"
+              className="text-sm w-[50px] xl:w-[25px] xl:my-3"
               // width="28"
               // height="28"
               viewBox="0 0 28 28"
@@ -127,14 +129,15 @@ const Contact = () => {
               Plot no 29, sugavacharhiram, MDR 447, Kilacheri, Tamil Nadu 631402
             </div>
           </div>
+          <div className="absolute w-[50px]  bg-white h-[50px] rounded-full left-[-5%] bottom-5 md:left-[-3%] md:bottom-6 xl:left-[-1%]"></div>
         </div>
       </div>
 
-      <div>
+      {/* <div className="w-[300px] h-[350px] mx-auto mt-30 md:w-[400px] md:h-[400px] xl:w-[600px] xl:h-[650px] hidden">
         <svg
           className="mx-auto"
-          width="300"
-          height="600"
+          // width="300"
+          // height="600"
           viewBox="0 0 1033 1031"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -377,7 +380,7 @@ const Contact = () => {
           />
           <div className="absolute t-0 l-0">hello</div>
         </svg>
-      </div>
+      </div> */}
 
       <Location />
 

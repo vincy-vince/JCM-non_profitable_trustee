@@ -3,9 +3,9 @@ import React from "react";
 const Location = () => {
   return (
     <a href="https://maps.app.goo.gl/K1UBacWEwEGKzRVP8">
-      <div className="w-auto mx-10 bg-[url(loc2.jpg)] bg-cover bg-no-repeat h-fit pb-3 md:h-54 mt-18 lg:h-60 rounded-lg md:pt-2 xl:h-64 xl:mx-40">
+      <div className="w-auto mx-10 bg-[url(loc2.jpg)] bg-cover bg-no-repeat h-fit pb-3 md:h-54 mt-18 lg:h-60 rounded-lg md:pt-2 xl:h-[300px] xl:mx-72 ">
         <div className="text-right">
-          <button className="font-bold text-md bg-blue-950 text-white p-2 border-none rounded-lg mt-6 mr-4 hidden md:block md:ml-[76%] lg:block xl:px-6 xl:py-4">
+          <button className="font-bold text-md bg-blue-950 text-white p-2 border-none rounded-lg mt-6 mr-4 hidden md:block md:ml-[76%] lg:block xl:px-6 xl:py-4 xl:text-xl">
             View Location
           </button>
         </div>
@@ -20,7 +20,7 @@ const Location = () => {
             xmlSpace="preserve"
             stroke="#FF0000"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
               strokeLinecap="round"
@@ -36,7 +36,7 @@ const Location = () => {
           </svg>
         </div>
         <div className="font-extrabold md:text-justify lg:text-left text-lg pt-3 md:mt-5 md:text-2xl mx-4 lg:text-3xl lg:pb-3 lg:ml-4 xl:ml-8">
-          Plot no 29,sugavachathiram, MDR 447, Kilacheri,<br></br> Tamil Nadu -
+          Plot no 29, sugavachathiram, MDR 447, Kilacheri,<br></br> Tamil Nadu -
           631402
         </div>
         <button className="font-bold text-md bg-blue-950 text-white p-2 border-none rounded-lg mt-10 ml-[55%] md:hidden lg:hidden xl:hidden">

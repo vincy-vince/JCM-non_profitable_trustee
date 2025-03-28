@@ -22,49 +22,47 @@ const WomensMinistry = () => {
         <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors lg:hidden">
           <HashLink to={"/#home"}>Donate</HashLink>
         </button>
-        <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors hidden md:hidden lg:block">
+        <button className="w-max font-bold px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors hidden md:hidden lg:block xl:py-3 xl:px-4 lg:text-lg xl:text-xl">
           <HashLink to={"/#lghome"}>Donate</HashLink>
         </button>
       </div>
 
-      <div className="mx-10 text-center mt-15">
+      <div className="mx-10 text-center my-15 lg:txt-lg xl:text-xl xl:mx-45">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, cum?
         Molestiae, molestias in! Vel magni fugit expedita ea consequuntur
         debitis quidem eos omnis, quae, facilis libero aliquam vero ut placeat?
       </div>
       {/* collage */}
 
-      <img
-        className="rounded-lg w-[80%] mx-auto h-[300px] my-4 xl:h-[500px]"
-        src="graduate.webp"
-      ></img>
+      <div className="xl:mx-40">
+        <img
+          className="rounded-lg w-[80%] mx-auto h-[300px] my-4 xl:h-[500px]"
+          src="graduate.webp"
+        ></img>
 
-      <div className="flex flex-row w-[80%] mx-auto gap-4 mb-15">
-        <img
-          className="rounded-lg w-1/2 mx-auto"
-          src="graduate.webp"
-        ></img>
-        <img
-          className="rounded-lg w-1/2 mx-auto"
-          src="graduate.webp"
-        ></img>
+        <div className="flex flex-row w-[80%] mx-auto gap-4 mb-15">
+          <img className="rounded-lg w-1/2 mx-auto" src="graduate.webp"></img>
+          <img className="rounded-lg w-1/2 mx-auto" src="graduate.webp"></img>
+        </div>
       </div>
 
       {/* Text */}
-      <div className="mt-5 text-center text-sm md:text-lg mx-8 lg:text-xl xl:mx-30">
-        <div className="font-bold text-lg md:text-xl lg:text-2xl mb-5">Village Ministry</div>
-        As the next phase of its growth, JCM Theological College was started in
-        2019. With excellent professors, this institution is operating in a
-        great manner. In addition, special youth gatherings, special sister’s
-        gatherings, Sunday schools, holiday Bible schools, village ministries,
-        and medical camps are also being conducted.
-      </div>
+      <div className="mt-5 text-center text-sm md:text-lg mx-8 lg:text-lg xl:mx-45 xl:text-xl">
+        <div className="font-bold text-lg md:text-xl lg:text-2xl mb-5 xl:text-3xl xl:mb-10">
+          Village Ministry
+        </div>
 
-      <div className="mt-5 text-center text-sm md:text-lg mx-8 lg:text-xl xl:mx-30">
-        In May 2024, this institution was registered under the name “Religious
-        and Charitable Trust.” This institution has been operating effectively
-        for the past 31 years, and many have benefitted through it. God has
-        raised many workers for this ministry.
+        <div className="xl:mx-40">
+          <img
+            className="rounded-lg w-[80%] mx-auto h-[300px] my-4 xl:h-[500px]"
+            src="graduate.webp"
+          ></img>
+
+          <img
+            className="rounded-lg w-[80%] mx-auto h-[300px] my-4 xl:h-[500px]"
+            src="graduate.webp"
+          ></img>
+        </div>
       </div>
 
       {/* volunteer */}

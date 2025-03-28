@@ -12,7 +12,7 @@ const LgTrustee = () => {
 
   const trusty = [
     <div
-      className=" relative flex flex-col justify-center items-center mx-auto w-[100%] "
+      className=" relative flex flex-col justify-center items-center mx-auto w-[100%] xl:h-[350px]"
       // onMouseEnter={handleMouseEnter}
       // onMouseLeave={handleMouseLeave}
     >
@@ -30,12 +30,12 @@ const LgTrustee = () => {
           Sis. Suma Thomas
         </div>
         <div className="text-lg font-extrabold mb-3 text-center">
-          MSc( Electronics),MTh{" "}
+          M.Div
         </div>
       </div>
       {/* )} */}
     </div>,
-    <div className=" relative flex flex-col justify-center items-center mx-auto w-[100%] ">
+    <div className=" relative flex flex-col justify-center items-center mx-auto w-[100%] xl:h-[350px]">
       <img
         className=" w-full h-[550px] rounded-lg"
         src="Mr.Tijo.jpeg"
@@ -53,7 +53,7 @@ const LgTrustee = () => {
         </div>
       </div>
     </div>,
-    <div className=" relative flex flex-col justify-center items-center mx-auto w-[100%] ">
+    <div className=" relative flex flex-col justify-center items-center mx-auto w-[100%] xl:h-[350px]">
       <img
         className=" w-full h-[550px] rounded-lg"
         src="boy2.png"
@@ -75,7 +75,7 @@ const LgTrustee = () => {
     return <div key={index}> {s} </div>;
   });
   return (
-    <div>
+    <div className="mx-auto w-[65%]">
       <div className="flex  gap-10  mx-10 flex-row">
         {trustydiv}{" "}
         {/* {display && (

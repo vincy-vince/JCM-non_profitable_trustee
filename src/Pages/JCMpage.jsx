@@ -33,7 +33,7 @@ const JCMpage = () => {
       </div>
 
       {/* About and Founder's Image */}
-      <div className=" mt-7  flex  flex-col  justify-evenly  items-center  p-5  mb-10  gap-10 md:flex-row lg:flex-row  relative z-[-1]">
+      <div className=" mt-7  flex  flex-col  justify-evenly  items-center  p-5  mb-10  gap-10 md:flex-row lg:flex-row  relative z-[-1] xl:mx-45 xl:mt-10">
         <div className="flex flex-col gap-4 md:gap-5 relative ">
           {/* <svg
             className="mr-14 md:mr-28 lg:mr-80"
@@ -78,7 +78,7 @@ const JCMpage = () => {
           src="stGirlpf.jpeg"
           alt=""
         />
-        <div className=" w-[100%] md:w-1/2 text-md text-justify md:mx-5 lg:mx-10">
+        <div className=" w-[100%] md:w-1/2 text-md text-justify md:mx-5 lg:mx-10 xl:mx-30 xl:text-xl">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
           perferendis quasi eius, distinctio totam vitae fugit suscipit
           accusantium.
@@ -91,8 +91,8 @@ const JCMpage = () => {
           ipsam, quos dolorem?
         </div>
       </div>
-      <div className=" text-lg  font-semibold  text-justify  flex  flex-col  gap-5  mx-10">
-        <p>
+      <div className=" text-lg  font-semibold  text-justify  flex  flex-col  gap-5  mx-10 xl:mx-70 xl:text-xl xl:text-center">
+        <p className="mb-10">
           JCM Bible College is committed to proclaiming the Gospel, making
           disciples of Christ, and guiding the younger generation in the right
           path. The college strives to help the poor and underprivileged by

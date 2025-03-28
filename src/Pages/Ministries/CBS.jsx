@@ -20,12 +20,12 @@ const CBS = () => {
         <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors lg:hidden">
           <HashLink to={"/#home"}>Donate</HashLink>
         </button>
-        <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors hidden md:hidden lg:block">
+        <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors font-bold hidden  md:hidden lg:block xl:py-3 xl:px-4 lg:text-lg xl:text-xl">
           <HashLink to={"/#lghome"}>Donate</HashLink>
         </button>
       </div>
 
-      <div className="mx-10 text-center mt-15">
+      <div className="mx-10 text-center mt-15 xl:mx-45 lg:text-lg xl:text-xl">
         Dear beloved in Christ! When Jesus Christ came to the land of Judea, He
         instructed His disciples to bring the children to Him, so that He could
         touch them. Based on this, I began children’s ministry in 1994. Over
@@ -36,40 +36,30 @@ const CBS = () => {
       </div>
       {/* collage */}
 
-      <div className="flex flex-row w-[80%] mx-auto gap-4 justify-between mt-15">
-        <img
-          className="rounded-lg w-1/2 mx-auto"
-          src="graduate.webp"
-        ></img>
-        <img
-          className="rounded-lg w-1/2 mx-auto"
-          src="graduate.webp"
-        ></img>
-      </div>
+      <div className="xl:mx-40">
+        <div className="flex flex-row w-[80%] mx-auto gap-4 justify-between mt-15">
+          <img className="rounded-lg w-1/2 mx-auto" src="graduate.webp"></img>
+          <img className="rounded-lg w-1/2 mx-auto" src="graduate.webp"></img>
+        </div>
 
-      <img
-        className="rounded-lg w-[80%] mx-auto h-[300px] my-4"
-        src="graduate.webp"
-      ></img>
+        <img
+          className="rounded-lg w-[80%] mx-auto h-[300px] my-4 xl:h-[500px]"
+          src="graduate.webp"
+        ></img>
 
-      <div className="flex flex-row w-[80%] mx-auto gap-4 mb-15">
-        <img
-          className="rounded-lg w-1/2 mx-auto"
-          src="graduate.webp"
-        ></img>
-        <img
-          className="rounded-lg w-1/2 mx-auto"
-          src="graduate.webp"
-        ></img>
+        <div className="flex flex-row w-[80%] mx-auto gap-4 mb-15">
+          <img className="rounded-lg w-1/2 mx-auto" src="graduate.webp"></img>
+          <img className="rounded-lg w-1/2 mx-auto" src="graduate.webp"></img>
+        </div>
       </div>
-      <div className="mx-10 text-center mt-15">
+      <div className="mx-10 text-center mt-15 lg:text-lg xl:text-xl xl:mx-45">
         With the thought that we have the responsibility to guide today’s
         generation in the way they should go, as the scripture says, "Train up a
         child in the way he should go," we have been working in children’s
         ministry since 1994.
         <br></br>
       </div>
-      <div className="mx-10 text-center mt-15">
+      <div className="mx-10 text-center mt-15 lg:text-lg xl:text-xl xl:mx-45">
         We provide well-structured curricula in our children’s Bible schools,
         teaching in simple ways that suit the children's language skills.
         Through songs and dances, we make sure they understand and learn with
@@ -83,19 +73,29 @@ const CBS = () => {
         this mission! Amen.
       </div>
       <Quote />
-      <div className="flex flex-col gap-6">
-        <p className="text-xl md:2xl lg:3xl text-center mt-15 font-extrabold ">
-          CBS students in kizma Nagar 2016
-        </p>
-        <img className="w-[80%] mx-auto " src="graduate.webp" alt="" />
-      </div>
 
       <div className="flex flex-col gap-6">
-        <p className="text-xl md:2xl lg:3xl text-center mt-15 font-extrabold">
+        <p className="text-xl md:text-2xl lg:text-3xl text-center mt-15 font-extrabold ">
+          CBS students in kizma Nagar 2016
+        </p>
+        <img
+          className="w-[80%] mx-auto xl:h-[550px] xl:w-[1100px]"
+          src="graduate.webp"
+          alt=""
+        />
+      </div>
+
+      <div className="flex flex-col gap-6 mb-8">
+        <p className="text-xl md:text-2xl lg:text-3xl text-center mt-15 font-extrabold ">
           CBS students in Thiruvallur 2016
         </p>
-        <img className="w-[80%] mx-auto " src="graduate.webp" alt="" />
+        <img
+          className="w-[80%] mx-auto xl:h-[550px] xl:w-[1100px]"
+          src="graduate.webp"
+          alt=""
+        />
       </div>
+
       <Location />
       <Footer />
     </div>

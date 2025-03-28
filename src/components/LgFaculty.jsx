@@ -2,13 +2,13 @@ import React from "react";
 
 const LgFaculty = () => {
   return (
-    <div className="flex flex-row gap-6 mt-15 mx-10">
+    <div className="flex flex-row gap-6 mt-15 mx-10 xl:mx-60">
       <div
         key={1}
-        className="relative flex flex-col justify-center items-center border border-black rounded-lg mx-auto w-[50%] h-max"
+        className="relative flex flex-col justify-center items-center border border-black rounded-lg mx-auto w-[50%] h-max xl:w-[400px]"
       >
         <img
-          className="w-full h-[40%] rounded-t-lg"
+          className="w-full h-[40%] rounded-t-lg xl:h-[500px]"
           src="Mr.Tijo.jpeg"
           alt="profile"
         />
@@ -24,10 +24,10 @@ const LgFaculty = () => {
 
       <div
         key={2}
-        className="relative flex flex-col justify-center items-center border border-black rounded-lg mx-auto w-[50%] h-max"
+        className="relative flex flex-col justify-center items-center border border-black rounded-lg mx-auto w-[50%] h-max xl:w-[400px]"
       >
         <img
-          className="w-full h-[40%] rounded-t-lg"
+          className="w-full h-[40%] rounded-t-lg xl:h-[500px]"
           src="dummy-prof2.webp"
           alt="profile"
         />
@@ -41,10 +41,10 @@ const LgFaculty = () => {
 
       <div
         key={3}
-        className="relative flex flex-col justify-center items-center border border-black rounded-lg mx-auto w-[50%] h-max"
+        className="relative flex flex-col justify-center items-center border border-black rounded-lg mx-auto w-[50%] h-max xl:w-[400px]"
       >
         <img
-          className="w-full h-[40%] rounded-t-lg"
+          className="w-full h-[40%] rounded-t-lg xl:h-[500px]"
           src="boy2.png"
           alt="profile"
         />
@@ -52,9 +52,7 @@ const LgFaculty = () => {
           <div className="text-xl font-extrabold mb-5 text-center mt-5">
             Pr. Robbin Devadas
           </div>
-          <div className="text-lg font-extrabold mb-5 text-center">
-            Bca
-          </div>
+          <div className="text-lg font-extrabold mb-5 text-center">Bca</div>
         </div>
       </div>
     </div>
