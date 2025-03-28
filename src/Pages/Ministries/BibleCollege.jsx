@@ -17,7 +17,7 @@ const BibleCollege = () => {
       <MenuBar />
       <div
         id="bible-coll"
-        className=" bg-[url(background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 xl:h-[800px]"
+        className=" bg-[url(background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 xl:h-[630px]"
       >
         <h1 className=" text-2xl  font-extrabold md:text-3xl lg:text-5xl ">
           JCM Bible College
