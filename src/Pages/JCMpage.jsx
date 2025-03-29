@@ -33,7 +33,7 @@ const JCMpage = () => {
       </div>
 
       {/* About and Founder's Image */}
-      <div className=" mt-7  flex  flex-col  justify-evenly  items-center  p-5  mb-10  gap-10 md:flex-row lg:flex-row  relative z-[-1] xl:mx-45 xl:mt-10">
+      <div className=" mt-7 h-[600px] flex flex-col justify-evenly items-center p-5 mb-10 gap-10 md:flex-row lg:flex-row  relative z-[-1] xl:mx-30 xl:my-20">
         <div className="flex flex-col gap-4 md:gap-5 relative ">
           {/* <svg
             className="mr-14 md:mr-28 lg:mr-80"
@@ -78,38 +78,51 @@ const JCMpage = () => {
           src="stGirlpf.jpeg"
           alt=""
         />
-        <div className=" w-[100%] md:w-1/2 text-md text-justify md:mx-5 lg:mx-10 xl:mx-30 xl:text-xl">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
-          perferendis quasi eius, distinctio totam vitae fugit suscipit
-          accusantium.
-          <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-          quasi illum fuga delectus, dignissimos vitae rerum, assumenda in ipsa
-          quibusdam iste asperiores ex fugiat suscipit eaque, provident nobis
-          cumque quia eum dolore magnam laboriosam perferendis. Voluptas dolores
-          voluptatum odio dolorum consectetur, rem voluptates iste saepe magni
-          est corrupti alias qui at nulla, mollitia quisquam totam aliquid ab
-          ipsam, quos dolorem?
+        <div className=" w-2/3 md:w-1/2 text-md text-justify md:mx-5 lg:mx-10 xl:mx-30 xl:text-xl">
+          <span className="font-bold">Judea Christ Ministries</span> warmly
+          welcomes and greets you.
+          <br></br>
+          <p className="my-5">
+          This organization is actively committed to bringing Christ to
+          people through good deeds, based on the teachings of our Lord Jesus
+          Christ. It remains steadfast in understanding and proclaiming the
+          essence of the Scriptures without deviation, participating in the
+          building of God’s kingdom.
+          </p>
+          <br /> This ministry, founded in January 2010, was established by Bro.
+          K M Thomas Babu and his wife Suma Thomas, through the vision and
+          revelation God granted them. The organization has been operating
+          effectively through the prayers and cooperation of many. Fulfilling
+          Christ’s great commission is its primary mission. Pray for the
+          fulfillment of this vision. May the Lord Himself bless us all!
         </div>
       </div>
       <div className=" text-lg  font-semibold  text-justify  flex  flex-col  gap-5  mx-10 xl:mx-70 xl:text-xl xl:text-center">
-        <p className="mb-10">
-          JCM Bible College is committed to proclaiming the Gospel, making
-          disciples of Christ, and guiding the younger generation in the right
-          path. The college strives to help the poor and underprivileged by
-          implementing programs aimed at their economic upliftment and
-          conducting special training sessions for them. It is dedicated to
-          raising up devoted ministers, leading young people towards God,
-          addressing the needs of the community, and teaching the Word of God
-          effectively.
-        </p>{" "}
-        <p>
-          JCM Bible College is dedicated to proclaiming the Gospel through
-          village ministries and fulfilling God’s plan by planting churches. The
-          college offers specialized training for individuals seeking to start
-          their own businesses and conducts vacation Bible schools. It also
-          organizes medical camps and promotes community awareness programs to
-          cultivate good values and enhance the quality of life. Through its
-          Bible school, JCM effectively teaches the Word of God with excellence.
+        <p className="mb-10 text-justify">
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Proclaiming the Gospel, making
+          disciples of Christ, and guiding the younger generation on the right
+          path. Helping the poor and needy by implementing programs to uplift
+          the economically disadvantaged and conducting special training
+          sessions for them. Raising up ministers, leading the youth towards the
+          Lord, and addressing the needs of the community. Finally, teaching the
+          Scriptures to strengthen spiritual growth.
+        </p>
+        <p className="mb-10 text-justify">
+          &nbsp; &nbsp; &nbsp; &nbsp;As God said to go and proclaim His Word, we
+          are committed to spreading the Gospel through village ministries and
+          establishing churches to fulfill His plan. We provide special training
+          for those aspiring to start self-employment, conduct vacation Bible
+          schools, and organize medical camps. We also promote good values and
+          strive to improve the quality of life through community awareness
+          programs. Finally, we effectively teach the Scriptures through the
+          Bible school.
+        </p>
+        <p className="mb-10 text-justify">
+          &nbsp; &nbsp; &nbsp; &nbsp; On May 30, 2024, this institution was
+          registered under the name “Public Christian Religious cum Charitable
+          Trust.” It has been operating effectively for the past 31 years,
+          benefiting many. God has raised numerous workers through this
+          ministry.
         </p>
       </div>
       {/* youtube-session */}

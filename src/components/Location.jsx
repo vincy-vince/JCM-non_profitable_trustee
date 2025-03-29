@@ -36,8 +36,8 @@ const Location = () => {
           </svg>
         </div>
         <div className="font-extrabold md:text-justify lg:text-left text-lg pt-3 md:mt-5 md:text-2xl mx-4 lg:text-3xl lg:pb-3 lg:ml-4 xl:ml-8">
-          Plot no 29, sugavachathiram, MDR 447, Kilacheri,<br></br> Tamil Nadu -
-          631402
+          No. 505/B1A, 1st Floor, Mappedu Village, Thiruvallur, Tamilnadu-631
+          402
         </div>
         <button className="font-bold text-md bg-blue-950 text-white p-2 border-none rounded-lg mt-10 ml-[55%] md:hidden lg:hidden xl:hidden">
           View Location

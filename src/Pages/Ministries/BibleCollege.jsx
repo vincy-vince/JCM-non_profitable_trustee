@@ -29,29 +29,31 @@ const BibleCollege = () => {
           <HashLink to={"/#lghome"}>Donate</HashLink>
         </button>
       </div>
-      <div className="text-center mt-10 mx-5 md:mx-10 md:text-lg lg:text-xl xl:mx-50">
-        The Lord redirected our focus, which was solely on the children's Bible
-        school, and inspired us to start a Bible college. Following the Lord's
-        prompting, we established JCM Bible College in January 2020.
+      <div className="text-justify mt-13 mx-5 md:mx-10 md:text-lg lg:text-xl xl:mx-50">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The Lord redirected our
+        focus, which was solely on the children's Bible school, and inspired us
+        to start a Bible college. Following the Lord's prompting, we established
+        JCM Bible College in January 2020.
         <br></br>
         <div className="mt-5">
           {" "}
-          The college, which initially began with three teachers and 11
-          students, has now seen three batches successfully graduate. Many who
-          studied in this college are now being powerfully used by the Lord. In
-          collaboration with Build International, we continue to offer Bible
-          courses. The curriculum is designed to be simple and easy to
-          understand, and we are effectively implementing it. The classes are
-          conducted in an engaging manner through discussions, making them very
-          interesting.
+          &nbsp; &nbsp; &nbsp; &nbsp; The college, which initially began with
+          three teachers and 11 students, has now seen three batches
+          successfully graduate. Many who studied in this college are now being
+          powerfully used by the Lord. In collaboration with Build
+          International, we continue to offer Bible courses. The curriculum is
+          designed to be simple and easy to understand, and we are effectively
+          implementing it. The classes are conducted in an engaging manner
+          through discussions, making them very interesting.
         </div>
         <br></br>
-        The college currently operates with five professors, offering flexible
-        schedules for those who wish to study while working. Both in-person and
-        online classes are available. The courses are taught in Tamil,
-        Malayalam, and English. We are working with the vision of raising an
-        army for the Lord. We humbly seek your prayers for this mission. May the
-        Lord Himself bless everyone. Amen.
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The college currently
+        operates with five professors, offering flexible schedules for those who
+        wish to study while working. Both in-person and online classes are
+        available. The courses are taught in Tamil, Malayalam, and English. We
+        are working with the vision of raising an army for the Lord. We humbly
+        seek your prayers for this mission. May the Lord Himself bless everyone.
+        Amen.
       </div>
       {/* collage */}
 
@@ -72,7 +74,7 @@ const BibleCollege = () => {
         </div>
       </div>
 
-      <div className="mt-5 text-center text-sm md:text-lg mx-8 lg:text-xl xl:mx-50">
+      <div className="mt-5 text-justify text-sm md:text-lg mx-8 lg:text-xl xl:mx-50">
         JCM Bible College emphasizes simple and clear learning exercises,
         encourages interactive classroom discussions, and fosters spiritual
         growth. The college focuses on understanding the mysteries of God's
@@ -82,11 +84,14 @@ const BibleCollege = () => {
         students for ministry.
       </div>
 
-      <div className="mt-5 text-center text-sm md:text-lg mx-8 lg:text-xl xl:mx-50">
-        In May 2024, this institution was registered under the name “Religious
-        and Charitable Trust.” This institution has been operating effectively
-        for the past 31 years, and many have benefitted through it. God has
-        raised many workers for this ministry.
+      <div className="mt-5 text-justify text-sm md:text-lg mx-8 lg:text-xl xl:mx-50">
+        JCM Bible College is dedicated to proclaiming the Gospel through village
+        ministries and fulfilling God’s plan by planting churches. The college
+        offers specialized training for individuals seeking to start their own
+        businesses and conducts vacation Bible schools. It also organizes
+        medical camps and promotes community awareness programs to cultivate
+        good values and enhance the quality of life. Through its Bible school,
+        JCM effectively teaches the Word of God with excellence.
       </div>
       <div className="block md:block lg:hidden">
         <OurFaculties />
@@ -136,9 +141,8 @@ const BibleCollege = () => {
             Online Mode
           </p>
           <div className="flex flex-col gap-3 md:text-center lg:text-center lg:text-lg xl:text-xl">
-            <div className="ml-5">08:00 AM - 10:00 AM Monday</div>
-            <div className="ml-5">08:00 AM - 10:00 AM Wednesday</div>
-            <div className="ml-5">08:00 AM - 10:00 AM Friday</div>
+            <div className="ml-5">Every Friday 07:00 PM - 08:30 PM <br></br> & </div>
+            <div className="ml-5">Every Tuesday and Thursday<br></br> 07:30 PM - 08:30 PM </div>
           </div>
         </div>
 
@@ -146,10 +150,11 @@ const BibleCollege = () => {
           <p className="text-center text-lg font-bold md:text-xl lg:text-2xl">
             Offline Mode
           </p>
-          <div className="flex flex-col gap-3 md:text-center lg:text-center lg:text-lg xl:text-xl">
-            <div className="ml-5">08:00 AM - 10:00 AM Monday</div>
-            <div className="ml-5">08:00 AM - 10:00 AM Wednesday</div>
-            <div className="ml-5">08:00 AM - 10:00 AM Friday</div>
+          <div className=" gap-3 md:text-center lg:text-center lg:text-lg xl:text-xl">
+            <div className="ml-5">
+              Every Monday, Wednesday and Thursday<br></br> morning 10:00 AM -
+              12:00 PM <br></br> & <br></br>evening 06:00 PM - 08:00 PM
+            </div>
           </div>
         </div>
       </div>

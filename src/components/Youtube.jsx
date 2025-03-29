@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Youtube = () => {
-  // const [videos, setVideos] = useState([
+
   //   {
   //     id: 1,
   //     title: "Video 1",

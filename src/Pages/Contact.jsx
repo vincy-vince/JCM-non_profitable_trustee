@@ -3,6 +3,7 @@ import MenuBar from "../components/MenuBar";
 import Footer from "../components/Footer";
 import Location from "../components/Location";
 import { HashLink } from "react-router-hash-link";
+import gForm from "../../GoogleForm";
 const Contact = () => {
   const [ShowModal, setShowModal] = useState(false);
 
@@ -35,7 +36,6 @@ const Contact = () => {
           </button>
         </div>
       </div>
-
       <div className="flex flex-col justify-around gap- w-[auto] h-[450px] mx-10 mt-15 md:mt-20 lg:text-lg xl:text-xl xl:mx-40">
         <div className="text-md">
           If you have any questions, need more information, or would like to get
@@ -68,7 +68,6 @@ const Contact = () => {
           and for helping us make a difference!
         </div>
       </div>
-
       <div className="relative mt-68 md:mt-16 bg-indigo-100 h-[max] mx-0 pb-13 md:mx-10 lg:mx-10 xl:mx-40 rounded-lg px-5">
         <div className="text-center">
           <button className="font-bold text-xl bg-white p-1 rounded-b-2xl px-2">
@@ -93,7 +92,7 @@ const Contact = () => {
                 />
               </svg>
             </div>
-            <div className="text-sm">+91 85694231875</div>
+            <div className="text-sm">+91 8148833190</div>
           </div>
           <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-1/2 h-[60px] shadow-lg shadow-indigo-300/50">
             <svg
@@ -109,7 +108,7 @@ const Contact = () => {
                 fill="black"
               />
             </svg>
-            <div className="text-sm">www.judeachrist.org</div>
+            <div className="text-sm">judeachristministries@gmail.com</div>
           </div>
           <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-1/2  h-[max] shadow-lg shadow-indigo-300/50 ">
             <svg
@@ -126,13 +125,13 @@ const Contact = () => {
               />
             </svg>
             <div className="text-justify text-sm">
-              Plot no 29, sugavacharhiram, MDR 447, Kilacheri, Tamil Nadu 631402
+              No. 505/B1A, 1st Floor, Mappedu Village, Thiruvallur,
+              Tamilnadu-631 402
             </div>
           </div>
           <div className="absolute w-[50px]  bg-white h-[50px] rounded-full left-[-5%] bottom-5 md:left-[-3%] md:bottom-6 xl:left-[-1%]"></div>
         </div>
       </div>
-
       {/* <div className="w-[300px] h-[350px] mx-auto mt-30 md:w-[400px] md:h-[400px] xl:w-[600px] xl:h-[650px] hidden">
         <svg
           className="mx-auto"
@@ -382,8 +381,25 @@ const Contact = () => {
         </svg>
       </div> */}
 
-      <Location />
+      <div id="your_contact">
+        <div className="text-center mt-15 mb-6 font-bold text-md md:text-lg lg:text-xl xl:text-2xl">
+          Your Contact
+        </div>
 
+        <iframe
+          className="w-[640px] mx-auto"
+          src={gForm[0]}
+          width="640"
+          height="1400"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
+      </div>
+
+      <Location />
       <Footer />
     </div>
   );

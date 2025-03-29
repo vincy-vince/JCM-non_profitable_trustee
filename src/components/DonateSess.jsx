@@ -9,7 +9,6 @@ const DonateSess = () => {
 
   const handleMouseLeave = () => {
     setShowModal(true);
-   
   };
 
   let slides = [
@@ -108,11 +107,14 @@ const DonateSess = () => {
                 <div className="flex flex-col gap-4">
                   <div className="border-2 border-blue-950 bg-blue-950 rounded-sm p-3 text-white text-center">
                     {" "}
-                    <Link to="/contact"> Yes, I'm a donar from India</Link>
+                    <Link to="/contact#your_contact">
+                      {" "}
+                      Yes, I'm a donar from India
+                    </Link>
                   </div>
                   <div className="border-2 text-blue-950 border-blue-950 bg-blue-50 rounded-sm p-3 text-center">
                     {" "}
-                    <Link to="/contact">
+                    <Link to="/contact#your_contact">
                       No, I'm a foreigner donor outside India
                     </Link>
                   </div>

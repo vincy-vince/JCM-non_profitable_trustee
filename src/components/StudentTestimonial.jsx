@@ -12,18 +12,16 @@ const StudentTestimonial = () => {
           ></img>
         </div>
         <div className="text-center mx-5">
-          <span className="text-6xl text-black/30">❝</span> Lorem ipsum dolor
-          sit, amet consectetur adipisicing elit. Aliquid et blanditiis officia
-          quo culpa, vitae molestias excepturi fugit facilis itaque quibusdam
-          nisi! A eius nihil nobis soluta asperiores dolorem doloribus.
+          <span className="text-6xl text-black/30">❝</span> Glory to the Lord!
+          In 2020, by God's grace, I studied at JCM Bible College, where the
+          excellent classes greatly aided my spiritual growth and ministry. I am
+          grateful to the teachers and wish for JCM's continued expansion.
           <div className="text-6xl text-black/30">❞</div>
         </div>
       </div>
       <div className="flex flex-col">
-        <div className="text-center font-bold text-emerald-500">
-          Student Name
-        </div>
-        <div className="text-center">Degree</div>
+        <div className="text-center font-bold text-emerald-500">Bro. David</div>
+        <div className="text-center">Dth</div>
       </div>
     </div>,
     <div className="h-[40%] w-[90%] md:w-[60%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
@@ -36,18 +34,19 @@ const StudentTestimonial = () => {
           ></img>
         </div>
         <div className="text-center mx-5">
-          <span className="text-6xl text-black/30">❝</span> Lorem ipsum dolor
-          sit, amet consectetur adipisicing elit. Aliquid et blanditiis officia
-          quo culpa, vitae molestias excepturi fugit facilis itaque quibusdam
-          nisi! A eius nihil nobis soluta asperiores dolorem doloribus.
+          <span className="text-6xl text-black/30">❝</span> Glory to Jesus! In
+          2020, I completed a Diploma in Theology at JCM Bible College. The
+          insightful classes, especially by Pastor Paul, deepened my biblical
+          understanding and inspired me to study further. I am grateful to the
+          teachers and administration.
           <div className="text-6xl h-[5%] text-black/30">❞</div>
         </div>
       </div>
       <div className="flex flex-col">
         <div className="text-center font-bold text-emerald-500">
-          Student Name
+          Bro. Albert
         </div>
-        <div className="text-center">Degree</div>
+        <div className="text-center">Dth</div>
       </div>
     </div>,
     <div className="h-[40%] w-[90%] md:w-[60%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
@@ -60,92 +59,85 @@ const StudentTestimonial = () => {
           ></img>
         </div>
         <div className="text-center mx-5">
-          <span className="text-6xl text-black/30">❝</span> Lorem ipsum dolor
-          sit, amet consectetur adipisicing elit. Aliquid et blanditiis officia
-          quo culpa, vitae molestias excepturi fugit facilis itaque quibusdam
-          nisi! A eius nihil nobis soluta asperiores dolorem doloribus.
+          <span className="text-6xl text-black/30">❝</span> Glory to God! In 2020, I completed my DTh at JCM Bible College, which enriched my spiritual growth, strengthened my faith, and equipped me for effective ministry. I sincerely wish for JCM's continued success.
           <div className="text-6xl text-black/30">❞</div>
         </div>
       </div>
       <div className="flex flex-col">
         <div className="text-center font-bold text-emerald-500">
-          Student Name
+        Bro. Irudhaya Raj
         </div>
-        <div className="text-center">Degree</div>
+        <div className="text-center">DTh</div>
       </div>
     </div>,
-    <div className="h-[40%] w-[90%] md:w-[60%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
-      <div className="flex flex-col gap-10">
-        <div>
-          <img
-            className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
-            src="stGirlpf.jpeg"
-            alt="student"
-          ></img>
-        </div>
-        <div className="text-center mx-5">
-          <span className="text-6xl text-black/30">❝</span> Lorem ipsum dolor
-          sit, amet consectetur adipisicing elit. Aliquid et blanditiis officia
-          quo culpa, vitae molestias excepturi fugit facilis itaque quibusdam
-          nisi! A eius nihil nobis soluta asperiores dolorem doloribus.
-          <div className="text-6xl h-[5%] text-black/30">❞</div>
-        </div>
-      </div>
-      <div className="flex flex-col">
-        <div className="text-center font-bold text-emerald-500">
-          Student Name
-        </div>
-        <div className="text-center">Degree</div>
-      </div>
-    </div>,
-    <div className="h-[40%] w-[90%] md:w-[60%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
-      <div className="flex flex-col gap-10">
-        <div>
-          <img
-            className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
-            src="StdedumyProf.jpg"
-            alt="student"
-          ></img>
-        </div>
-        <div className="text-center mx-5">
-          <span className="text-6xl text-black/30">❝</span> Lorem ipsum dolor
-          sit, amet consectetur adipisicing elit. Aliquid et blanditiis officia
-          quo culpa, vitae molestias excepturi fugit facilis itaque quibusdam
-          nisi! A eius nihil nobis soluta asperiores dolorem doloribus.
-          <div className="text-6xl h-[5%] text-black/30">❞</div>
-        </div>
-      </div>
-      <div className="flex flex-col">
-        <div className="text-center font-bold text-emerald-500">
-          Student Name
-        </div>
-        <div className="text-center">Degree</div>
-      </div>
-    </div>,
-    <div className="h-[40%] w-[90%] md:w-[60%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
-      <div className="flex flex-col gap-10">
-        <div>
-          <img
-            className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
-            src="stGirlpf.jpeg"
-            alt="student"
-          ></img>
-        </div>
-        <div className="text-center mx-5">
-          <span className="text-6xl text-black/30">❝</span> Lorem ipsum dolor
-          sit, amet consectetur adipisicing elit. Aliquid et blanditiis officia
-          quo culpa, vitae molestias excepturi fugit facilis itaque quibusdam
-          nisi! A eius nihil nobis soluta asperiores dolorem doloribus.
-          <div className="text-6xl h-[5%] text-black/30">❞</div>
-        </div>
-      </div>
-      <div className="flex flex-col">
-        <div className="text-center font-bold text-emerald-500">
-          Student Name
-        </div>
-        <div className="text-center">Degree</div>
-      </div>
-    </div>,
+     <div className="h-[40%] w-[90%] md:w-[60%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
+     <div className="flex flex-col gap-10">
+       <div>
+         <img
+           className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
+           src="StdedumyProf.jpg"
+           alt="student"
+         ></img>
+       </div>
+       <div className="text-center mx-5">
+         <span className="text-6xl text-black/30">❝</span> Glory to the Lord!
+         In 2020, by God's grace, I studied at JCM Bible College, where the
+         excellent classes greatly aided my spiritual growth and ministry. I am
+         grateful to the teachers and wish for JCM's continued expansion.
+         <div className="text-6xl text-black/30">❞</div>
+       </div>
+     </div>
+     <div className="flex flex-col">
+       <div className="text-center font-bold text-emerald-500">Bro. David</div>
+       <div className="text-center">Dth</div>
+     </div>
+   </div>,
+   <div className="h-[40%] w-[90%] md:w-[60%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
+     <div className="flex flex-col gap-10">
+       <div>
+         <img
+           className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
+           src="stGirlpf.jpeg"
+           alt="student"
+         ></img>
+       </div>
+       <div className="text-center mx-5">
+         <span className="text-6xl text-black/30">❝</span> Glory to Jesus! In
+         2020, I completed a Diploma in Theology at JCM Bible College. The
+         insightful classes, especially by Pastor Paul, deepened my biblical
+         understanding and inspired me to study further. I am grateful to the
+         teachers and administration.
+         <div className="text-6xl h-[5%] text-black/30">❞</div>
+       </div>
+     </div>
+     <div className="flex flex-col">
+       <div className="text-center font-bold text-emerald-500">
+         Bro. Albert
+       </div>
+       <div className="text-center">Dth</div>
+     </div>
+   </div>,
+   <div className="h-[40%] w-[90%] md:w-[60%] flex flex-col gap-10 align-center mx-auto bg-gray-200/40 py-4 border-none rounded-lg">
+     <div className="flex flex-col gap-10">
+       <div>
+         <img
+           className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
+           src="StdedumyProf.jpg"
+           alt="student"
+         ></img>
+       </div>
+       <div className="text-center mx-5">
+         <span className="text-6xl text-black/30">❝</span> Glory to God! In 2020, I completed my DTh at JCM Bible College, which enriched my spiritual growth, strengthened my faith, and equipped me for effective ministry. I sincerely wish for JCM's continued success.
+         <div className="text-6xl text-black/30">❞</div>
+       </div>
+     </div>
+     <div className="flex flex-col">
+       <div className="text-center font-bold text-emerald-500">
+       Bro. Irudhaya Raj
+       </div>
+       <div className="text-center">DTh</div>
+     </div>
+   </div>,
   ];
   return (
     <div>

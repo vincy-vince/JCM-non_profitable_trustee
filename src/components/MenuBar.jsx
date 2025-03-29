@@ -48,7 +48,7 @@ const MenuBar = () => {
   return (
     <div
       className="relative"
-      onMouseLeave={() => closeMenubig(setToggle(!toggle))}
+      // onMouseLeave={() => closeMenubig(setToggle(!toggle))}
     >
       <div className=" w-auto mx-2 ">
         <div className=" fixed top-0 right-0 left-0 flex flex-row w-auto justify-between p-4 items-center gap-4 bg-white z-[10]">
