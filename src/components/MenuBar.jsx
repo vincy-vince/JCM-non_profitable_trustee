@@ -69,7 +69,7 @@ const MenuBar = () => {
           <div>
             <a href="/">
               <img
-                className="w-[70px] h-[70px] rounded-full"
+                className="w-[70px] h-[70px]"
                 src="public/jcmLOGO-square.png"
               />
             </a>
