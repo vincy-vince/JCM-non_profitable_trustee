@@ -13,24 +13,29 @@ const WomensMinistry = () => {
 
       <div
         id="womens-min"
-        className=" bg-[url(background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px] xl:h-[630px]"
+        className=" bg-[url(womenPic.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px] xl:h-[630px]"
       >
-        <h1 className=" text-2xl md:text-3xl lg:text-5xl font-extrabold">
+        <h1 className="text-white text-2xl md:text-3xl lg:text-5xl font-extrabold">
           {" "}
           Women's Ministry
         </h1>
         <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors lg:hidden">
           <HashLink to={"/#home"}>Donate</HashLink>
         </button>
-        <button className="w-max font-bold px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors hidden md:hidden lg:block xl:py-3 xl:px-4 lg:text-lg xl:text-xl">
+        <button className="w-max font-bold px-3 py-2 bg-blue-900 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-800 transition-colors hidden md:hidden lg:block xl:py-3 xl:px-4 lg:text-lg xl:text-xl">
           <HashLink to={"/#lghome"}>Donate</HashLink>
         </button>
       </div>
 
       <div className="mx-10 text-center my-15 lg:txt-lg xl:text-xl xl:mx-45">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, cum?
-        Molestiae, molestias in! Vel magni fugit expedita ea consequuntur
-        debitis quidem eos omnis, quae, facilis libero aliquam vero ut placeat?
+        <div className="text-lg md:text-xl lg:text-2xl font-bold mb-5">
+          Sisters' Gathering:
+        </div>
+        <div>
+          Special meetings for women are conducted every year. We have decided
+          to provide training to help them start self-employment ventures,
+          enabling them to improve their economic status.
+        </div>
       </div>
       {/* collage */}
 

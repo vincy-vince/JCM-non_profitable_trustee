@@ -12,15 +12,15 @@ const CBS = () => {
 
       <div
         id="cbs"
-        className=" bg-[url(background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px] xl:h-[630px]"
+        className=" bg-[url(CBSpic.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px] xl:h-[630px]"
       >
-        <h1 className=" text-2xl md:text-3xl lg:text-5xl font-extrabold">
+        <h1 className="text-white text-2xl md:text-3xl lg:text-5xl font-extrabold">
           Children Bible School
         </h1>
         <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors lg:hidden">
           <HashLink to={"/#home"}>Donate</HashLink>
         </button>
-        <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors font-bold hidden  md:hidden lg:block xl:py-3 xl:px-4 lg:text-lg xl:text-xl">
+        <button className="w-max px-3 py-2 bg-blue-900 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-800 transition-colors font-bold hidden  md:hidden lg:block xl:py-3 xl:px-4 lg:text-lg xl:text-xl">
           <HashLink to={"/#lghome"}>Donate</HashLink>
         </button>
       </div>
@@ -92,20 +92,22 @@ const CBS = () => {
           alt=""
         />
       </div>
-      <div>
+      <div className="mx-10 text-justify mt-15 lg:text-lg xl:text-xl xl:mx-45">
+        <div className="text-xl mb-10 md:text-2xl lg:text-3xl text-center mt-15 font-extrabold ">Youth Gatherings</div>
         <p>
           As the scripture says, "The young man cleanses his way," it is our
           duty to protect today’s youth community, which is heading towards
           destruction.
-          <br></br> Keeping this in mind, we, with the help of blessed
-          servants of God, conduct youth gatherings for them. Through these
-          gatherings, many young people have come and experienced deliverance.
-          They listen to the Word of God, and their hearts are turned towards
-          Him, leading them to make wise decisions for their lives. We ask that
-          they rise up as an army for God and pray for them. May the Lord
-          Himself bless them! Amen.
+          <br></br> Keeping this in mind, we, with the help of blessed servants
+          of God, conduct youth gatherings for them. Through these gatherings,
+          many young people have come and experienced deliverance. They listen
+          to the Word of God, and their hearts are turned towards Him, leading
+          them to make wise decisions for their lives. We ask that they rise up
+          as an army for God and pray for them. May the Lord Himself bless them!
+          Amen.
         </p>
       </div>
+      <div className="text-center my-10 text-xl">( collage picture )</div>
       <Location />
       <Footer />
     </div>

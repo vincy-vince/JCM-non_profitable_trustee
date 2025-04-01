@@ -10,24 +10,43 @@ const OurMinistries = () => {
         Our Ministries
       </h1>
 
-      <div className="flex flex-col gap-10">
-        <Link onClick={scrollToTop} to="/biblecollege#bible-coll">
-          <div className="bg-sky-300 w-auto h-54 border-none rounded-lg text-center mx-10 pt-5 md:h-64 lg:h-80 lg:w-[70%] lg:mx-auto xl:w-[900px] xl:w-auto xl:h-[400px] xl:mx-23 xl:text-xl font-bold">
-            Bible College
-          </div>
-        </Link>
+      <div className=" flex flex-col gap-10">
+        <div className="relative">
+          <Link onClick={scrollToTop} to="/biblecollege#bible-coll">
+            <img
+              className=" w-[90%] mx-auto h-80 rounded-lg md:h-64 lg:h-80 lg:w-[80%] lg:mx-auto xl:w-[100%] xl:h-[400px] xl:mx-auto "
+              src="public/bibleColl-pic.png"
+            />
+            <div className="absolute top-10 left-35 text-white text-center text-lg lg:text-xl xl:text-2xl font-bold ">
+              Bible College
+            </div>
+          </Link>
+        </div>
 
-        <div className="flex flex-col justify-around mb-10 w-auto mx-10 gap-5 md:flex-row lg:flex-row xl:mx-23 xl:gap-5 lg:justify-center xl:justify-center">
-          <Link onClick={scrollToTop} to="/cbs#cbs">
-            <div className="bg-pink-300 w-auto h-54 border-none rounded-lg text-center pt-5 md:h-64 md:w-[330px] lg:mx-0 lg:w-[350px] md:mx-0 md:justify-center xl:h-[300px] xl:w-[520px] xl:text-xl font-bold">
-              Children Bible Study
-            </div>
-          </Link>
-          <Link onClick={scrollToTop} to="/womensministry#womens-min">
-            <div className="bg-slate-300 w-auto h-54 border-none rounded-lg text-center pt-5 md:h-64 md:w-[330px] lg:mx-0 lg:w-[350px] md:mx-0 md:justify-center xl:h-[300px] xl:w-[520px] xl:text-xl font-bold">
-              Womens Fellowship
-            </div>
-          </Link>
+        <div className="flex flex-col justify-around mb-10 w-auto mx-10 gap-10 md:flex-row lg:flex-row xl:mx-23 xl:gap-5 lg:justify-center xl:justify-center">
+          <div className="relative">
+            <Link onClick={scrollToTop} to="/cbs#cbs">
+              <img
+                src="public/CBSpic.png"
+                className=" w-[100%] h-54 md:h-64 md:w-[330px] lg:mx-0 lg:w-[350px] md:mx-0 md:justify-center xl:h-[300px] xl:w-[520px] "
+              />
+              <div className="absolute bottom-10 left-25 text-white text-center text-lg lg:text-xl xl:text-2xl font-bold ">
+                {" "}
+                Children Bible Study
+              </div>
+            </Link>
+          </div>
+          <div className="relative">
+            <Link onClick={scrollToTop} to="/womensministry#womens-min">
+              <img
+                src="public/womenPic.png"
+                className="w-[100%] h-54 md:h-64 md:w-[330px] lg:mx-0 lg:w-[350px] md:mx-0 md:justify-center xl:h-[300px] xl:w-[520px]"
+              />
+              <div className="absolute bottom-10 left-25 text-white text-center text-lg lg:text-xl xl:text-2xl font-bold ">
+                Womens Fellowship
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

@@ -17,8 +17,8 @@ const JCMpage = () => {
   return (
     <div id="home">
       <MenuBar />
-      <div className=" bg-[url(background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 lg:h-[600px] xl:h-[630px]">
-        <h1 className=" text-2xl lg:text-6xl lg:font-semibold font-extrabold">
+      <div className=" bg-[url(jcm-BG.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 lg:h-[600px] xl:h-[630px]">
+        <h1 className=" text-2xl text-white lg:text-6xl lg:font-semibold font-extrabold">
           Judea Christ Ministries
         </h1>
         <button className=" bg-red-600  text-white  p-1  border-none  rounded-md  text-sm  mt-5  hidden">
@@ -33,7 +33,7 @@ const JCMpage = () => {
       </div>
 
       {/* About and Founder's Image */}
-      <div className=" mt-7 h-[600px] flex flex-col justify-evenly items-center p-5 mb-10 gap-10 md:flex-row lg:flex-row  relative z-[-1] xl:mx-30 xl:my-20">
+      <div className=" mt-7 h-max flex flex-col justify-evenly items-center p-5 mb-10 gap-10 md:flex-row lg:flex-row  relative z-[-1] xl:mx-30 xl:my-20">
         <div className="flex flex-col gap-4 md:gap-5 relative ">
           {/* <svg
             className="mr-14 md:mr-28 lg:mr-80"
@@ -78,16 +78,16 @@ const JCMpage = () => {
           src="stGirlpf.jpeg"
           alt=""
         />
-        <div className=" w-2/3 md:w-1/2 text-md text-justify md:mx-5 lg:mx-10 xl:mx-30 xl:text-xl">
+        <div className=" w-2/3 h-max md:w-1/2 text-md text-justify md:mx-5 lg:mx-10 xl:mx-30 xl:text-xl">
           <span className="font-bold">Judea Christ Ministries</span> warmly
           welcomes and greets you.
           <br></br>
           <p className="my-5">
-          This organization is actively committed to bringing Christ to
-          people through good deeds, based on the teachings of our Lord Jesus
-          Christ. It remains steadfast in understanding and proclaiming the
-          essence of the Scriptures without deviation, participating in the
-          building of God’s kingdom.
+            This organization is actively committed to bringing Christ to people
+            through good deeds, based on the teachings of our Lord Jesus Christ.
+            It remains steadfast in understanding and proclaiming the essence of
+            the Scriptures without deviation, participating in the building of
+            God’s kingdom.
           </p>
           <br /> This ministry, founded in January 2010, was established by Bro.
           K M Thomas Babu and his wife Suma Thomas, through the vision and
@@ -97,7 +97,7 @@ const JCMpage = () => {
           fulfillment of this vision. May the Lord Himself bless us all!
         </div>
       </div>
-      <div className=" text-lg  font-semibold  text-justify  flex  flex-col  gap-5  mx-10 xl:mx-70 xl:text-xl xl:text-center">
+      <div className=" text-lg text-justify flex flex-col gap-5 mx-10 xl:mx-70 xl:text-xl xl:text-center">
         <p className="mb-10 text-justify">
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Proclaiming the Gospel, making
           disciples of Christ, and guiding the younger generation on the right
@@ -145,7 +145,7 @@ const JCMpage = () => {
       {/* <div>
         <TrusteeMd className="hidden md:block lg:hidden"/>
       </div> */}
-      <div className="hidden md:hidden lg:block">
+      <div className="hidden md:block lg:block">
         <LgTrustee />
       </div>
       {/* volunteer */}

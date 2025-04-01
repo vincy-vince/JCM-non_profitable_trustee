@@ -12,12 +12,12 @@ const LgTrustee = () => {
 
   const trusty = [
     <div
-      className=" relative flex flex-col justify-center items-center mx-auto w-[100%] xl:h-[350px]"
+      className=" relative flex flex-col justify-center items-center mx-auto w-[100%] md:h-[350px] xl:h-[350px]"
       // onMouseEnter={handleMouseEnter}
       // onMouseLeave={handleMouseLeave}
     >
       <img
-        className=" w-full h-[550px] rounded-lg"
+        className=" w-full h-full rounded-lg"
         src="boy2.png"
         alt="profile"
       />
@@ -29,15 +29,13 @@ const LgTrustee = () => {
         <div className="text-lg font-extrabold mb-3 text-center mt-2">
           Sis. Suma Thomas
         </div>
-        <div className="text-lg font-extrabold mb-3 text-center">
-          M.Div
-        </div>
+        <div className="text-lg md:text-sm font-extrabold mb-3 text-center">M.Div</div>
       </div>
       {/* )} */}
     </div>,
-    <div className=" relative flex flex-col justify-center items-center mx-auto w-[100%] xl:h-[350px]">
+    <div className=" relative flex flex-col justify-center items-center mx-auto w-[100%] md:h-[350px] xl:h-[350px]">
       <img
-        className=" w-full h-[550px] rounded-lg"
+        className=" w-full h-full rounded-lg"
         src="Mr.Tijo.jpeg"
         alt="profile"
       />
@@ -48,14 +46,14 @@ const LgTrustee = () => {
         <div className="text-lg font-extrabold mb-3 text-center mt-2">
           Mr. Tijo K John
         </div>
-        <div className="text-lg font-extrabold mb-3 text-center">
-          MSc( Electronics),MTh{" "}
+        <div className="text-lg md:text-sm font-extrabold mb-3 text-center">
+          MSc( Electronics)
         </div>
       </div>
     </div>,
-    <div className=" relative flex flex-col justify-center items-center mx-auto w-[100%] xl:h-[350px]">
+    <div className=" relative flex flex-col justify-center items-center mx-auto w-[100%] md:h-[350px] xl:h-[350px]">
       <img
-        className=" w-full h-[550px] rounded-lg"
+        className=" w-full h-full rounded-lg"
         src="boy2.png"
         alt="profile"
       />
@@ -66,7 +64,7 @@ const LgTrustee = () => {
         <div className="text-lg font-extrabold mb-3 text-center mt-2">
           Mr. Arun Kumar
         </div>
-        <div className="text-lg font-extrabold mb-3 text-center">Trustee</div>
+        <div className="text-lg md:text-sm font-extrabold mb-3 text-center">Trustee</div>
       </div>
     </div>,
   ];
@@ -75,30 +73,8 @@ const LgTrustee = () => {
     return <div key={index}> {s} </div>;
   });
   return (
-    <div className="mx-auto w-[65%]">
-      <div className="flex  gap-10  mx-10 flex-row">
-        {trustydiv}{" "}
-        {/* {display && (
-          <div
-            id="hover"
-            className="absolute left-2 right-2 bottom-2 bg-white rounded-lg p-2 h-fit "
-          >
-            <div className="text-lg font-extrabold mb-3 text-center mt-2">
-              Tijo K John
-            </div>
-            <div className="text-lg font-extrabold mb-3 text-center">
-              MSc( Electronics),MTh{" "}
-            </div>
-            <div className="text-sm font-semibold text-center">
-              Praise the Lord! May God bless all the ministry work carried out
-              by JCM through village ministries and the Bible College. I pray
-              that JCM will be a light to many lives in darkness through its
-              ministries, bringing all glory to God in the name of Jesus Christ.
-              Amen!
-            </div>
-          </div>
-        )} */}
-      </div>
+    <div className="mx-auto w-[65%] md:w-[85%]">
+      <div className="flex  gap-10 flex-row justify-center">{trustydiv} </div>
     </div>
   );
 };

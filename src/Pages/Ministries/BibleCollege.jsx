@@ -17,15 +17,15 @@ const BibleCollege = () => {
       <MenuBar />
       <div
         id="bible-coll"
-        className=" bg-[url(background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 xl:h-[630px]"
+        className=" bg-[url(bibleColl-pic.png)] h-[400px] p-10 w-auto bg-cover  bg-no-repeat  mt-24  mx-4 xl:h-[630px]"
       >
-        <h1 className=" text-2xl  font-extrabold md:text-3xl lg:text-5xl ">
+        <h1 className=" text-2xl text-white font-extrabold md:text-3xl lg:text-5xl ">
           JCM Bible College
         </h1>
         <button className="w-max font-bold px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 lg:text-xl xl:text-2xl xl:px-4 xl:py-3 hover:bg-blue-900 transition-colors lg:hidden">
           <HashLink to={"/#home"}>Donate</HashLink>
         </button>
-        <button className="w-max font-bold px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 lg:text-xl xl:text-2xl xl:px-4 xl:py-3 hover:bg-blue-900 transition-colors hidden md:hidden lg:block">
+        <button className="w-max font-bold px-3 py-2 bg-blue-950 shadow-md shadow-blue-900 text-white border-none rounded-lg text-lg mt-10 lg:text-xl xl:text-2xl xl:px-4 xl:py-3 hover:bg-blue-900 transition-colors hidden md:hidden lg:block">
           <HashLink to={"/#lghome"}>Donate</HashLink>
         </button>
       </div>
@@ -141,8 +141,12 @@ const BibleCollege = () => {
             Online Mode
           </p>
           <div className="flex flex-col gap-3 md:text-center lg:text-center lg:text-lg xl:text-xl">
-            <div className="ml-5">Every Friday 07:00 PM - 08:30 PM <br></br> & </div>
-            <div className="ml-5">Every Tuesday and Thursday<br></br> 07:30 PM - 08:30 PM </div>
+            <div className="ml-5">
+              Every Friday 07:00 PM - 08:30 PM <br></br> &{" "}
+            </div>
+            <div className="ml-5">
+              Every Tuesday and Thursday<br></br> 07:30 PM - 08:30 PM{" "}
+            </div>
           </div>
         </div>
 

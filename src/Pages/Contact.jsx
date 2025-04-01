@@ -76,12 +76,10 @@ const Contact = () => {
         </div>
         <div className=" flex flex-col w-auto justify-around items-center mt-14 gap-5 pb-10 md:flex-row lg:flex-row md:mx-4 lg:mx-4">
           <div className="absolute w-[50px]  bg-white h-[50px] rounded-full right-[-7%] top-7 md:right-[-3%] md:top-4 xl:right-[-1%]"></div>
-          <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-1/2 h-[60px] shadow-lg shadow-indigo-300/50">
+          <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-1/2 h-[60px] shadow-lg shadow-indigo-300/50 border-l-2 border-b-2 border-transparent hover:border-l-2 hover:border-b-2 hover:border-blue-700 transition-all">
             <div>
               <svg
                 className="text-sm w-[20px]"
-                // width="23"
-                // height="23"
                 viewBox="0 0 23 23"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -94,11 +92,9 @@ const Contact = () => {
             </div>
             <div className="text-sm">+91 8148833190</div>
           </div>
-          <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-1/2 h-[60px] shadow-lg shadow-indigo-300/50">
+          <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-1/2 h-[60px] shadow-lg shadow-indigo-300/50 border-l-2 border-b-2 border-transparent hover:border-l-2 hover:border-b-2 hover:border-blue-700 transition-all">
             <svg
               className="text-sm w-[20px]"
-              // width="28"
-              // height="28"
               viewBox="0 0 28 28"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -108,13 +104,11 @@ const Contact = () => {
                 fill="black"
               />
             </svg>
-            <div className="text-sm">judeachristministries@gmail.com</div>
+            <div className="text-sm">judeachristministry@gmail.com</div>
           </div>
-          <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-1/2  h-[max] shadow-lg shadow-indigo-300/50 ">
+          <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-1/2  h-[max] shadow-lg shadow-indigo-300/50 border-l-2 border-b-2 border-transparent hover:border-l-2 hover:border-b-2 hover:border-blue-700 transition-all ">
             <svg
               className="text-sm w-[50px] xl:w-[25px] xl:my-3"
-              // width="28"
-              // height="28"
               viewBox="0 0 28 28"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -387,13 +381,13 @@ const Contact = () => {
         </div>
 
         <iframe
-          className="w-[640px] mx-auto"
+          className="w-[320px] h-[1800px] mx-auto md:w-[640px] md:mx-auto lg:h-[1400px]"
           src={gForm[0]}
           width="640"
           height="1400"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
         >
           Loading…
         </iframe>
