@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 const MenuBar = () => {
   const [toggle, setToggle] = useState(false);
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
   let [menu, setMenu] = useState(false);
   function showToggle() {
     const Ministries = document.getElementById("ministries");
@@ -31,7 +32,7 @@ const MenuBar = () => {
   function closeMenubig() {
     const Navbar = document.getElementById("nav");
     if (!toggle == false) {
-      Navbar.style.display = "none";
+   //   Navbar.style.display = "none";
     }
   }
 
@@ -45,8 +46,12 @@ const MenuBar = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
+
   return (
-    <div className="relative">
+    <div
+      className="relative"
+      // onMouseLeave={() => closeMenubig(setToggle(!toggle))}
+    >
       <div className=" w-auto mx-2 ">
         <div className=" fixed top-0 right-0 left-0 flex flex-row w-auto justify-between p-4 items-center gap-4 bg-white z-[10]">
           <div className=" block md:hidden lg:hidden">
