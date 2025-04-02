@@ -70,7 +70,7 @@ const Contact = () => {
       </div>
       <div className="relative mt-68 md:mt-16 border-indigo-200 border-2 bg-indigo-100 h-[max] mx-0 pb-13 md:mx-10 lg:mx-10 xl:mx-40 rounded-lg px-5">
         <div className="text-center">
-          <button className="font-bold text-xl bg-white p-1 rounded-b-2xl px-2">
+          <button className="font-bold text-xl bg-white p-1 rounded-b-2xl border-indigo-200 shadow-md shadow-indigo-200 border-b-2 px-2">
             Contact Us
           </button>
         </div>

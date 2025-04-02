@@ -98,7 +98,7 @@ const MenuBar = () => {
               <div
                 id="nav"
                 onMouseLeave={() => closeMenubig(setToggle(!toggle))}
-                className="hidden flex-col absolute top-15  text-md bg-white rounded-b-md border-b-2 "
+                className="hidden flex-col absolute top-19 text-md bg-white rounded-b-md border-b-2 "
               >
                 <div className="p-2 hover:bg-blue-900 hover:text-white transition-all lg:text-lg xl:text-xl">
                   <Link onClick={scrollToTop} to="/biblecollege#bible-coll">
