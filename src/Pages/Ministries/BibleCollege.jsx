@@ -62,12 +62,14 @@ const BibleCollege = () => {
           <img className="rounded-lg w-1/2 mx-auto" src="graduate.webp"></img>
           <img className="rounded-lg w-1/2 mx-auto" src="graduate.webp"></img>
         </div>
-
+      </div>
+      <div>
         <img
           className="rounded-lg w-[80%] mx-auto h-[300px] my-4 xl:h-[500px]"
-          src="graduate.webp"
+          src="public/college-collage1.jpeg"
         ></img>
-
+      </div>
+      <div className="xl:mx-40">
         <div className="flex flex-row w-[80%] mx-auto gap-4 mb-15">
           <img className="rounded-lg w-1/2 mx-auto" src="graduate.webp"></img>
           <img className="rounded-lg w-1/2 mx-auto" src="graduate.webp"></img>
@@ -117,7 +119,7 @@ const BibleCollege = () => {
         </p>
         <img
           className="w-[80%] mx-auto xl:h-[550px] xl:w-[1100px]"
-          src="graduate.webp"
+          src="public/graduation-2019.jpg"
           alt=""
         />
       </div>
@@ -128,7 +130,7 @@ const BibleCollege = () => {
         </p>
         <img
           className="w-[80%] mx-auto xl:h-[550px] xl:w-[1100px]"
-          src="graduate.webp"
+          src="public/2023-graduates.jpeg"
           alt=""
         />
       </div>

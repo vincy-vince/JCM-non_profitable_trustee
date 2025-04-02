@@ -7,7 +7,7 @@ const StudentTestimonial = () => {
         <div>
           <img
             className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
-            src="StdedumyProf.jpg"
+            src="public/bro-david.jpeg"
             alt="student"
           ></img>
         </div>
@@ -29,7 +29,7 @@ const StudentTestimonial = () => {
         <div>
           <img
             className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
-            src="stGirlpf.jpeg"
+            src="public/bro-albert.jpeg"
             alt="student"
           ></img>
         </div>
@@ -54,7 +54,7 @@ const StudentTestimonial = () => {
         <div>
           <img
             className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
-            src="StdedumyProf.jpg"
+            src="public/bro-irudhayaraj.jpeg"
             alt="student"
           ></img>
         </div>
@@ -75,7 +75,7 @@ const StudentTestimonial = () => {
        <div>
          <img
            className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
-           src="StdedumyProf.jpg"
+           src="public/bro-david.jpeg"
            alt="student"
          ></img>
        </div>
@@ -97,7 +97,7 @@ const StudentTestimonial = () => {
        <div>
          <img
            className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
-           src="stGirlpf.jpeg"
+           src="public/bro-albert.jpeg"
            alt="student"
          ></img>
        </div>
@@ -122,7 +122,7 @@ const StudentTestimonial = () => {
        <div>
          <img
            className="w-[100px] h-[100px] mx-auto border-white border-2 rounded-full"
-           src="StdedumyProf.jpg"
+           src="public/bro-irudhayaraj.jpeg"
            alt="student"
          ></img>
        </div>

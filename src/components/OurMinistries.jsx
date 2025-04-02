@@ -14,7 +14,7 @@ const OurMinistries = () => {
         <div className="relative">
           <Link onClick={scrollToTop} to="/biblecollege#bible-coll">
             <img
-              className=" w-[90%] mx-auto h-80 rounded-lg md:h-64 lg:h-80 lg:w-[80%] lg:mx-auto xl:w-[100%] xl:h-[400px] xl:mx-auto "
+              className=" w-[90%] mx-auto h-80 rounded-lg md:h-64 lg:h-80 lg:w-[80%] lg:mx-auto xl:w-[80%] xl:h-[400px] xl:mx-auto "
               src="public/bibleColl-pic.png"
             />
             <div className="absolute top-10 left-35 text-white text-center text-lg lg:text-xl xl:text-2xl font-bold ">

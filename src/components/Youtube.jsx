@@ -10,17 +10,17 @@ const Youtube = () => {
     {
       id: 2,
       title: "Play",
-      src: "https://www.youtube.com/embed/KhTgVrIvoBg?si=hEdy9so1Xrrvjkz1?rel=0",
+      src: "https://www.youtube.com/embed/KhTgVrIvoBg?si=hEdy9so1Xrrvjkz1&autoplay=0?controls=0",
     },
     {
       id: 3,
       title: "Play",
-      src: "https://www.youtube.com/embed/9OF7uBaib4w?si=eg0SwuN-pDLHil02?rel=0",
+      src: "https://www.youtube.com/embed/9OF7uBaib4w?si=eg0SwuN-pDLHil02&autoplay=0?controls=0",
     },
     {
       id: 4,
       title: "Play",
-      src: "https://www.youtube.com/embed/2BDm-7-_cUs?si=HIzxMqLRDVBRuxqI?rel=0",
+      src: "https://www.youtube.com/embed/2BDm-7-_cUs?si=HIzxMqLRDVBRuxqI&autoplay=0?controls=0",
     },
   ]);
 

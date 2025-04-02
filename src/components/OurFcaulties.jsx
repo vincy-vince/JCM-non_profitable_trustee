@@ -26,15 +26,15 @@ const OurFaculties = () => {
     >
       <img
         className="w-full h-[40%] rounded-t-lg"
-        src="dummy-prof2.webp"
+        src="public/sis-Suma.jpeg"
         alt="profile"
       />
       <div className="absolute bottom-2 left-2 right-2 bg-white rounded-lg">
         <div className="text-sm font-extrabold mb-3 text-center mt-3">
-          Tijo K John
+          Sis. Suma Thomas
         </div>
         <div className="text-sm font-extrabold mb-3 text-center">
-          MSc( Electronics),MTh{" "}
+          M.div
         </div>
       </div>
     </div>,
@@ -49,10 +49,10 @@ const OurFaculties = () => {
       />
       <div className="absolute bottom-2 left-2 right-2 bg-white rounded-lg">
         <div className="text-sm font-extrabold mb-3 text-center mt-3">
-          Tijo K John
+          Pr. Robbin Dhevadas
         </div>
         <div className="text-sm font-extrabold mb-3 text-center">
-          MSc( Electronics),MTh{" "}
+          Bca
         </div>
       </div>
     </div>,

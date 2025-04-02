@@ -18,7 +18,7 @@ const LgTrustee = () => {
     >
       <img
         className=" w-full h-full rounded-lg"
-        src="boy2.png"
+        src="public/sis-Suma.jpeg"
         alt="profile"
       />
       {/* {display && ( */}
@@ -54,7 +54,7 @@ const LgTrustee = () => {
     <div className=" relative flex flex-col justify-center items-center mx-auto w-[100%] md:h-[350px] xl:h-[350px]">
       <img
         className=" w-full h-full rounded-lg"
-        src="boy2.png"
+        src="public/Bro-Arun.jpeg"
         alt="profile"
       />
       <div

@@ -46,10 +46,7 @@ const MenuBar = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
   return (
-    <div
-      className="relative"
-      // onMouseLeave={() => closeMenubig(setToggle(!toggle))}
-    >
+    <div className="relative">
       <div className=" w-auto mx-2 ">
         <div className=" fixed top-0 right-0 left-0 flex flex-row w-auto justify-between p-4 items-center gap-4 bg-white z-[10]">
           <div className=" block md:hidden lg:hidden">
@@ -90,7 +87,6 @@ const MenuBar = () => {
               <li
                 id="our-Mini"
                 onMouseEnter={() => openMenubig(setToggle(!toggle))}
-                // onClick={() => closeMenubig(setToggle(!toggle))}
                 className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md xl:text-xl"
               >
                 Our Ministries
@@ -100,12 +96,11 @@ const MenuBar = () => {
                 onMouseLeave={() => closeMenubig(setToggle(!toggle))}
                 className="hidden flex-col absolute top-19 text-md bg-white rounded-b-md border-b-2 "
               >
-                <div className="p-2 hover:bg-blue-900 hover:text-white transition-all lg:text-lg xl:text-xl">
-                  <Link onClick={scrollToTop} to="/biblecollege#bible-coll">
+                <Link onClick={scrollToTop} to="/biblecollege#bible-coll">
+                  <div className="p-2 hover:bg-blue-900 hover:text-white transition-all lg:text-lg xl:text-xl">
                     Bible College
-                  </Link>
-                </div>
-
+                  </div>
+                </Link>
                 <Link onClick={scrollToTop} to="/cbs#cbs">
                   {" "}
                   <div className="p-2 hover:bg-blue-900 hover:text-white transition-all lg:text-lg xl:text-xl">
@@ -159,7 +154,12 @@ const MenuBar = () => {
               </svg>
             </div>
             <div>
-              <a href="/">LOGO</a>
+              <a href="/">
+                <img
+                  className="w-[60px] h-[60px]"
+                  src="public/jcmLOGO-square.png"
+                />
+              </a>
             </div>
           </div>
 
