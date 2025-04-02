@@ -146,13 +146,13 @@ const LgStudentTest = () => {
     </div>,
   ];
   return (
-    <div className="xl:mx-50">
+    <div className="xl:mx-35">
       <p className="text-center text-xl md:text-2xl lg:text-2xl font-extrabold mt-20 mb-8">
         Student Testimonials
       </p>
 
       <Carousel2 slides={slides} />
-      <div className="flex flex-row gap-4 mx-4 lg:mx-10"></div>
+      {/* <div className="flex flex-row gap-4 mx-4 lg:mx-10"></div> */}
     </div>
   );
 };
