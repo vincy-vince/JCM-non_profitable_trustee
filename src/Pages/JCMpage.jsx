@@ -75,7 +75,7 @@ const JCMpage = () => {
         </div>
         <img
           className=" w-1/2 h-[50%] top-8 rounded-lg md:w-[40%] md:h-[50%] lg:w-[30%] mx-5"
-          src="stGirlpf.jpeg"
+          src="public/sis-Suma.jpeg"
           alt=""
         />
         <div className=" w-2/3 h-max md:w-1/2 text-md text-justify md:mx-5 lg:mx-10 xl:mx-30 xl:text-xl">

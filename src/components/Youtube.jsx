@@ -53,14 +53,14 @@ const Youtube = () => {
         {videos.slice(1).map((video, index) => (
           <div
             key={video.id}
-            className="cursor-pointer w-full mx-auto sm:w-1/2 md:w-1/3 lg:w-1/4"
+            className="relative cursor-pointer w-full mx-auto sm:w-1/2 md:w-1/3 lg:w-1/4"
             onClick={() => swapVideos(index + 1)} // Pass the index (starting from 1)
           >
-            <h3 className="text-md md:text-lg font-semibold border-x-1 border-t-1 border-red-600 bg-red-600 text-white rounded-t-lg">
+            <h3 className=" text-md md:text-lg font-semibold border-x-1 p-2 border-t-1 border-red-600 bg-red-600 text-white rounded-t-lg">
               {video.title}
             </h3>
             <iframe
-              className="w-full rounded-b-lg"
+              className=" w-full rounded-b-lg "
               height="150"
               src={video.src}
               title={video.title}
@@ -68,6 +68,7 @@ const Youtube = () => {
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
+            <div className="absolute top-0 left-0 right-0 bottom-0 bg-white/10"></div>
           </div>
         ))}
       </div>
