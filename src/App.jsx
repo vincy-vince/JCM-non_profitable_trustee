@@ -6,7 +6,9 @@ import BibleCollege from "./Pages/Ministries/BibleCollege";
 import CBS from "./Pages/Ministries/CBS";
 import WomensMinistry from "./Pages/Ministries/WomensMinistry";
 import Resources from "./Pages/Resources";
+import { useEffect } from "react";
 const App = () => {
+  
   return (
     <Routes>
       <Route path="/" element={<JCMpage />} />

@@ -113,18 +113,7 @@ const BibleCollege = () => {
 
       {/* graduation */}
 
-      <div className="flex flex-col gap-6">
-        <p className="text-xl md:text-2xl lg:text-3xl text-center mt-15 font-extrabold ">
-          Batch 2019 Graduation
-        </p>
-        <img
-          className="w-[80%] mx-auto xl:h-[550px] xl:w-[1100px]"
-          src="public/graduation-2019.jpg"
-          alt=""
-        />
-      </div>
-
-      <div className="flex flex-col gap-6 mb-8">
+      <div className="flex flex-col gap-6 mt-8 mb-8">
         <p className="text-xl md:text-2xl lg:text-3xl text-center mt-15 font-extrabold ">
           Batch 2023 Graduation
         </p>
@@ -135,6 +124,16 @@ const BibleCollege = () => {
         />
       </div>
 
+      <div className="flex flex-col gap-6 mb-8">
+        <p className="text-xl md:text-2xl lg:text-3xl text-center mt-15 font-extrabold ">
+          Batch 2019 Graduation
+        </p>
+        <img
+          className="w-[80%] mx-auto xl:h-[550px] xl:w-[1100px]"
+          src="public/graduation-2019.jpg"
+          alt=""
+        />
+      </div>
       {/* Mode of teaching */}
 
       <div className="flex flex-col gap-4 mx-10 md:flex-row lg:flex-row xl:w-[62%] xl:mx-auto">

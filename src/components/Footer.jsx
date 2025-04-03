@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
   return (
     <div className="flex flex-col justify-around mt-30 bg-slate-300 pt-6 pb-6 wrap gap-10 w-auto lg:flex-row lg:justify-evenly xl:justify-evenly">
       <div className="flex flex-row sm:mx-10 md:mx-10 gap-3 justify-around lg:flex-row lg:mx-0 lg:gap-20 xl:gap-50">
@@ -75,10 +78,14 @@ const Footer = () => {
         <div className="text-sm flex flex-col gap-3">
           <div className="font-bold lg:text-lg xl:text-xl">Navigate</div>
           <div className="text-sm lg:text-lg ">
-            <Link to="/">Home</Link>
+            <Link onClick={scrollToTop} to="/">
+              Home
+            </Link>
           </div>
           <div className="text-sm lg:text-lg ">
-            <HashLink to="/contact#contact">Contact us</HashLink>
+            <Link onClick={scrollToTop} to="/contact#contact">
+              Contact us
+            </Link>
           </div>
           <div className="text-sm lg:text-lg ">
             <a href="#">Our Ministries</a>
@@ -90,16 +97,20 @@ const Footer = () => {
           </div>
           <div className="text-sm lg:text-lg ">
             {" "}
-            <HashLink to="/biblecollege#bible-coll">Bible College</HashLink>
+            <Link onClick={scrollToTop} to="/biblecollege#bible-coll">
+              Bible College
+            </Link>
           </div>
           <div className="text-sm lg:text-lg ">
-            <HashLink to="/cbs#cbs">
+            <Link onClick={scrollToTop} to="/cbs#cbs">
               (CBS) children <br />
               Bible Study
-            </HashLink>
+            </Link>
           </div>
           <div className="text-sm lg:text-lg ">
-            <HashLink to="/womensministry#womens-min">Womens Ministry</HashLink>
+            <Link onClick={scrollToTop} to="/womensministry#womens-min">
+              Womens Ministry
+            </Link>
           </div>
         </div>
       </div>
@@ -108,10 +119,14 @@ const Footer = () => {
         <div className=" text-sm flex flex-col gap-3">
           <div className="font-bold lg:text-lg xl:text-xl">Resources</div>
           <div className="text-sm lg:text-lg ">
-            <HashLink to="/resources#resources">Privacy Policy</HashLink>
+            <Link onClick={scrollToTop} to="/resources#resources">
+              Privacy Policy
+            </Link>
           </div>
           <div className="text-sm lg:text-lg ">
-            <HashLink to="/resources#resources">Refund Policy</HashLink>
+            <Link onClick={scrollToTop} to="/resources#resources">
+              Refund Policy
+            </Link>
           </div>
         </div>
         <div className="flex flex-row gap-5">

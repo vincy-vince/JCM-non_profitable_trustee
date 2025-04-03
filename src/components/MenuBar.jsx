@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 const MenuBar = () => {
   const [toggle, setToggle] = useState(false);
-  const [isDropdownVisible, setDropdownVisible] = useState(false);
   let [menu, setMenu] = useState(false);
   function showToggle() {
     const Ministries = document.getElementById("ministries");
@@ -29,11 +28,10 @@ const MenuBar = () => {
       Navbar.style.display = "flex";
     }
   }
+
   function closeMenubig() {
     const Navbar = document.getElementById("nav");
-    if (!toggle == false) {
-   //   Navbar.style.display = "none";
-    }
+    Navbar.style.display = "none";
   }
 
   function closeMenu() {
@@ -77,64 +75,66 @@ const MenuBar = () => {
             </a>
           </div>
 
-          <ul className=" flex-row  items-center justify-around hidden md:flex lg:flex md:gap-3 lg:gap-4">
-            <li className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md xl:text-xl">
-              <Link onClick={scrollToTop} to="/#home">
-                Home
-              </Link>
-            </li>
-            <li className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md xl:text-xl">
-              <Link onClick={scrollToTop} to="/contact#contact">
-                Contact us
-              </Link>
-            </li>
-            <div className=" flex flex-col">
-              <li
-                id="our-Mini"
-                onMouseEnter={() => openMenubig(setToggle(!toggle))}
-                className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md xl:text-xl"
-              >
-                Our Ministries
+          <ul className="hidden flex-row items-center justify-around md:flex lg:flex md:gap-20 lg:gap-60 xl:gap-75">
+            <div className="flex justify-center md:gap-5 lg:gap-10 xl:gap-12">
+              <li className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md xl:text-xl">
+                <Link onClick={scrollToTop} to="/#home">
+                  Home
+                </Link>
               </li>
-              <div
-                id="nav"
-                onMouseLeave={() => closeMenubig(setToggle(!toggle))}
-                className="hidden flex-col absolute top-19 text-md bg-white rounded-b-md border-b-2 "
-              >
-                <Link onClick={scrollToTop} to="/biblecollege#bible-coll">
-                  <div className="p-2 hover:bg-blue-900 hover:text-white transition-all lg:text-lg xl:text-xl">
-                    Bible College
-                  </div>
+              <li className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md xl:text-xl">
+                <Link onClick={scrollToTop} to="/contact#contact">
+                  Contact us
                 </Link>
-                <Link onClick={scrollToTop} to="/cbs#cbs">
-                  {" "}
-                  <div className="p-2 hover:bg-blue-900 hover:text-white transition-all lg:text-lg xl:text-xl">
-                    (CBS) children <br />
-                    Bible Study
-                  </div>
-                </Link>
+              </li>
+              <div className=" flex flex-col">
+                <li
+                  id="our-Mini"
+                  onMouseEnter={() => openMenubig(setToggle(!toggle))}
+                  className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md xl:text-xl"
+                >
+                  Our Ministries
+                </li>
+                <div
+                  id="nav"
+                  onMouseLeave={() => closeMenubig(setToggle(!toggle))}
+                  className="hidden flex-col absolute top-19 text-md bg-white rounded-b-md border-b-2 "
+                >
+                  <Link onClick={scrollToTop} to="/biblecollege#bible-coll">
+                    <div className="p-2 hover:bg-blue-900 hover:text-white transition-all lg:text-lg xl:text-xl">
+                      Bible College
+                    </div>
+                  </Link>
+                  <Link onClick={scrollToTop} to="/cbs#cbs">
+                    {" "}
+                    <div className="p-2 hover:bg-blue-900 hover:text-white transition-all lg:text-lg xl:text-xl">
+                      (CBS) children <br />
+                      Bible Study
+                    </div>
+                  </Link>
 
-                <Link onClick={scrollToTop} to="/womensministry#womens-min">
-                  <div className="p-2 hover:bg-blue-900 hover:text-white transition-all lg:text-lg xl:text-xl rounded-b-md">
-                    Womens Ministry
-                  </div>
-                </Link>
+                  <Link onClick={scrollToTop} to="/womensministry#womens-min">
+                    <div className="p-2 hover:bg-blue-900 hover:text-white transition-all lg:text-lg xl:text-xl rounded-b-md">
+                      Womens Ministry
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
-          </ul>
-
-          {/* For Xs screen (370px) */}
-          <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg font-bold hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 md:inline-block lg:hidden">
-            <HashLink to={"/#home"}>Donate</HashLink>
-          </button>
-          <HashLink to={"/#lghome"}>
-            <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg font-bold hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 md:hidden lg:block lg:text-lg xl:text-xl">
-              Donate
+            <HashLink to={"/#lghome"}>
+              <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg font-bold hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 md:hidden lg:block lg:text-lg xl:text-xl">
+                Donate
+              </button>
+            </HashLink>
+            <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg font-bold hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 md:inline-block lg:hidden">
+              <HashLink to={"/#home"}>Donate</HashLink>
             </button>
-          </HashLink>
+          </ul>
         </div>
 
         {/* for mobile design => XS size (370px)*/}
+
+        {/* For Xs screen (370px) */}
 
         <div
           id="MenuBar-div"

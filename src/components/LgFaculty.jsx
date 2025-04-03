@@ -61,7 +61,7 @@ const LgFaculty = () => {
         </div>
 
         <div
-          key={3}
+          key={4}
           className="relative flex flex-col justify-center items-center border border-black rounded-lg mx-auto w-[50%] h-max xl:w-[400px] xl:h-[360px]"
         >
           <img
@@ -78,7 +78,7 @@ const LgFaculty = () => {
         </div>
 
         <div
-          key={1}
+          key={5}
           className="relative flex flex-col justify-center items-center border border-black rounded-lg mx-auto w-[50%] h-max xl:w-[400px] xl:h-[360px]"
         >
           <img

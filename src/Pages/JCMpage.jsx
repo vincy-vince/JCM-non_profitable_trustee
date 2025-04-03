@@ -33,52 +33,13 @@ const JCMpage = () => {
       </div>
 
       {/* About and Founder's Image */}
-      <div className=" mt-7 h-max flex flex-col justify-evenly items-center p-5 mb-10 gap-10 md:flex-row lg:flex-row  relative z-[-1] xl:mx-30 xl:my-20">
-        <div className="flex flex-col gap-4 md:gap-5 relative ">
-          {/* <svg
-            className="mr-14 md:mr-28 lg:mr-80"
-            width="247"
-            height="192"
-            viewBox="0 0 247 192"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="2"
-              y="2"
-              width="243"
-              height="188"
-              rx="6"
-              stroke="#010E54"
-              strokeWidth="4"
-            />
-          </svg>
-
-          <svg
-            className="ml-47 h-[65px] w-[95px] md:ml-64 md:mt-5 lg:ml-90 lg:mt-5"
-            width="87"
-            height="70"
-            viewBox="0 0 87 70"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="2"
-              y="2"
-              width="83"
-              height="66"
-              rx="6"
-              stroke="#010E54"
-              strokeWidth="4"
-            />
-          </svg> */}
-        </div>
+      <div className=" mt-7 h-max flex flex-col justify-center items-center p-5 mb-10 gap-10 md:flex-row lg:flex-row relative z-[-1] xl:mx-30 xl:my-20 xl:gap-2">
         <img
-          className=" w-1/2 h-[50%] top-8 rounded-lg md:w-[40%] md:h-[50%] lg:w-[30%] mx-5"
+          className=" w-1/2 h-[50%] top-8 rounded-lg md:w-[40%] md:h-[50%] lg:w-[30%] xl:h-[430px] "
           src="public/sis-Suma.jpeg"
           alt=""
         />
-        <div className=" w-2/3 h-max md:w-1/2 text-md text-justify md:mx-5 lg:mx-10 xl:mx-30 xl:text-xl">
+        <div className=" w-2/3 h-max md:w-1/2 text-md text-justify md:mx-5 lg:mx-10 xl:mx-10 xl:text-xl">
           <span className="font-bold">Judea Christ Ministries</span> warmly
           welcomes and greets you.
           <br></br>

@@ -1,31 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
 const LgDonate = () => {
   const [ShowModal, setShowModal] = useState(false);
-  
-  const container = document.getElementById("scrollContainer");
 
-  document.addEventListener("mousemove", (event) => {
-    const { clientX, clientWidth } = document.documentElement;
-
-    const scrollSpeed = 5; // Adjust speed as needed
-
-    if (clientX < 100) {
-      // Scroll left if mouse is near the left edge
-      container.scrollLeft -= scrollSpeed;
-    } else if (clientX > clientWidth - 100) {
-      // Scroll right if mouse is near the right edge
-      container.scrollLeft += scrollSpeed;
-    }
-  });
   return (
-    <div className="ml-10">
-      <h1 className="mt-20 text-2xl font-extrabold text-center mb-20 xl:text-3xl">
+    <div>
+      <h1 className=" mt-20 text-2xl font-extrabold text-center mb-20 xl:text-3xl">
         Donate now
       </h1>
-      <div id="scrollContainer" className="w-full overflow-x-auto whitespace-nowrap scroll-smooth scrollbar-hide">
-        <div className=" flex space-x-4 items-center flex-row gap-3 w-[90%] xl:w-max xl:mx-auto mx-auto">
+      <div
+        id="scrollContainer"
+        className="ml-10 overflow-auto  scroll-smooth scrollbar-hide transparent-scrollbar "
+      >
+        <div className="flex space-x-8 items-center flex-row gap-3 w-[100%] xl:w-max xl:mx-auto mx-auto">
           <div className="bg-emerald-600 w-[60%] h-fit mx-4 border-none rounded-lg text-left py-5 ">
             <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
               <div className="font-bold text-lg">Empower her</div>
@@ -59,8 +47,8 @@ const LgDonate = () => {
                         size={30}
                       ></IoClose>
                     </div>
-                    <div className=" flex flex-col gap-3">
-                      <div className="text-center mt-5">
+                    <div className="text-black flex flex-col gap-3">
+                      <div className="text-center ">
                         {" "}
                         Are you a donar donating from India?
                       </div>
@@ -118,8 +106,8 @@ const LgDonate = () => {
                         size={30}
                       ></IoClose>
                     </div>
-                    <div className=" flex flex-col gap-3">
-                      <div className="text-center mt-5">
+                    <div className="text-black  flex flex-col gap-3">
+                      <div className="text-center ">
                         {" "}
                         Are you a donar donating from India?
                       </div>
@@ -177,8 +165,8 @@ const LgDonate = () => {
                         size={30}
                       ></IoClose>
                     </div>
-                    <div className=" flex flex-col gap-3">
-                      <div className="text-center mt-5">
+                    <div className="text-black  flex flex-col gap-3">
+                      <div className="text-center ">
                         {" "}
                         Are you a donar donating from India?
                       </div>
@@ -236,8 +224,8 @@ const LgDonate = () => {
                         size={30}
                       ></IoClose>
                     </div>
-                    <div className=" flex flex-col gap-3">
-                      <div className="text-center mt-5">
+                    <div className="text-black  flex flex-col gap-3">
+                      <div className=" text-center ">
                         {" "}
                         Are you a donar donating from India?
                       </div>
@@ -295,8 +283,8 @@ const LgDonate = () => {
                         size={30}
                       ></IoClose>
                     </div>
-                    <div className=" flex flex-col gap-3">
-                      <div className="text-center mt-5">
+                    <div className="text-black  flex flex-col gap-3">
+                      <div className="text-center ">
                         {" "}
                         Are you a donar donating from India?
                       </div>
