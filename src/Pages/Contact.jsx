@@ -5,7 +5,6 @@ import Location from "../components/Location";
 import { HashLink } from "react-router-hash-link";
 import gForm from "../../GoogleForm";
 const Contact = () => {
-  const [ShowModal, setShowModal] = useState(false);
 
   return (
     <div>
@@ -20,7 +19,6 @@ const Contact = () => {
           </h1>
 
           <button
-            onClick={() => setShowModal(true)}
             className=" p-1 bg-blue-950 text-white border-none rounded-lg text-lg w-[30%] mx-auto md:hidden lg:hidden"
           >
             <HashLink to={"/#home"}>Donate</HashLink>
@@ -38,34 +36,46 @@ const Contact = () => {
       </div>
       <div className="flex flex-col justify-around gap- w-[auto] h-[450px] mx-10 mt-15 md:mt-20 lg:text-lg xl:text-xl xl:mx-40">
         <div className="text-md">
-          If you have any questions, need more information, or would like to get
-          involved with The Social Project, we'd love to hear from you. Whether
-          you're interested in learning more about our programs, want to partner
-          with us, or have a suggestion, we're here to help.
+          If you have any questions, need more information, or are looking to
+          get involved with Judea Christ Ministry, we’d love to hear from you!
+          Whether you’re interested in our programs, exploring partnership
+          opportunities, or simply want to share a suggestion — we're here to
+          help.
         </div>
         <div className="flex flex-col gap-5">
-          <div className="text-md ">Please feel free to reach out if you:</div>
+          <div className="text-md ">Feel free to reach out if you:</div>
           <ul className="list-disc ml-5 flex flex-col gap-3">
             <li>
-              Wish to learn more about our initiatives and how you can support
-              them.
-            </li>
-            <li>Want to volunteer or collaborate with us on our projects</li>
-            <li>
-              Need assistance with making a donation or have questions about
-              your contribution
+              Want to learn more about our mission, initiatives, and how you can
+              support them
             </li>
             <li>
-              Are looking for more details on our events, campaigns, or
-              sponsorship opportunities.
+              Need guidance or assistance with the Bible College admission
+              process
             </li>
-            <li>Have any other inquiries or feedback you'd like to share.</li>
+            <li>
+              Are interested in volunteering or collaborating on one of our
+              projects
+            </li>
+            <li>
+              Require help with a donation or have questions about your
+              contribution
+            </li>
+            <li>
+              Would like more details about our upcoming events, campaigns, or
+              sponsorship opportunities
+            </li>
+            <li>
+              Have any other questions, suggestions, or feedback you'd like to
+              share
+            </li>
           </ul>
         </div>
         <div className="text-md">
-          Fill out the form below, and a member of our team will get back to you
-          as soon as possible. Thank you for your interest in The Social Project
-          and for helping us make a difference!
+          Simply fill out the form below, and a member of our team will get back
+          to you as soon as possible. Thank you for your interest in Judea
+          Christ Ministry — your support helps us grow and continue making a meaningful
+          difference!
         </div>
       </div>
       <div className="relative mt-68 md:mt-16 border-indigo-200 border-2 bg-indigo-100 h-[max] mx-0 pb-13 md:mx-10 lg:mx-10 xl:mx-40 rounded-lg px-5">

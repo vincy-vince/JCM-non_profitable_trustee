@@ -31,7 +31,9 @@ const MenuBar = () => {
 
   function closeMenubig() {
     const Navbar = document.getElementById("nav");
-    Navbar.style.display = "none";
+    if (!toggle == false) {
+      Navbar.style.display = "none";
+    }
   }
 
   function closeMenu() {
@@ -50,7 +52,10 @@ const MenuBar = () => {
       className="relative"
       // onMouseLeave={() => closeMenubig(setToggle(!toggle))}
     >
-      <div className=" w-auto mx-2 ">
+      <div
+        onClick={() => closeMenubig(setToggle(!toggle))}
+        className=" w-auto mx-2 "
+      >
         <div className=" fixed top-0 right-0 left-0 flex flex-row w-auto justify-between p-4 items-center gap-4 bg-white z-[10]">
           <div className=" block md:hidden lg:hidden">
             <svg
@@ -97,7 +102,6 @@ const MenuBar = () => {
                 </li>
                 <div
                   id="nav"
-                  onMouseLeave={() => closeMenubig(setToggle(!toggle))}
                   className="hidden flex-col absolute top-19 text-md bg-white rounded-b-md border-b-2 "
                 >
                   <Link onClick={scrollToTop} to="/biblecollege#bible-coll">

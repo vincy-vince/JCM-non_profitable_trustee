@@ -119,12 +119,12 @@ const Footer = () => {
         <div className=" text-sm flex flex-col gap-3">
           <div className="font-bold lg:text-lg xl:text-xl">Resources</div>
           <div className="text-sm lg:text-lg ">
-            <Link onClick={scrollToTop} to="/resources#resources">
+            <Link onClick={scrollToTop} to="/privacypolicy#resources">
               Privacy Policy
             </Link>
           </div>
           <div className="text-sm lg:text-lg ">
-            <Link onClick={scrollToTop} to="/resources#resources">
+            <Link onClick={scrollToTop} to="/refundpolicy#resources">
               Refund Policy
             </Link>
           </div>

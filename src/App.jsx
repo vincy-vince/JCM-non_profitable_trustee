@@ -5,10 +5,11 @@ import Contact from "./Pages/Contact";
 import BibleCollege from "./Pages/Ministries/BibleCollege";
 import CBS from "./Pages/Ministries/CBS";
 import WomensMinistry from "./Pages/Ministries/WomensMinistry";
-import Resources from "./Pages/Resources";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import RefundPolicy from "./Pages/RefundPolicy";
 import { useEffect } from "react";
+
 const App = () => {
-  
   return (
     <Routes>
       <Route path="/" element={<JCMpage />} />
@@ -16,7 +17,8 @@ const App = () => {
       <Route path="/biblecollege" element={<BibleCollege />} />
       <Route path="/cbs" element={<CBS />} />
       <Route path="/womensministry" element={<WomensMinistry />} />
-      <Route path="/resources" element={<Resources />} />
+      <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+      <Route path="/refundpolicy" element={<RefundPolicy />} />
     </Routes>
   );
 };

@@ -1,9 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        scroll: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        scroll: "loop-scroll 50s linear infinite",
+      },
+    },
     fontFamily: {
       // Note: This is @notapatch and not the docs
       //       I think what it is trying to say is that if you define
@@ -21,7 +32,6 @@ module.exports = {
     extend: {},
   },
   plugins: [require("tailwind-scrollbar-hide")],
-  
 };
 
 module.exports = {
