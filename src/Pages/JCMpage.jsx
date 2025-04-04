@@ -87,7 +87,7 @@ const JCMpage = () => {
         </p>
       </div>
       {/* youtube-session */}
-      <Youtube />
+      {/* <Youtube /> */}
       {/* Our Ministries */}
       <OurMinistries />
       {/* Donate now session */}

@@ -5,7 +5,6 @@ import Location from "../components/Location";
 import { HashLink } from "react-router-hash-link";
 import gForm from "../../GoogleForm";
 const Contact = () => {
-
   return (
     <div>
       <MenuBar />
@@ -18,9 +17,7 @@ const Contact = () => {
             Contact Us
           </h1>
 
-          <button
-            className=" p-1 bg-blue-950 text-white border-none rounded-lg text-lg w-[30%] mx-auto md:hidden lg:hidden"
-          >
+          <button className=" p-1 bg-blue-950 text-white border-none rounded-lg text-lg w-[30%] mx-auto md:hidden lg:hidden">
             <HashLink to={"/#home"}>Donate</HashLink>
           </button>
         </div>
@@ -74,8 +71,8 @@ const Contact = () => {
         <div className="text-md">
           Simply fill out the form below, and a member of our team will get back
           to you as soon as possible. Thank you for your interest in Judea
-          Christ Ministry — your support helps us grow and continue making a meaningful
-          difference!
+          Christ Ministry — your support helps us grow and continue making a
+          meaningful difference!
         </div>
       </div>
       <div className="relative mt-68 md:mt-16 border-indigo-200 border-2 bg-indigo-100 h-[max] mx-0 pb-13 md:mx-10 lg:mx-10 xl:mx-40 rounded-lg px-5">
@@ -136,7 +133,6 @@ const Contact = () => {
           <div className="absolute w-[50px]  bg-white h-[50px] rounded-full left-[-5%] bottom-5 md:left-[-3%] md:bottom-6 xl:left-[-1%]"></div>
         </div>
       </div>
-     
 
       <div id="your_contact">
         <div className="text-center mt-15 mb-6 font-bold text-md md:text-lg lg:text-xl xl:text-2xl">

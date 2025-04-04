@@ -2,6 +2,10 @@ import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
 const LgDonate = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   const [ShowModal, setShowModal] = useState(false);
 
   const handleMouseLeave = () => {
@@ -138,15 +142,15 @@ const LgDonate = () => {
   ];
   return (
     <div className="relative">
-      <h1 className=" mt-20 text-2xl font-extrabold text-center mb-20 xl:text-3xl">
+      <h1 className=" mt-20 text-2xl font-extrabold text-center mb-10 xl:text-3xl">
         Donate now
       </h1>
       <div
-        className="absolute left-0 top-[55%] h-10 w-10 z-5 scroll-smooth text-center bg-gray-400 mx-auto hover:bg-gray-500 hover:text-white xl:text-2xl font-extrabold rounded-full"
+        className="absolute left-0 bottom-12 h-[75%] w-10 z-5 scroll-smooth text-center bg-linear-to-r from-gray-700 to-white  mx-auto xl:text-2xl font-extrabold "
         onMouseEnter={() => startScrolling(-1)}
         onMouseLeave={stopScrolling}
       >
-        ←
+        <div className="mt-65 text-5xl">←</div>
       </div>
       <div
         ref={scrollRef}
@@ -155,7 +159,7 @@ const LgDonate = () => {
       >
         {/* Left Hover Zone */}
 
-        <div className="flex space-x-4  items-center flex-row gap-3 w-[100%]  lg:w-max lg:mx-auto xl:w-max xl:mx-auto mx-auto">
+        <div className="flex space-x-4 items-center flex-row gap-3 w-[100%] lg:w-max lg:mx-auto xl:w-max xl:mx-auto mx-auto">
           {slides.map((s, index) => {
             return <div key={index}> {s} </div>;
           })}
@@ -179,14 +183,14 @@ const LgDonate = () => {
                   <div className="flex flex-col gap-4">
                     <div className="border-2 border-blue-950 bg-blue-950 rounded-sm p-3 text-white text-center">
                       {" "}
-                      <Link to="/contact#your_contact">
+                      <Link onClick={scrollToTop} to="/contact#your_contact">
                         {" "}
                         Yes, I'm a donar from India
                       </Link>
                     </div>
                     <div className="border-2 text-blue-950 border-blue-950 bg-blue-50 rounded-sm p-3 text-center">
                       {" "}
-                      <Link to="/contact#your_contact">
+                      <Link onClick={scrollToTop} to="/contact#your_contact">
                         No, I'm a foreigner donor outside India
                       </Link>
                     </div>
@@ -200,11 +204,11 @@ const LgDonate = () => {
         {/* Right Hover Zone */}
       </div>
       <div
-        className="absolute right-0 top-[55%] h-10 w-10 z-5 scroll-smooth text-center bg-gray-400 mx-auto hover:bg-gray-500 hover:text-white xl:text-2xl font-extrabold rounded-full"
+        className="absolute right-0 bottom-12 h-[75%] w-10 z-5 scroll-smooth bg-linear-to-l from-gray-500 to-white  mx-auto  xl:text-2xl font-extrabold "
         onMouseEnter={() => startScrolling(1)}
         onMouseLeave={stopScrolling}
       >
-        →
+        <div className="mt-65 text-5xl">→</div>
       </div>
     </div>
   );

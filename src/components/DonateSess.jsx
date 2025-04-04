@@ -5,6 +5,10 @@ import { IoClose } from "react-icons/io5";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const DonateSess = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   const [ShowModal, setShowModal] = useState(false);
 
   const handleMouseLeave = () => {
@@ -107,14 +111,14 @@ const DonateSess = () => {
                 <div className="flex flex-col gap-4">
                   <div className="border-2 border-blue-950 bg-blue-950 rounded-sm p-3 text-white text-center">
                     {" "}
-                    <Link to="/contact#your_contact">
+                    <Link onClick={scrollToTop} to="/contact#your_contact">
                       {" "}
                       Yes, I'm a donar from India
                     </Link>
                   </div>
                   <div className="border-2 text-blue-950 border-blue-950 bg-blue-50 rounded-sm p-3 text-center">
                     {" "}
-                    <Link to="/contact#your_contact">
+                    <Link onClick={scrollToTop} to="/contact#your_contact">
                       No, I'm a foreigner donor outside India
                     </Link>
                   </div>

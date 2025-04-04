@@ -12,7 +12,7 @@ const LgFaculty = () => {
           className="relative flex flex-col justify-center items-center border border-black rounded-lg mx-auto w-[50%] h-max xl:w-[400px] xl:h-[360px]"
         >
           <img
-            className="w-full h-[40%] rounded-t-lg xl:h-[500px]"
+            className="w-full h-[40%] rounded-lg xl:h-[500px]"
             src="Mr.Tijo.jpeg"
             alt="profile"
           />
@@ -31,7 +31,7 @@ const LgFaculty = () => {
           className="relative flex flex-col justify-center items-center border border-black rounded-lg mx-auto w-[50%] h-max xl:w-[400px] xl:h-[360px]"
         >
           <img
-            className="w-full h-[40%] rounded-t-lg xl:h-[500px]"
+            className="w-full h-[40%] rounded-lg xl:h-[500px]"
             src="public/sis-Suma.jpeg"
             alt="profile"
           />
@@ -48,7 +48,7 @@ const LgFaculty = () => {
           className="relative flex flex-col justify-center items-center border border-black rounded-lg mx-auto w-[50%] h-max xl:w-[400px] xl:h-[360px]"
         >
           <img
-            className="w-full h-[40%] rounded-t-lg xl:h-[500px]"
+            className="w-full h-[40%] rounded-lg xl:h-[500px]"
             src="public/Pr.Robbin.jpeg"
             alt="profile"
           />
@@ -65,7 +65,7 @@ const LgFaculty = () => {
           className="relative flex flex-col justify-center items-center border border-black rounded-lg mx-auto w-[50%] h-max xl:w-[400px] xl:h-[360px]"
         >
           <img
-            className="w-full h-[40%] rounded-t-lg xl:h-[500px]"
+            className="w-full h-[40%] rounded-lg xl:h-[500px]"
             src="boy2.png"
             alt="profile"
           />
@@ -82,7 +82,7 @@ const LgFaculty = () => {
           className="relative flex flex-col justify-center items-center border border-black rounded-lg mx-auto w-[50%] h-max xl:w-[400px] xl:h-[360px]"
         >
           <img
-            className="w-full h-[40%] rounded-t-lg xl:h-[500px]"
+            className="w-full h-[40%] rounded-lg xl:h-[500px]"
             src="public/Pr-Praveen.jpeg"
             alt="profile"
           />
