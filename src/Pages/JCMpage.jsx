@@ -17,14 +17,14 @@ const JCMpage = () => {
   return (
     <div id="home">
       <MenuBar />
-      <div className=" bg-[url(jcm-BG.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 lg:h-[600px] xl:h-[630px]">
+      <div className=" bg-[url(jcm-BG.png)] h-[400px] p-10 w-auto bg-cover bg-no-repeat mt-24 mx-4 lg:h-[600px] xl:h-[630px]">
         <h1 className=" text-2xl text-white lg:text-6xl lg:font-semibold font-extrabold">
           Judea Christ Ministries
         </h1>
         <button className=" bg-red-600  text-white  p-1  border-none  rounded-md  text-sm  mt-5  hidden">
           Register Now
         </button>
-        <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors lg:hidden">
+        <button className= " w-max px-3 py-2 xs:bg-red-500 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors lg:hidden">
           <HashLink to={"#home"}>Donate</HashLink>
         </button>
         <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors hidden md:hidden lg:block">
@@ -33,7 +33,7 @@ const JCMpage = () => {
       </div>
 
       {/* About and Founder's Image */}
-      <div className=" mt-7 h-max flex flex-col justify-center items-center p-5 mb-10 gap-10 md:flex-row lg:flex-row relative z-[-1] xl:mx-30 xl:my-20 xl:gap-2">
+      <div className=" mt-7 h-max flex flex-col justify-center items-center pt-5 mb-10 gap-10 md:flex-row lg:flex-row relative z-[-1] xl:mx-30 xl:my-20 xl:gap-2">
         <img
           className=" w-1/2 h-[50%] top-8 rounded-lg md:w-[40%] md:h-[50%] lg:w-[30%] xl:h-[430px] "
           src="public/sis-Suma.jpeg"

@@ -36,11 +36,16 @@ module.exports = {
 
 module.exports = {
   theme: {
-    xs: "400px",
-    xl: "1280px",
-    // => @media (min-width: 1280px) { ... }
+    extend: {
+      screens: {
+        xs: "320px",
+        s: "400px",
+        xl: "1280px",
+        // => @media (min-width: 1280px) { ... }
 
-    "2xl": "1536px",
-    // => @media (min-width: 1536px) { ... }
+        "2xl": "1536px",
+        // => @media (min-width: 1536px) { ... }
+      },
+    },
   },
 };

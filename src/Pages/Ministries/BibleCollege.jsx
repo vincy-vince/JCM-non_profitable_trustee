@@ -76,7 +76,7 @@ const BibleCollege = () => {
         </div>
       </div>
 
-      <div className="mt-5 text-justify text-sm md:text-lg mx-8 lg:text-xl xl:mx-50">
+      <div className="mt-5 text-justify text-md md:text-lg mx-8 lg:text-xl xl:mx-50">
         JCM Bible College emphasizes simple and clear learning exercises,
         encourages interactive classroom discussions, and fosters spiritual
         growth. The college focuses on understanding the mysteries of God's
@@ -86,7 +86,7 @@ const BibleCollege = () => {
         students for ministry.
       </div>
 
-      <div className="mt-5 text-justify text-sm md:text-lg mx-8 lg:text-xl xl:mx-50">
+      <div className="mt-5 text-justify text-md md:text-lg mx-8 lg:text-xl xl:mx-50">
         JCM Bible College is dedicated to proclaiming the Gospel through village
         ministries and fulfilling God’s plan by planting churches. The college
         offers specialized training for individuals seeking to start their own

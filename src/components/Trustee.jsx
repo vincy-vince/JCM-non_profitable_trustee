@@ -8,7 +8,7 @@ const Trustee = () => {
       className=" relative flex flex-col justify-center items-center mx-auto w-[90%] "
     >
       <img
-        className=" w-90% md:w-[60%] h-[500px] rounded-lg"
+        className=" w-90% md:w-[60%] h-[300px] rounded-lg"
         src="public/sis-Suma.jpeg"
         alt="profile"
       />
@@ -26,7 +26,7 @@ const Trustee = () => {
       className=" relative flex flex-col justify-center items-center mx-auto w-[90%] "
     >
       <img
-        className=" w-90% md:w-[60%] h-[500px] rounded-lg"
+        className=" w-90% md:w-[60%] h-[300px] rounded-lg"
         src="Mr.Tijo.jpeg"
         alt="profile"
       />
@@ -44,7 +44,7 @@ const Trustee = () => {
       className=" relative flex flex-col justify-center items-center mx-auto w-[90%] "
     >
       <img
-        className=" w-90% md:w-[60%] h-[500px] rounded-lg"
+        className=" w-90% md:w-[60%] h-[300px] rounded-lg"
         src="public/Bro-Arun.jpeg"
         alt="profile"
       />
@@ -59,7 +59,8 @@ const Trustee = () => {
     </div>,
   ];
   return (
-    <div className="m-auto w-full">
+    <div className="m-auto w-full mb-20">
+      <div className="text-center font-extrabold mb-8 text-2xl lg:text-3xl xl:text-3xl">Our Trustee</div>
       <Corousal slides={slides} />
     </div>
   );

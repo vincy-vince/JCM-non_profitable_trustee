@@ -21,9 +21,9 @@ const Contact = () => {
             <HashLink to={"/#home"}>Donate</HashLink>
           </button>
         </div>
-        <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto mt-54 shadow-lg md:mt-89 lg:mt-[460px] xl:mt-[400px]">
+        <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto mt-58 shadow-lg md:mt-89 lg:mt-[460px] xl:mt-[400px]">
           <input
-            className="text-blue-900 active:border-none md:w-[73%] lg:w-[80%] "
+            className="text-blue-900 w-[60%] active:border-none md:w-[73%] lg:w-[80%] "
             placeholder="Enter your email"
           ></input>
           <button className="bg-red-800 text-white px-4 ml-4 rounded-md py-2 font-bold md:ml-0 xl:ml-13 shadow-md shadow-red-800">
@@ -75,15 +75,15 @@ const Contact = () => {
           meaningful difference!
         </div>
       </div>
-      <div className="relative mt-68 md:mt-16 border-indigo-200 border-2 bg-indigo-100 h-[max] mx-0 pb-13 md:mx-10 lg:mx-10 xl:mx-40 rounded-lg px-5">
+      <div className="relative mt-88 md:mt-16 border-indigo-200 border-2 bg-indigo-100 h-[max] mx-10 lg:pb-13 xl:pb-13 md:mx-10 lg:mx-10 xl:mx-40 rounded-lg px-5 pb-5">
         <div className="text-center">
           <button className="font-bold text-xl bg-white p-1 rounded-b-2xl border-indigo-200 shadow-md shadow-indigo-200 border-b-2 px-2">
             Contact Us
           </button>
         </div>
-        <div className=" flex flex-col w-auto justify-around items-center mt-14 gap-5 pb-10 md:flex-row lg:flex-row md:mx-4 lg:mx-4">
+        <div className=" flex flex-col w-auto justify-around items-center mt-10 gap-5 pb-10 md:flex-row lg:flex-row md:mx-4 lg:mx-4">
           <div className="absolute w-[50px]  bg-white h-[50px] rounded-full right-[-7%] top-7 md:right-[-3%] md:top-4 xl:right-[-1%]"></div>
-          <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-1/2 h-[60px] shadow-lg shadow-indigo-300/50 border-l-2 border-b-2 border-transparent hover:border-l-2 hover:border-b-2 hover:border-blue-700 transition-all">
+          <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-2/2 h-[60px] shadow-lg shadow-indigo-300/50 border-l-2 border-b-2 border-transparent hover:border-l-2 hover:border-b-2 hover:border-blue-700 transition-all">
             <div>
               <svg
                 className="text-sm w-[20px]"
@@ -99,23 +99,25 @@ const Contact = () => {
             </div>
             <div className="text-sm">+91 8148833190</div>
           </div>
-          <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-1/2 h-[60px] shadow-lg shadow-indigo-300/50 border-l-2 border-b-2 border-transparent hover:border-l-2 hover:border-b-2 hover:border-blue-700 transition-all">
-            <svg
-              className="text-sm w-[20px]"
-              viewBox="0 0 28 28"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M23.625 4.375H4.375C3.91087 4.375 3.46575 4.55937 3.13756 4.88756C2.80937 5.21575 2.625 5.66087 2.625 6.125V21.875C2.625 22.3391 2.80937 22.7842 3.13756 23.1124C3.46575 23.4406 3.91087 23.625 4.375 23.625H23.625C24.0891 23.625 24.5342 23.4406 24.8624 23.1124C25.1906 22.7842 25.375 22.3391 25.375 21.875V6.125C25.375 5.66087 25.1906 5.21575 24.8624 4.88756C24.5342 4.55937 24.0891 4.375 23.625 4.375ZM23.625 6.125V9.625H4.375V6.125H23.625ZM23.625 21.875H4.375V11.375H23.625V21.875Z"
-                fill="black"
-              />
-            </svg>
-            <div className="text-sm">judeachristministry@gmail.com</div>
+          <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-2/2 h-[60px] shadow-lg shadow-indigo-300/50 border-l-2 border-b-2 border-transparent hover:border-l-2 hover:border-b-2 hover:border-blue-700 transition-all">
+            <div>
+              <svg
+                className="text-sm w-[20px] "
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.625 4.375H4.375C3.91087 4.375 3.46575 4.55937 3.13756 4.88756C2.80937 5.21575 2.625 5.66087 2.625 6.125V21.875C2.625 22.3391 2.80937 22.7842 3.13756 23.1124C3.46575 23.4406 3.91087 23.625 4.375 23.625H23.625C24.0891 23.625 24.5342 23.4406 24.8624 23.1124C25.1906 22.7842 25.375 22.3391 25.375 21.875V6.125C25.375 5.66087 25.1906 5.21575 24.8624 4.88756C24.5342 4.55937 24.0891 4.375 23.625 4.375ZM23.625 6.125V9.625H4.375V6.125H23.625ZM23.625 21.875H4.375V11.375H23.625V21.875Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <div className="text-sm "> judeachristministry@gmail.com</div>
           </div>
-          <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-1/2  h-[max] shadow-lg shadow-indigo-300/50 border-l-2 border-b-2 border-transparent hover:border-l-2 hover:border-b-2 hover:border-blue-700 transition-all ">
+          <div className="flex flex-row items-center gap-3 font-bold bg-white p-1 pt-2 rounded-xl w-2/2  h-[max] shadow-lg shadow-indigo-300/50 border-l-2 border-b-2 border-transparent hover:border-l-2 hover:border-b-2 hover:border-blue-700 transition-all ">
             <svg
-              className="text-sm w-[50px] xl:w-[25px] xl:my-3"
+              className="text-sm w-[80px] lg:w-[50px] xl:w-[25px] xl:my-3"
               viewBox="0 0 28 28"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +132,7 @@ const Contact = () => {
               Tamilnadu-631 402
             </div>
           </div>
-          <div className="absolute w-[50px]  bg-white h-[50px] rounded-full left-[-5%] bottom-5 md:left-[-3%] md:bottom-6 xl:left-[-1%]"></div>
+          <div className="absolute w-[50px]  bg-white h-[50px] rounded-full left-[-5%] bottom-3 md:left-[-3%] md:bottom-6 xl:left-[-1%]"></div>
         </div>
       </div>
 
@@ -140,7 +142,7 @@ const Contact = () => {
         </div>
 
         <iframe
-          className="w-[320px] h-[1800px] mx-auto md:w-[640px] md:mx-auto lg:h-[1400px]"
+          className="w-[320px] h-[1600px] mx-auto md:w-[640px] md:mx-auto lg:h-[1400px]"
           src={gForm[0]}
           width="640"
           height="1400"

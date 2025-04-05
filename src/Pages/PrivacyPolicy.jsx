@@ -16,10 +16,9 @@ const Resources = () => {
         className=" bg-[url(background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-auto flex flex-col justify-between xl:h-[630px]"
       >
         <div className="flex flex-col gap-3">
-          <h1 className=" text-2xl w-[60%] mt-10 ml-3 font-extrabold  lg:text-3xl xl:text-5xl">
+          <h1 className=" text-2xl text-black font-extrabold md:text-3xl lg:text-5xl ">
             Privacy Policy
           </h1>
-
           <button className="w-max font-bold px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 lg:text-xl xl:text-2xl xl:px-4 xl:py-3 hover:bg-blue-900 transition-colors lg:hidden">
             <HashLink to={"/#home"}>Donate</HashLink>
           </button>
@@ -27,18 +26,18 @@ const Resources = () => {
             <HashLink to={"/#lghome"}>Donate</HashLink>
           </button>
         </div>
-        <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto">
+        <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto mt-48 shadow-lg md:mt-89 lg:mt-[460px] xl:mt-[400px]">
           <input
-            className="text-blue-900 w-[70%] lg:w-[80%] "
+            className="text-blue-900 w-[60%] active:border-none md:w-[73%] lg:w-[80%] "
             placeholder="Enter your email"
           ></input>
-          <button className="bg-red-800 text-white px-4 rounded-md py-2 ml-2 font-bold md:ml-4 lg:ml-2 xl:ml-13">
+          <button className="bg-red-800 text-white px-4 ml-4 rounded-md py-2 font-bold md:ml-0 xl:ml-13 shadow-md shadow-red-800">
             Join now
           </button>
         </div>
       </div>
 
-      <div className="mx-20 flex flex-col gap-5">
+      <div className="mx-10 flex flex-col gap-5 md:mx-20 lg:mx-20 xl:mx-20">
         <div className=" mt-10"></div>
         <p className="text-lg xl:text-xl mb-3">
           Access to and use of this site (judeachristministry.org) is provided

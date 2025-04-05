@@ -13,7 +13,7 @@ const RefundPolicy = () => {
         className=" bg-[url(background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-auto flex flex-col justify-between xl:h-[630px]"
       >
         <div className="flex flex-col gap-3">
-          <h1 className=" text-2xl w-[60%] mt-10 ml-3 font-extrabold lg:text-3xl xl:text-5xl">
+          <h1 className=" text-2xl text-black font-extrabold md:text-3xl lg:text-5xl ">
             Refund Policy
           </h1>
 
@@ -24,18 +24,18 @@ const RefundPolicy = () => {
             <HashLink to={"/#lghome"}>Donate</HashLink>
           </button>
         </div>
-        <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto">
+        <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto mt-48 shadow-lg md:mt-89 lg:mt-[460px] xl:mt-[400px]">
           <input
-            className="text-blue-900 w-[70%] lg:w-[80%] "
+            className="text-blue-900 w-[60%] active:border-none md:w-[73%] lg:w-[80%] "
             placeholder="Enter your email"
           ></input>
-          <button className="bg-red-800 text-white px-4 rounded-md py-2 ml-2 font-bold md:ml-4 lg:ml-2 xl:ml-13">
+          <button className="bg-red-800 text-white px-4 ml-4 rounded-md py-2 font-bold md:ml-0 xl:ml-13 shadow-md shadow-red-800">
             Join now
           </button>
         </div>
       </div>
       {/* text */}
-      <div className="mx-20 flex flex-col gap-2 my-15">
+      <div className="mt-15 mx-10 flex flex-col gap-5 md:mx-20 lg:mx-20 xl:mx-20 ">
         <p className="text-lg xl:text-xl mb-3">
           Judea Christ Ministry is instituting a donation refund policy to
           ensure fair and transparent processing of requests for refund of
@@ -74,17 +74,17 @@ const RefundPolicy = () => {
           pertaining to the donation:
         </p>
         <ul className="text-lg xl:text-xl mb-3 list-disc">
-          <li className="text-lg xl:text-xl mb-3">Date of donation</li>
-          <li className="text-lg xl:text-xl mb-3">Donation amount</li>
-          <li className="text-lg xl:text-xl mb-3">
+          <li className="ml-10 text-lg xl:text-xl mb-3">Date of donation</li>
+          <li className="ml-10 text-lg xl:text-xl mb-3">Donation amount</li>
+          <li className="ml-10 text-lg xl:text-xl mb-3">
             If donation was made through cheque/draft, please provide
             Cheque/Draft no.
           </li>
-          <li className="text-lg xl:text-xl mb-3">
+          <li className="ml-10 text-lg xl:text-xl mb-3">
             If donation was made through credit card, please provide Credit Card
             no. (last 4 digits only)
           </li>
-          <li className="text-lg xl:text-xl mb-3">
+          <li className="ml-10 text-lg xl:text-xl mb-3">
             If donation was made online, please provide Transaction-ID.
           </li>
         </ul>

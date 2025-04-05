@@ -6,7 +6,7 @@ const OurMinistries = () => {
   };
   return (
     <div className="xl:mx-65">
-      <h1 className="text-2xl font-extrabold mb-10 text-center mt-15 xl:text-3xl ">
+      <h1 className="text-2xl font-extrabold mb-10 text-center mt-10 lg:mt-15 xl:mt-15 xl:text-3xl ">
         Our Ministries
       </h1>
 

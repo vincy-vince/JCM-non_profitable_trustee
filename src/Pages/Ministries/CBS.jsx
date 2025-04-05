@@ -72,7 +72,7 @@ const CBS = () => {
       <Quote />
 
       <div className="flex flex-col gap-6">
-        <p className="text-xl md:text-2xl lg:text-3xl text-center mt-15 font-extrabold ">
+        <p className="text-xl md:text-2xl lg:text-3xl mt-5 text-center lg:mt-15 xl:mt-15 font-extrabold ">
           CBS students in kizma Nagar 2016
         </p>
         <img
@@ -93,7 +93,9 @@ const CBS = () => {
         />
       </div>
       <div className="mx-10 text-justify mt-15 lg:text-lg xl:text-xl xl:mx-45">
-        <div className="text-xl mb-10 md:text-2xl lg:text-3xl text-center mt-15 font-extrabold ">Youth Gatherings</div>
+        <div className="text-xl mb-10 md:text-2xl lg:text-3xl text-center mt-15 font-extrabold ">
+          Youth Gatherings
+        </div>
         <p>
           As the scripture says, "The young man cleanses his way," it is our
           duty to protect today’s youth community, which is heading towards

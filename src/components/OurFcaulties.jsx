@@ -85,7 +85,7 @@ const OurFaculties = () => {
   ];
   return (
     <div className="m-auto w-full mt-15">
-      <div className="text-center mb-10 text-lg font-bold md:text-xl lg:text-2xl">
+      <div className="text-center mb-10 text-2xl font-bold md:text-2xl lg:text-3xl">
         Our Faculties
       </div>
       <Corousal slides={slides} />
