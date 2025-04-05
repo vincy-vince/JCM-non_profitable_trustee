@@ -74,7 +74,7 @@ const Footer = () => {
               </div>
 
               <div className="text-justify">
-                No.505/B1A, 1st Floor,
+                No.505/B1A,1st Floor,
                 <br /> Mappedu Village,
                 <br />
                 Thiruvallur, Tamilnadu- 631 402
@@ -147,37 +147,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-row gap-5 items-center">
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              viewBox="0 0 64 64"
-            >
-              <defs>
-                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#F58529" />
-                  <stop offset="25%" stopColor="#FEDA77" />
-                  <stop offset="50%" stopColor="#DD2A7B" />
-                  <stop offset="75%" stopColor="#8134AF" />
-                  <stop offset="100%" stopColor="#515BD4" />
-                </linearGradient>
-              </defs>
-              <g>
-                <path
-                  fill="url(#grad1)"
-                  d="M47.9 0H16.1C7.2 0 0 7.2 0 16.1v31.8c0 8.9 7.2 16.1 16.1 16.1h31.8c8.9 0 16.1-7.2 16.1-16.1V16.1c0-8.9-7.2-16.1-16.1-16.1z"
-                />
-                <path
-                  fill="#fff"
-                  d="M32 48.5c-9.2 0-16.5-7.3-16.5-16.5S22.8 15.5 32 15.5s16.5 7.3 16.5 16.5-7.3 16.5-16.5 16.5zM32 20.3c6.4 0 11.6 5.2 11.6 11.6 0 6.4-5.2 11.6-11.6 11.6-6.4 0-11.6-5.2-11.6-11.6 0-6.4 5.2-11.6 11.6-11.6z"
-                />
-                <path
-                  fill="#fff"
-                  d="M47.9 2.3c-.5 0-.9.1-1.3.3-.4.2-.7.5-.9.9-.2.4-.3.8-.3 1.3s.1.9.3 1.3c.2.4.5.7.9.9.4.2.8.3 1.3.3s.9-.1 1.3-.3c.4-.2.7-.5.9-.9.2-.4.3-.8.3-1.3s-.1-.9-.3-1.3c-.2-.4-.5-.7-.9-.9-.4-.2-.8-.3-1.3-.3z"
-                />
-              </g>
-            </svg>
+          <div className="w-[30px] h-[30px]">
+            <img src="public/instagram-1-svgrepo-com.svg" alt="" />
           </div>
           <a href="http://www.youtube.com/@judeachristministries517">
             <div>

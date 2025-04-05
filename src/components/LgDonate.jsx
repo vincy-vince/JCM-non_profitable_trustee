@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
+import { DonateInfo } from "../js/Donate";
 const LgDonate = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -28,139 +29,56 @@ const LgDonate = () => {
     clearInterval(scrollIntervalRef.current);
     scrollIntervalRef.current = null;
   };
-  let slides = [
-    <div className="bg-emerald-600 w-[60%] h-fit mx-4 border-none rounded-lg text-left py-5 lg:w-[100%] xl:w-[100%] hover:shadow-xl hover:shadow-emerald-600 hover:-translate-y-4 transition-all duration-300">
-      <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
-        <div className="font-bold text-lg">Empower her</div>
-        <div>rs.2000/month</div>
-        <div className="bg-white h-30 border-none rounded-lg"></div>
-        <div className="font-bold">Sponser a girl child</div>
-        <ul className="flex flex-col gap-3 list-disc ml-5 p-2">
-          <li>Medical care</li>
-          <li>Educational support</li>
-          <li>Health and Nutrition</li>
-          <li>Personal mentorship</li>
-          <li>Hygene and Sanitation</li>
-          <li>Imparting ethics and values and more</li>
-        </ul>
-        <button
-          onClick={handleMouseLeave}
-          className="text-emerald-600 font-bold bg-white border-none rounded-lg w-max p-2 mx-auto"
-        >
-          Donate
-        </button>
+
+  const donate = DonateInfo.map((Dinfo) => {
+    return (
+      <div
+        className={`bg-${Dinfo.bg_color} w-[60%] h-fit mx-4 border-none rounded-lg text-left py-5 lg:w-[100%] xl:w-[100%] hover:shadow-xl hover:shadow-${Dinfo.bg_color} hover:-translate-y-4 transition-all duration-300`}
+      >
+        <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
+          <div className="font-bold text-lg">{Dinfo.title}</div>
+          <div>{Dinfo.rupees}</div>
+          <div className="bg-white h-30 border-none rounded-lg"></div>
+          <div className="font-bold">{Dinfo.subtitle}</div>
+          <ul className="flex flex-col gap-3 list-disc ml-5 p-2">
+            {Dinfo.points.map((point) => {
+              return <li>{point}</li>;
+            })}
+          </ul>
+          <button
+            onClick={handleMouseLeave}
+            className={`font-bold bg-white border-none rounded-lg w-max p-2 mx-auto  ${Dinfo.class}`}
+          >
+            Donate
+          </button>
+        </div>
       </div>
-    </div>,
-    <div className="bg-zinc-600 w-[60%] h-fit mx-4 border-none rounded-lg text-left py-5 lg:w-[100%] xl:w-[100%] hover:shadow-xl hover:shadow-zinc-600 hover:-translate-y-4 transition-all duration-300">
-      <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
-        <div className="font-bold text-lg">Empower her</div>
-        <div>rs.2000/month</div>
-        <div className="bg-white h-30 border-none rounded-lg"></div>
-        <div className="font-bold">Sponser a girl child</div>
-        <ul className="flex flex-col gap-3 list-disc ml-5 p-2">
-          <li>Medical care</li>
-          <li>Educational support</li>
-          <li>Health and Nutrition</li>
-          <li>Personal mentorship</li>
-          <li>Hygene and Sanitation</li>
-          <li>Imparting ethics and values and more</li>
-        </ul>
-        <button
-          onClick={handleMouseLeave}
-          className="text-zinc-600 font-bold bg-white border-none rounded-lg w-max p-2 mx-auto"
-        >
-          Donate
-        </button>
-      </div>
-    </div>,
-    <div className="bg-red-800 w-[60%] h-fit mx-4 border-none rounded-lg text-left py-5  lg:w-[100%] xl:w-[100%] hover:shadow-xl hover:shadow-red-800 hover:-translate-y-4 transition-all duration-300">
-      <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
-        <div className="font-bold text-lg">Empower her</div>
-        <div>rs.2000/month</div>
-        <div className="bg-white h-30 border-none rounded-lg"></div>
-        <div className="font-bold">Sponser a girl child</div>
-        <ul className="flex flex-col gap-3 list-disc ml-5 p-2">
-          <li>Medical care</li>
-          <li>Educational support</li>
-          <li>Health and Nutrition</li>
-          <li>Personal mentorship</li>
-          <li>Hygene and Sanitation</li>
-          <li>Imparting ethics and values and more</li>
-        </ul>
-        <button
-          onClick={handleMouseLeave}
-          className="text-red-800 font-bold bg-white border-none rounded-lg w-max p-2 mx-auto"
-        >
-          Donate
-        </button>
-      </div>
-    </div>,
-    <div className="bg-zinc-600 w-[60%] h-fit mx-4 border-none rounded-lg text-left py-5 lg:w-[100%] xl:w-[100%] hover:shadow-xl hover:shadow-zinc-600 hover:-translate-y-4 transition-all duration-300">
-      <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
-        <div className="font-bold text-lg">Empower her</div>
-        <div>rs.2000/month</div>
-        <div className="bg-white h-30 border-none rounded-lg"></div>
-        <div className="font-bold">Sponser a girl child</div>
-        <ul className="flex flex-col gap-3 list-disc ml-5 p-2">
-          <li>Medical care</li>
-          <li>Educational support</li>
-          <li>Health and Nutrition</li>
-          <li>Personal mentorship</li>
-          <li>Hygene and Sanitation</li>
-          <li>Imparting ethics and values and more</li>
-        </ul>
-        <button
-          onClick={handleMouseLeave}
-          className="text-zinc-600 font-bold bg-white border-none rounded-lg w-max p-2 mx-auto"
-        >
-          Donate
-        </button>
-      </div>
-    </div>,
-    <div className="bg-emerald-600 w-[60%] h-fit mx-4 border-none rounded-lg text-left py-5 lg:w-[100%] xl:w-[100%] hover:shadow-xl hover:shadow-emerald-600 hover:-translate-y-4 transition-all duration-300">
-      <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
-        <div className="font-bold text-lg">Empower her</div>
-        <div>rs.2000/month</div>
-        <div className="bg-white h-30 border-none rounded-lg"></div>
-        <div className="font-bold">Sponser a girl child</div>
-        <ul className="flex flex-col gap-3 list-disc ml-5 p-2">
-          <li>Medical care</li>
-          <li>Educational support</li>
-          <li>Health and Nutrition</li>
-          <li>Personal mentorship</li>
-          <li>Hygene and Sanitation</li>
-          <li>Imparting ethics and values and more</li>
-        </ul>
-        <button
-          onClick={handleMouseLeave}
-          className="text-emerald-600 font-bold bg-white border-none rounded-lg w-max p-2 mx-auto"
-        >
-          Donate
-        </button>
-      </div>
-    </div>,
-  ];
+    );
+  });
+
   return (
     <div className="relative">
       <h1 className=" mt-20 text-2xl font-extrabold text-center mb-10 xl:text-3xl">
         Donate now
       </h1>
+
+      {/* Left Hover Zone */}
+
       <div
-        className="absolute left-0 bottom-12 h-[75%] w-10 z-5 scroll-smooth text-center bg-linear-to-r from-gray-700 to-white  mx-auto xl:text-2xl font-extrabold "
+        className="absolute left-0 bottom-14 h-[76.5%] w-10 z-5 scroll-smooth text-center hover:bg-linear-to-r hover:from-gray-400 hover:to-white  mx-auto xl:text-2xl font-extrabold "
         onMouseEnter={() => startScrolling(-1)}
         onMouseLeave={stopScrolling}
       >
         <div className="mt-65 text-5xl">←</div>
       </div>
+
       <div
         ref={scrollRef}
         id="scrollContainer"
         className=" mx-10 overflow-auto scroll-smooth scrollbar-hide transparent-scrollbar lg:py-10 xl:py-10"
       >
-        {/* Left Hover Zone */}
-
         <div className="flex space-x-4 items-center flex-row gap-3 w-[100%] lg:w-max lg:mx-auto xl:w-max xl:mx-auto mx-auto">
-          {slides.map((s, index) => {
+          {donate.map((s, index) => {
             return <div key={index}> {s} </div>;
           })}
           {ShowModal && (
@@ -200,11 +118,12 @@ const LgDonate = () => {
             </div>
           )}
         </div>
-
-        {/* Right Hover Zone */}
       </div>
+
+      {/* Right Hover Zone */}
+
       <div
-        className="absolute right-0 bottom-12 h-[75%] w-10 z-5 scroll-smooth bg-linear-to-l from-gray-500 to-white  mx-auto  xl:text-2xl font-extrabold "
+        className="absolute right-0 bottom-14 h-[76.5%] w-10 z-5 scroll-smooth hover:bg-linear-to-l hover:from-gray-500 hover:to-white  mx-auto  xl:text-2xl font-extrabold "
         onMouseEnter={() => startScrolling(1)}
         onMouseLeave={stopScrolling}
       >

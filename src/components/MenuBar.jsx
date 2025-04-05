@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 const MenuBar = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
+
   let [menu, setMenu] = useState(false);
   function showToggle() {
     const Ministries = document.getElementById("ministries");
@@ -24,14 +25,14 @@ const MenuBar = () => {
 
   function openMenubig() {
     const Navbar = document.getElementById("nav");
-    if (!toggle !== false) {
+    if (!toggle == false) {
       Navbar.style.display = "flex";
     }
   }
 
   function closeMenubig() {
     const Navbar = document.getElementById("nav");
-    if (!toggle == false) {
+    if (!toggle !== false) {
       Navbar.style.display = "none";
     }
   }
@@ -48,10 +49,7 @@ const MenuBar = () => {
   };
 
   return (
-    <div
-      className="relative"
-      // onMouseLeave={() => closeMenubig(setToggle(!toggle))}
-    >
+    <div>
       <div
         onClick={() => closeMenubig(setToggle(!toggle))}
         className=" w-auto mx-2 "
@@ -223,13 +221,13 @@ const MenuBar = () => {
               </div>
 
               <div id="ministries" className="hidden text-left mt-2">
-                <div className="shadow-md mt-1 w-[30%] hover:bg-blue-900 rounded-sm p-2 hover:text-white transition-all">
+                <div className="shadow-md mt-1 w-[45%] hover:bg-blue-900 rounded-sm p-2 hover:text-white transition-all">
                   <Link to="/biblecollege">Bible College</Link>
                 </div>
-                <div className="shadow-md mt-1 w-[30%] hover:bg-blue-900 rounded-sm p-2 hover:text-white transition-all">
+                <div className="shadow-md mt-1 w-[45%] hover:bg-blue-900 rounded-sm p-2 hover:text-white transition-all">
                   <Link to="/cbs">(CBS) Children Bible Study</Link>
                 </div>
-                <div className="shadow-md mt-1 w-[30%] hover:bg-blue-900 rounded-sm p-2 hover:text-white transition-all">
+                <div className="shadow-md mt-1 w-[45%] hover:bg-blue-900 rounded-sm p-2 hover:text-white transition-all">
                   <Link to="/womensministry">Womens Ministry</Link>
                 </div>
               </div>

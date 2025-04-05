@@ -14,10 +14,10 @@ const Trustee = () => {
       />
       <div className="absolute left-2 right-2 bottom-2 bg-white rounded-lg p-2 h-fit w-[80%] md:w-[55%] mx-auto">
         <div className="text-sm font-extrabold mb-1 text-center mt-1">
-          Suma Thomas
+         Sis. Suma Thomas
         </div>
         <div className="text-sm font-extrabold mb-2 text-center">
-          MSc( Electronics),MTh{" "}
+          M.Div
         </div>
       </div>
     </div>,
@@ -35,7 +35,7 @@ const Trustee = () => {
           Tijo K John
         </div>
         <div className="text-sm font-extrabold mb-2 text-center">
-          MSc( Electronics),MTh{" "}
+          MSc,MTh{" "}
         </div>
       </div>
     </div>,
@@ -53,7 +53,7 @@ const Trustee = () => {
           Arun Kumar
         </div>
         <div className="text-sm font-extrabold mb-2 text-center">
-          MSc( Electronics),MTh{" "}
+         trustee
         </div>
       </div>
     </div>,

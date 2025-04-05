@@ -1,43 +1,43 @@
 export const FacultyInfo = [
   {
     id: "Tijok",
-    img: "Mr.Tijo.jpeg",
+    img: "public/Mr.Tijo.jpeg",
     name: "Bro. Tijo K John",
     educationalStatus: " MSc( Electronics),MTh",
   },
 
   {
     id: "sumat",
-    img: "dummy-prof2.webp",
+    img: "public/sis-Suma.jpeg",
     name: "Sis. Suma Thomas",
     educationalStatus: "M.Div",
   },
 
   {
     id: "robin",
-    img: "boy2.png",
+    img: "public/Pr.Robbin.jpeg",
     name: "Pr. Robbin Devadas",
     educationalStatus: "Bca",
   },
 
-  {
-    id: "pauly",
-    img: "boy2.png",
-    name: "Pr. P V Pauly",
-    educationalStatus: "M.Div",
-  },
+  // {
+  //   id: "pauly",
+  //   img: "boy2.png",
+  //   name: "Pr. P V Pauly",
+  //   educationalStatus: "M.Div",
+  // },
 
   {
     id: "rejim",
-    img: "boy2.png",
+    img: "public/boy2.png",
     name: "Pr. Reji Mathew",
-    educationalStatus: "",
+    educationalStatus: "teacher",
   },
 
   {
     id: "josep",
-    img: "boy2.png",
+    img: "public/Pr-Praveen.jpeg",
     name: "Pr. Joseph Preveen",
-    educationalStatus: "",
+    educationalStatus: "teacher",
   },
 ];

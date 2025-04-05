@@ -43,3 +43,23 @@ body {
 /* body:hover {
   overflow: auto;
 } */
+
+.emerald {
+  color: rgb(0, 138, 92);
+}
+
+.zinc {
+  color: rgb(88, 88, 88);
+}
+
+.red {
+  color: rgb(172, 15, 15);
+}
+
+.blue {
+  color: rgb(38, 87, 250);
+}
+
+.gray {
+  color: rgb(88, 88, 88);
+}

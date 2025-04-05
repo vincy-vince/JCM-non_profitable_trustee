@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { DonateInfo } from "../js/Donate";
 const DonateSess = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -15,81 +16,107 @@ const DonateSess = () => {
     setShowModal(true);
   };
 
-  let slides = [
-    <div className="bg-emerald-600 w-[90%] h-fit mx-auto border-none rounded-lg text-left py-5 md:w-[60%]">
-      <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
-        <div className="font-bold text-lg text-left">Empower her</div>
-        <div>rs.2000/month</div>
-        <div className="bg-white w-[100%] h-40 border-none rounded-lg mx-auto mb-3"></div>
-        <div className="font-bold">Sponser a girl child</div>
-        <ul className="flex flex-col gap-3 list-disc ml-5 p-2 text-sm">
-          <li>Medical care</li>
-          <li>Educational support</li>
-          <li>Health and Nutrition</li>
-          <li>Personal mentorship</li>
-          <li>Hygene and Sanitation</li>
-          <li>Imparting ethics and values and more</li>
-        </ul>
-        <button
-          onClick={handleMouseLeave}
-          className="text-emerald-600 font-bold bg-white border-none rounded-lg w-[30%] p-2 mx-auto"
-        >
-          Donate
-        </button>
+  const donate = DonateInfo.map((Dinfo) => {
+    return (
+      <div
+        className={`bg-${Dinfo.bg_color} w-[90%] h-fit mx-auto border-none rounded-lg text-left py-5 md:w-[60%]`}
+      >
+        <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
+          <div className="font-bold text-lg text-left">{Dinfo.title}</div>
+          <div>{Dinfo.rupees}</div>
+          <div className="bg-white w-[100%] h-40 border-none rounded-lg mx-auto mb-3"></div>
+          <div className="font-bold">{Dinfo.subtitle}</div>
+          <ul className="flex flex-col gap-3 list-disc ml-5 p-2 text-sm">
+            {Dinfo.points.map((point) => {
+              return <li>{point}</li>;
+            })}
+          </ul>
+          <button
+            onClick={handleMouseLeave}
+            className={`font-bold bg-white border-none rounded-lg w-[30%] p-2 mx-auto ${Dinfo.class}`}
+          >
+            Donate
+          </button>
+        </div>
       </div>
-    </div>,
-    <div className="bg-zinc-600 w-[90%] h-fit mx-auto border-none rounded-lg text-left py-5 md:w-[60%]">
-      <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
-        <div className="font-bold text-lg text-left">Empower her</div>
-        <div>rs.2000/month</div>
-        <div className="bg-white w-[100%] h-40 border-none rounded-lg mx-auto mb-3"></div>
-        <div className="font-bold">Sponser a girl child</div>
-        <ul className="flex flex-col gap-3 list-disc ml-5 p-2 h-max text-sm">
-          <li>Medical care</li>
-          <li>Educational support</li>
-          <li>Health and Nutrition</li>
-          <li>Personal mentorship</li>
-          <li>Hygene and Sanitation</li>
-          <li>Imparting ethics and values and more</li>
-        </ul>
-        <button
-          onClick={() => setShowModal(true)}
-          className="text-zinc-600 font-bold bg-white border-none rounded-lg w-[30%] p-2 mx-auto"
-        >
-          Donate
-        </button>
-      </div>
-    </div>,
-    <div className="bg-red-800 w-[90%] h-fit mx-auto border-none rounded-lg text-left py-5 md:w-[60%]">
-      <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
-        <div className="font-bold text-lg text-left">Empower her</div>
-        <div>rs.2000/month</div>
-        <div className="bg-white w-[100%] h-40 border-none rounded-lg mx-auto mb-3"></div>
-        <div className="font-bold">Sponser a girl child</div>
-        <ul className="flex flex-col gap-3 list-disc ml-5 p-2 text-sm">
-          <li>Medical care</li>
-          <li>Educational support</li>
-          <li>Health and Nutrition</li>
-          <li>Personal mentorship</li>
-          <li>Hygene and Sanitation</li>
-          <li>Imparting ethics and values and more</li>
-        </ul>
-        <button
-          onClick={() => setShowModal(true)}
-          className="text-red-800 font-bold bg-white border-none rounded-lg w-[30%] p-2 mx-auto"
-        >
-          Donate
-        </button>
-      </div>
-    </div>,
-  ];
+    );
+  });
+
+  // let slides = [
+  //   <div className={`bg-${} w-[90%] h-fit mx-auto border-none rounded-lg text-left py-5 md:w-[60%]`}>
+  //     <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
+  //       <div className="font-bold text-lg text-left">Empower her</div>
+  //       <div>rs.2000/month</div>
+  //       <div className="bg-white w-[100%] h-40 border-none rounded-lg mx-auto mb-3"></div>
+  //       <div className="font-bold">Sponser a girl child</div>
+  //       <ul className="flex flex-col gap-3 list-disc ml-5 p-2 text-sm">
+  //         <li>Medical care</li>
+  //         <li>Educational support</li>
+  //         <li>Health and Nutrition</li>
+  //         <li>Personal mentorship</li>
+  //         <li>Hygene and Sanitation</li>
+  //         <li>Imparting ethics and values and more</li>
+  //       </ul>
+  //       <button
+  //         onClick={handleMouseLeave}
+  //         className="text-emerald-600 font-bold bg-white border-none rounded-lg w-[30%] p-2 mx-auto"
+  //       >
+  //         Donate
+  //       </button>
+  //     </div>
+  //   </div>,
+  //   <div className="bg-zinc-600 w-[90%] h-fit mx-auto border-none rounded-lg text-left py-5 md:w-[60%]">
+  //     <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
+  //       <div className="font-bold text-lg text-left">Empower her</div>
+  //       <div>rs.2000/month</div>
+  //       <div className="bg-white w-[100%] h-40 border-none rounded-lg mx-auto mb-3"></div>
+  //       <div className="font-bold">Sponser a girl child</div>
+  //       <ul className="flex flex-col gap-3 list-disc ml-5 p-2 h-max text-sm">
+  //         <li>Medical care</li>
+  //         <li>Educational support</li>
+  //         <li>Health and Nutrition</li>
+  //         <li>Personal mentorship</li>
+  //         <li>Hygene and Sanitation</li>
+  //         <li>Imparting ethics and values and more</li>
+  //       </ul>
+  //       <button
+  //         onClick={() => setShowModal(true)}
+  //         className="text-zinc-600 font-bold bg-white border-none rounded-lg w-[30%] p-2 mx-auto"
+  //       >
+  //         Donate
+  //       </button>
+  //     </div>
+  //   </div>,
+  //   <div className="bg-red-800 w-[90%] h-fit mx-auto border-none rounded-lg text-left py-5 md:w-[60%]">
+  //     <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
+  //       <div className="font-bold text-lg text-left">Empower her</div>
+  //       <div>rs.2000/month</div>
+  //       <div className="bg-white w-[100%] h-40 border-none rounded-lg mx-auto mb-3"></div>
+  //       <div className="font-bold">Sponser a girl child</div>
+  //       <ul className="flex flex-col gap-3 list-disc ml-5 p-2 text-sm">
+  //         <li>Medical care</li>
+  //         <li>Educational support</li>
+  //         <li>Health and Nutrition</li>
+  //         <li>Personal mentorship</li>
+  //         <li>Hygene and Sanitation</li>
+  //         <li>Imparting ethics and values and more</li>
+  //       </ul>
+  //       <button
+  //         onClick={() => setShowModal(true)}
+  //         className="text-red-800 font-bold bg-white border-none rounded-lg w-[30%] p-2 mx-auto"
+  //       >
+  //         Donate
+  //       </button>
+  //     </div>
+  //   </div>,
+  // ];
 
   return (
     <div id="#home" className="mt-20">
       <h1 className="text-2xl font-extrabold text-center mb-20">Donate now</h1>
       <div className="flex items-center flex-col gap-3">
         <div className="m-auto w-full">
-          <Corousal slides={slides}></Corousal>
+          <Corousal slides={donate}></Corousal>
         </div>
         {ShowModal && (
           <div className="fixed bg-black/50 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0">
