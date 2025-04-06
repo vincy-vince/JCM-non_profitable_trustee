@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
 import { DonateInfo } from "../js/Donate";
 const LgDonate = () => {
+  const [ShowModal, setShowModal] = useState(false);
+  const scrollRef = useRef(null);
+  const scrollIntervalRef = useRef(null);
+  const scrollAmount = 25;
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
-  const [ShowModal, setShowModal] = useState(false);
-
   const handleMouseLeave = () => {
     setShowModal(true);
   };
-  const scrollRef = useRef(null);
-  const scrollIntervalRef = useRef(null);
-  const scrollAmount = 25;
 
   const startScrolling = (direction) => {
     if (scrollIntervalRef.current) return;
