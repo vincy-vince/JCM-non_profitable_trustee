@@ -15,7 +15,7 @@ const MenuBar = () => {
         Navbar.style.display = "none";
       }
     };
-    document.addEventListener("mousedown", handler);
+    document.addEventListener("mouseover", handler);
   });
 
   function showToggle() {
@@ -45,9 +45,8 @@ const MenuBar = () => {
 
   function closeMenubig() {
     const Navbar = document.getElementById("nav");
-   
-      Navbar.style.display = "none";
-    
+
+    Navbar.style.display = "none";
   }
 
   function closeMenu() {
