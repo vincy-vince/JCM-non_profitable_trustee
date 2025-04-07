@@ -65,7 +65,7 @@ const LgDonate = () => {
       {/* Left Hover Zone */}
 
       <div
-        className="absolute left-0 bottom-14 h-[76.5%] w-10 z-5 scroll-smooth text-center hover:bg-linear-to-r hover:from-gray-400 hover:to-white  mx-auto xl:text-2xl font-extrabold "
+        className="absolute left-0 bottom-14 h-[76.5%] w-10 z-5 scroll-smooth text-center hover:bg-linear-to-r hover:from-gray-300 hover:to-white  mx-auto xl:text-2xl font-extrabold "
         onMouseEnter={() => startScrolling(-1)}
         onMouseLeave={stopScrolling}
       >
@@ -123,7 +123,7 @@ const LgDonate = () => {
       {/* Right Hover Zone */}
 
       <div
-        className="absolute right-0 bottom-14 h-[76.5%] w-10 z-5 scroll-smooth hover:bg-linear-to-l hover:from-gray-500 hover:to-white  mx-auto  xl:text-2xl font-extrabold "
+        className="absolute right-0 bottom-14 h-[76.5%] w-10 z-5 scroll-smooth hover:bg-linear-to-l hover:from-gray-300 hover:to-white  mx-auto  xl:text-2xl font-extrabold "
         onMouseEnter={() => startScrolling(1)}
         onMouseLeave={stopScrolling}
       >

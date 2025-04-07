@@ -12,8 +12,8 @@ export const DonateInfo = [
       "Hygene and Sanitation",
       "Imparting ethics and values and more",
     ],
-    bg_color: "emerald-600",
-    class: "emerald",
+    bg_color: "blue-600",
+    class: "blue",
   },
   {
     title: "Empower her",
@@ -60,8 +60,8 @@ export const DonateInfo = [
       "Hygene and Sanitation",
       "Imparting ethics and values and more",
     ],
-    bg_color: "blue-600",
-    class: "blue",
+    bg_color: "zinc-600",
+    class: "zinc",
   },
   {
     title: "Empower her",
@@ -76,7 +76,7 @@ export const DonateInfo = [
       "Hygene and Sanitation",
       "Imparting ethics and values and more",
     ],
-    bg_color: "zinc-600",
-    class: "gray",
+    bg_color: "blue-600",
+    class: "blue",
   },
 ];
