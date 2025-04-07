@@ -33,13 +33,13 @@ const JCMpage = () => {
       </div>
 
       {/* About and Founder's Image */}
-      <div className=" mt-7 h-max flex flex-col justify-center items-center pt-5 mb-10 gap-10 md:flex-row lg:flex-row relative z-[-1] xl:mx-30 xl:my-20 xl:gap-2">
+      <div className=" mt-7 h-max flex flex-col justify-center items-center pt-5 mb-10 gap-10 md:flex-row md:mx-10 lg:flex-row relative z-[-1] xl:mx-30 xl:my-20 xl:gap-2">
         <img
           className=" w-1/2 h-[50%] top-8 rounded-lg md:w-[40%] md:h-[50%] lg:w-[30%] xl:h-[430px] "
           src="public/sis-Suma.jpeg"
           alt=""
         />
-        <div className=" w-2/3 h-max md:w-1/2 text-md text-justify md:mx-5 lg:mx-10 xl:mx-10 xl:text-xl">
+        <div className=" w-2/3 h-max md:w-1/2 text-md text-justify md:ml-5 lg:ml-10 xl:ml-10 xl:text-xl">
           <span className="font-bold">Judea Christ Ministries</span> warmly
           welcomes and greets you.
           <br></br>

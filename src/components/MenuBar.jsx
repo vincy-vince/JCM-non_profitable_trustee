@@ -1,10 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 const MenuBar = () => {
-  const [toggle, setToggle] = useState(true);
-
+  const [toggle, setToggle] = useState(false);
+  const [open, setOpen] = useState(true);
   let [menu, setMenu] = useState(false);
+  let menuRef = useRef();
+
+  useEffect(() => {
+    let handler = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        const Navbar = document.getElementById("nav");
+        setOpen(true);
+        Navbar.style.display = "none";
+      }
+    };
+    document.addEventListener("mousedown", handler);
+  });
+
   function showToggle() {
     const Ministries = document.getElementById("ministries");
 
@@ -25,16 +38,16 @@ const MenuBar = () => {
 
   function openMenubig() {
     const Navbar = document.getElementById("nav");
-    if (!toggle == false) {
+    if (!open == false) {
       Navbar.style.display = "flex";
     }
   }
 
   function closeMenubig() {
     const Navbar = document.getElementById("nav");
-    if (!toggle !== false) {
+   
       Navbar.style.display = "none";
-    }
+    
   }
 
   function closeMenu() {
@@ -51,7 +64,8 @@ const MenuBar = () => {
   return (
     <div>
       <div
-        onClick={() => closeMenubig(setToggle(!toggle))}
+        onClick={() => closeMenubig(setOpen(!open))}
+        ref={menuRef}
         className=" w-auto mx-2 "
       >
         <div className=" fixed top-0 right-0 left-0 flex flex-row w-auto justify-between p-4 items-center gap-4 bg-white z-[10]">
@@ -93,7 +107,7 @@ const MenuBar = () => {
               <div className=" flex flex-col">
                 <li
                   id="our-Mini"
-                  onMouseEnter={() => openMenubig(setToggle(!toggle))}
+                  onMouseEnter={() => openMenubig(setOpen(!open))}
                   className=" p-2 list-none border-none text-white shadow-md bg-red-700/70 font-bold shadow-red-700/50 rounded-md xl:text-xl"
                 >
                   Our Ministries

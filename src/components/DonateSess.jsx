@@ -41,8 +41,6 @@ const DonateSess = () => {
       </div>
     );
   });
-
-  // let slides = [
   //   <div className={`bg-${} w-[90%] h-fit mx-auto border-none rounded-lg text-left py-5 md:w-[60%]`}>
   //     <div className="text-white flex flex-col gap-3 justify-left items-left mx-4">
   //       <div className="font-bold text-lg text-left">Empower her</div>

@@ -13,7 +13,7 @@ const RefundPolicy = () => {
         className=" bg-[url(background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-auto flex flex-col justify-between xl:h-[630px]"
       >
         <div className="flex flex-col gap-3">
-          <h1 className=" text-2xl text-black font-extrabold md:text-3xl lg:text-5xl ">
+          <h1 className=" text-2xl text-black font-extrabold md:text-3xl lg:text-4xl xl:text-5xl ">
             Refund Policy
           </h1>
 
@@ -24,7 +24,7 @@ const RefundPolicy = () => {
             <HashLink to={"/#lghome"}>Donate</HashLink>
           </button>
         </div>
-        <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto mt-48 shadow-lg md:mt-89 lg:mt-[460px] xl:mt-[400px]">
+        <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto mt-48 shadow-lg md:mt-50 lg:mt-[180px] xl:mt-[390px]">
           <input
             className="text-blue-900 w-[60%] active:border-none md:w-[73%] lg:w-[80%] "
             placeholder="Enter your email"

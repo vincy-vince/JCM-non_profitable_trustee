@@ -15,8 +15,8 @@ const Resources = () => {
         id="resources"
         className=" bg-[url(background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-auto flex flex-col justify-between xl:h-[630px]"
       >
-        <div className="flex flex-col gap-3">
-          <h1 className=" text-2xl text-black font-extrabold md:text-3xl lg:text-5xl ">
+        <div className="flex flex-col gap-3 pt-15 pl-15">
+          <h1 className=" text-2xl text-black font-extrabold md:text-3xl lg:text-4xl xl:text-5xl">
             Privacy Policy
           </h1>
           <button className="w-max font-bold px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 lg:text-xl xl:text-2xl xl:px-4 xl:py-3 hover:bg-blue-900 transition-colors lg:hidden">
@@ -26,7 +26,7 @@ const Resources = () => {
             <HashLink to={"/#lghome"}>Donate</HashLink>
           </button>
         </div>
-        <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto mt-48 shadow-lg md:mt-89 lg:mt-[460px] xl:mt-[400px]">
+        <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto mt-48 shadow-lg md:mt-50 lg:mt-[180px] xl:mt-[350px]">
           <input
             className="text-blue-900 w-[60%] active:border-none md:w-[73%] lg:w-[80%] "
             placeholder="Enter your email"
