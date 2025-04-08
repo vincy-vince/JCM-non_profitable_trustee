@@ -105,12 +105,14 @@ const Footer = () => {
             </Link>
           </div>
           <div className="text-sm lg:text-lg ">
-            <a href="#">Our Ministries</a>
+            <a onClick={scrollToTop} href="#our-Mini">
+              Our Ministries
+            </a>
           </div>
         </div>
         <div className=" text-sm flex flex-col gap-3">
           <div className="font-bold lg:text-lg xl:text-xl">
-            <a href="#our-Mini">Our Ministries</a>
+            <a>Our Ministries</a>
           </div>
           <div className="text-sm lg:text-lg ">
             {" "}
