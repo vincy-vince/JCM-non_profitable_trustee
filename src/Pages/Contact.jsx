@@ -23,7 +23,7 @@ const Contact = () => {
         </div>
         <div className="bg-white p-2 inline-block rounded-lg w-full md:w-[60%] lg:w-[60%] mx-auto mt-58 shadow-lg md:mt-[380px] lg:mt-[480px] xl:mt-[500px]">
           <input
-            className="text-blue-900 w-[60%] active:border-none md:w-[73%] lg:w-[80%] "
+            className="text-blue-900 w-[60%] active:border-none md:w-[73%] lg:w-[80%] " 
             placeholder="Enter your email"
           ></input>
           <button className="bg-red-800 text-white px-4 ml-4 rounded-md py-2 font-bold md:ml-0 xl:ml-13 shadow-md shadow-red-800">
