@@ -41,8 +41,8 @@ const LgDonate = () => {
           <div className="bg-white h-30 border-none rounded-lg"></div>
           <div className="font-bold">{Dinfo.subtitle}</div>
           <ul className="flex flex-col gap-3 list-disc ml-5 p-2">
-            {Dinfo.points.map((point) => {
-              return <li>{point}</li>;
+            {Dinfo.points.map((point,i) => {
+              return <li key={i}>{point}</li>;
             })}
           </ul>
           <button

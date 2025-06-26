@@ -35,7 +35,6 @@ const LgStudentTest = () => {
       </p>
 
       <Carousel2 slides={StdTest} />
-      {/* <div className="flex flex-row gap-4 mx-4 lg:mx-10"></div> */}
     </div>
   );
 };

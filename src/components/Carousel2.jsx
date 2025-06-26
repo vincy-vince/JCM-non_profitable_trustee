@@ -22,8 +22,8 @@ const Carousel2 = ({ slides }) => {
     <div className="w-[2/3] mx-auto">
       <div className="slider-container">
         <Slider {...settings}>
-          {slides.map((s) => {
-            return <div> {s} </div>;
+          {slides.map((s,id) => {
+            return <div key={i}> {s} </div>;
           })}
         </Slider>
       </div>

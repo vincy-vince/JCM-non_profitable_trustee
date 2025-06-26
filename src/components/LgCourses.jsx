@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Course } from "../js/CoursesInfo";
 const LgCourses = () => {
-  const course = Course.map((course) => {
+  const course = Course.map((course,i) => {
     return (
-      <div className="bg-red-500/85 h-72 p-3 text-white rounded-lg flex flex-col justify-between w-[70%] mx-auto lg:w-[30%] md:w-[50%] xl:w-[40%]">
+      <div key={i} className="bg-red-500/85 h-72 p-3 text-white rounded-lg flex flex-col justify-between w-[70%] mx-auto lg:w-[30%] md:w-[50%] xl:w-[40%]">
         <div className="flex flex-col items-center justify-center">
           <div className="bg-white w-[100%] h-30 border-none rounded-lg"></div>
           <div className="text-lg font-bold mt-5 xl:text-xl">

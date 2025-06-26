@@ -9,7 +9,7 @@ const MenuBar = () => {
 
   useEffect(() => {
     let handler = (e) => {
-      if (!menuRef.current.contains(e.target)) {
+      if (!menuRef) {
         const Navbar = document.getElementById("nav");
         setOpen(true);
         Navbar.style.display = "none";
@@ -257,60 +257,3 @@ const MenuBar = () => {
 };
 
 export default MenuBar;
-// import { useState, useEffect, useRef } from "react";
-
-// const App = () => {
-//   const [isOpen, setIsOpen] = useState(false);
-//   const dropdownRef = useRef(null);
-
-//   // Close dropdown when clicking outside
-//   useEffect(() => {
-//     const handleClickOutside = (event) => {
-//       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-//         setIsOpen(false);
-//       }
-//     };
-
-//     window.addEventListener("click", handleClickOutside);
-
-//     return () => {
-//       window.removeEventListener("click", handleClickOutside);
-//     };
-//   }, []);
-
-//   return (
-//     <div className="min-h-screen bg-gray-100 flex justify-center items-center">
-//       <div
-//         className="relative"
-//         ref={dropdownRef}
-//         onMouseEnter={() => setIsOpen(true)}
-//         onMouseLeave={() => setIsOpen(false)}
-//       >
-//         {/* Navbar Button */}
-//         <button className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">
-//           Menu
-//         </button>
-
-//         {/* Dropdown */}
-//         {isOpen && (
-//           <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg transition-opacity duration-300">
-//             <ul className="py-2">
-//               <li className="px-4 py-2 hover:bg-gray-200">
-//                 <a href="#">Home</a>
-//               </li>
-//               <li className="px-4 py-2 hover:bg-gray-200">
-//                 <a href="#">About</a>
-//               </li>
-//               <li className="px-4 py-2 hover:bg-gray-200">
-//                 <a href="#">Services</a>
-//               </li>
-//               <li className="px-4 py-2 hover:bg-gray-200">
-//                 <a href="#">Contact</a>
-//               </li>
-//             </ul>
-//           </div>
-//         )}
-//       </div>
-//     </div>
-//   );
-// };

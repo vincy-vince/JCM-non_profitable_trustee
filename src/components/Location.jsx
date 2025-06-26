@@ -2,7 +2,7 @@ import React from "react";
 
 const Location = () => {
   return (
-    <a href="https://maps.app.goo.gl/K1UBacWEwEGKzRVP8">
+    <a target="_blank" href="https://maps.app.goo.gl/K1UBacWEwEGKzRVP8">
       <div className="w-auto mx-10 bg-[url(loc2.jpg)] bg-cover bg-no-repeat h-fit pb-3 md:h-54 mt-18 lg:h-60 rounded-lg md:pt-2 xl:h-[300px] xl:mx-72 ">
         <div className="text-right">
           <button className="font-bold text-md bg-blue-950 text-white p-2 border-none rounded-lg mt-6 mr-4 hidden md:block md:ml-[76%] lg:block xl:px-6 xl:py-4 xl:text-xl">
