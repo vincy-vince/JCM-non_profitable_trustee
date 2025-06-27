@@ -1,8 +1,13 @@
 {
-	"command": "npm run preview",
-	"build_path": "/home/system-6/Desktop/New Folder/JCM-non_profitable_trustee",
-	"stack": "node20",
+	"command": "node ./server/index.js",
+	"buildPath": "/home/system-6/Desktop/New Folder/JCM-non_profitable_trustee/build",
+	"stack": "node16",
 	"env_variables": {},
-	"memory": 128,
-	"scripts": {}
+	"memory": 256,
+	"scripts": {
+		"preserve":"cd client && npm run build && cd .. && cp -r server build",
+		"postserve": "rm -r build/*",
+        "predeploy":"cd client && npm run build && cd .. && cp -r server build",
+		"postdeploy": "rm -r build/*"
+	}
 }
