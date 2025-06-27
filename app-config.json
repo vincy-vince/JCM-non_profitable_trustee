@@ -3,9 +3,9 @@
 	"buildPath": "/home/system-6/Desktop/New Folder/JCM-non_profitable_trustee/build",
 	"stack": "node16",
 	"env_variables": {},
-	"memory": 256,
+	"memory": 128,
 	"scripts": {
-		"preserve":"cd client && npm run build && cd .. && cp -r server build",
+		"preserve":"cd client && npm i && npm run build && cd ../server && npm i && cd .. && cp -r server build",
 		"postserve": "rm -r build/*",
         "predeploy":"cd client && npm run build && cd .. && cp -r server build",
 		"postdeploy": "rm -r build/*"
