@@ -86,7 +86,7 @@ const MenuBar = () => {
             <a href="/">
               <img
                 className="w-[70px] h-[70px]"
-                src="public/jcmLOGO-square.png"
+                src="jcmLOGO-square.png"
               />
             </a>
           </div>
@@ -177,7 +177,7 @@ const MenuBar = () => {
               <a href="/">
                 <img
                   className="w-[60px] h-[60px]"
-                  src="public/jcmLOGO-square.png"
+                  src="jcmLOGO-square.png"
                 />
               </a>
             </div>

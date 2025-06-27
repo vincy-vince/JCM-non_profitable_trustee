@@ -10,7 +10,7 @@ const Contact = () => {
       <MenuBar />
       <div
         id="contact"
-        className=" bg-[url(public/background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-20  mx-auto flex flex-col justify-between md:h-[500px] lg:h-[600px] xl:h-[630px]"
+        className=" bg-[url(background-JCM.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-20  mx-auto flex flex-col justify-between md:h-[500px] lg:h-[600px] xl:h-[630px]"
       >
         <div className="flex flex-col gap-3">
           <h1 className=" text-2xl w-[60%] mx-auto font-extrabold text-center lg:text-3xl xl:text-5xl">

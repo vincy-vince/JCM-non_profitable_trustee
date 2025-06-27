@@ -66,7 +66,7 @@ const BibleCollege = () => {
       <div>
         <img
           className="rounded-lg w-[80%] mx-auto h-[300px] my-4 xl:h-[500px]"
-          src="public/college-collage1.jpeg"
+          src="college-collage1.jpeg"
         ></img>
       </div>
       <div className="xl:mx-40">
@@ -119,7 +119,7 @@ const BibleCollege = () => {
         </p>
         <img
           className="w-[80%] mx-auto xl:h-[550px] xl:w-[1100px]"
-          src="public/2023-graduates.jpeg"
+          src="2023-graduates.jpeg"
           alt=""
         />
       </div>
@@ -130,7 +130,7 @@ const BibleCollege = () => {
         </p>
         <img
           className="w-[80%] mx-auto xl:h-[550px] xl:w-[1100px]"
-          src="public/graduation-2019.jpg"
+          src="graduation-2019.jpg"
           alt=""
         />
       </div>

@@ -1,21 +1,21 @@
 export const FacultyInfo = [
   {
     id: "Tijok",
-    img: "public/Mr.Tijo.jpeg",
+    img: "Mr.Tijo.jpeg",
     name: "Bro. Tijo K John",
     educationalStatus: " MSc( Electronics),MTh",
   },
 
   {
     id: "sumat",
-    img: "public/sis-Suma.jpeg",
+    img: "sis-Suma.jpeg",
     name: "Sis. Suma Thomas",
     educationalStatus: "M.Div",
   },
 
   {
     id: "robin",
-    img: "public/Pr.Robbin.jpeg",
+    img: "Pr.Robbin.jpeg",
     name: "Pr. Robbin Devadas",
     educationalStatus: "Bca",
   },
@@ -29,14 +29,14 @@ export const FacultyInfo = [
 
   {
     id: "rejim",
-    img: "public/boy2.png",
+    img: "boy2.png",
     name: "Pr. Reji Mathew",
     educationalStatus: "teacher",
   },
 
   {
     id: "josep",
-    img: "public/Pr-Praveen.jpeg",
+    img: "Pr-Praveen.jpeg",
     name: "Pr. Joseph Preveen",
     educationalStatus: "teacher",
   },

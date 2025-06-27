@@ -1,7 +1,7 @@
 export const trustee = [
   {
     name: "Sis. Suma Thomas",
-    img: "public/sis-Suma.jpeg",
+    img: "sis-Suma.jpeg",
     education: "M.div",
   },
   {
@@ -11,7 +11,7 @@ export const trustee = [
   },
   {
     name: "Bro. Arun Kumar",
-    img: "public/Bro-Arun.jpeg",
+    img: "Bro-Arun.jpeg",
     education: "trustee",
   },
 ];

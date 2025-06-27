@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="hidden text-sm font-bold lg:inline-block">
           <img
             className="w-[70px] h-[70px]"
-            src="public/jcmLOGO-square.png"
+            src="jcmLOGO-square.png"
             alt=""
           />
         </div>
@@ -85,7 +85,7 @@ const Footer = () => {
         <div className="w-[50%] text-sm font-bold mb-5 inline-block md:w-auto md:inline-block lg:hidden">
           <img
             className="W-[70px] h-[70px]"
-            src="public/jcmLOGO-square.png"
+            src="jcmLOGO-square.png"
             alt="LOGO"
           />
         </div>
@@ -152,7 +152,7 @@ const Footer = () => {
           <div className="w-[30px] h-[30px]">
             <a href="">
               {" "}
-              <img src="public/instagram-1-svgrepo-com.svg" alt="" />
+              <img src="instagram-1-svgrepo-com.svg" alt="" />
             </a>
           </div>
           <a
