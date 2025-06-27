@@ -9,7 +9,7 @@ const MenuBar = () => {
 
   useEffect(() => {
     let handler = (e) => {
-      if (!menuRef) {
+      if (!menuRef.current.contains(e.target)) {
         const Navbar = document.getElementById("nav");
         setOpen(true);
         Navbar.style.display = "none";
