@@ -22,12 +22,12 @@ const BibleCollege = () => {
         <h1 className=" text-2xl text-white font-extrabold md:text-3xl lg:text-5xl ">
           JCM Bible College
         </h1>
-        <button className="w-max font-bold px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 lg:text-xl xl:text-2xl xl:px-4 xl:py-3 hover:bg-blue-900 transition-colors lg:hidden">
+        {/* <button className="w-max font-bold px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 lg:text-xl xl:text-2xl xl:px-4 xl:py-3 hover:bg-blue-900 transition-colors lg:hidden">
           <HashLink to={"/#home"}>Donate</HashLink>
         </button>
         <button className="w-max font-bold px-3 py-2 bg-blue-950 shadow-md shadow-blue-900 text-white border-none rounded-lg text-lg mt-10 lg:text-xl xl:text-2xl xl:px-4 xl:py-3 hover:bg-blue-900 transition-colors hidden md:hidden lg:block">
           <HashLink to={"/#lghome"}>Donate</HashLink>
-        </button>
+        </button> */}
       </div>
       <div className="text-justify mt-13 mx-5 md:mx-10 md:text-lg lg:text-xl xl:mx-50">
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The Lord redirected our

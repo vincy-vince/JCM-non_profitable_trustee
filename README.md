@@ -1,6 +1,6 @@
 # Hosting Vite.JS application using Catalyst AppSail
 
-To host your Vite.js application in Catalyst we would suggest you check our Catalyst AppSail feature. Catalyst AppSail is a **Platform-as-a-Service(PaaS)** feature of Catalyst that helps you host your Standalone applications in Catalyst.
+<!-- To host your Vite.js application in Catalyst we would suggest you check our Catalyst AppSail feature. Catalyst AppSail is a **Platform-as-a-Service(PaaS)** feature of Catalyst that helps you host your Standalone applications in Catalyst.
 
 You can find the help documentation for Catalyst AppSail [here](https://docs.catalyst.zoho.com/en/serverless/help/appsail/introduction/).
 
@@ -258,4 +258,28 @@ You can find the help documentation for catalyst serve [here](https://docs.catal
 - The above command will run the script file mentioned in the **app-config.json** and create a production build of your Vite application and deploy the same to the development environment.
 - After successful deployment you will be able to see an URL in the terminal which you can use to test your application in development environment.
 
-You can find the help documentation for **catalyst deploy** command [here](https://docs.catalyst.zoho.com/en/cli/v1/deploy-resources/introduction/).
+You can find the help documentation for **catalyst deploy** command [here](https://docs.catalyst.zoho.com/en/cli/v1/deploy-resources/introduction/). -->
+
+# ✝️ Judea Christ Ministry Website
+
+A fully responsive website built for _Judea Christ Ministry (JCM)_ — a non-profit Christian trust — using modern front-end technologies.  
+The site highlights various ministries, provides information about events, and ensures an engaging and accessible experience for users.
+
+## 🛠️ Tech Stack
+
+- _React.js_
+- _Tailwind CSS_
+- _HTML5_
+- _JavaScript_
+
+## ✨ Features
+
+- 🔹 Clean and responsive design across all screen sizes
+- 🔹 Smooth navigation using React Router
+- 🔹 Sections for ministries, events, donation info, and contact
+- 🔹 Reusable components for better scalability
+- 🔹 Optimized for readability and user engagement
+
+## 🚀 Live Demo
+
+🔗 View the JCM website (Replace with live URL once deployed)

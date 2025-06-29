@@ -19,12 +19,12 @@ const WomensMinistry = () => {
           {" "}
           Women's Ministry
         </h1>
-        <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors lg:hidden">
+        {/* <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors lg:hidden">
           <HashLink to={"/#home"}>Donate</HashLink>
         </button>
         <button className="w-max font-bold px-3 py-2 bg-blue-900 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-800 transition-colors hidden md:hidden lg:block xl:py-3 xl:px-4 lg:text-lg xl:text-xl">
           <HashLink to={"/#lghome"}>Donate</HashLink>
-        </button>
+        </button> */}
       </div>
 
       <div className="mx-10 text-center my-15 lg:txt-lg xl:text-xl xl:mx-45">

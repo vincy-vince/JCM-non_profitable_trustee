@@ -17,19 +17,19 @@ const JCMpage = () => {
   return (
     <div id="home">
       <MenuBar />
-      <div className=" bg-[url(jcm-BG.png)] h-[400px] p-10 w-auto bg-cover bg-no-repeat mt-24 mx-4 lg:h-[600px] xl:h-[630px]">
+      <div className=" bg-[url(/jcm-BG.png)] h-[400px] p-10 w-auto bg-cover bg-no-repeat mt-24 mx-4 lg:h-[600px] xl:h-[630px]">
         <h1 className=" text-2xl text-white lg:text-6xl lg:font-semibold font-extrabold">
           Judea Christ Ministries
         </h1>
         <button className=" bg-red-600  text-white  p-1  border-none  rounded-md  text-sm  mt-5  hidden">
           Register Now
         </button>
-        <button className= " w-max px-3 py-2 xs:bg-red-500 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors lg:hidden">
+        {/* <button className=" w-max px-3 py-2 xs:bg-red-500 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors lg:hidden">
           <HashLink to={"#home"}>Donate</HashLink>
         </button>
         <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors hidden md:hidden lg:block">
-          <HashLink to={"#lghome"}>Donate</HashLink>
-        </button>
+          <HashLink to={"ome"}>Donate</HashLink>
+        </button> */}
       </div>
 
       {/* About and Founder's Image */}
@@ -90,13 +90,15 @@ const JCMpage = () => {
       {/* <Youtube /> */}
       {/* Our Ministries */}
       <OurMinistries />
+
       {/* Donate now session */}
-      <div id="home" className="block md:block lg:hidden">
+      {/* <div id="home" className="block md:block lg:hidden">
         <DonateSess />
       </div>
       <div id="lghome" className="hidden md:hidden lg:block xl:block">
         <LgDonate />
-      </div>
+      </div> */}
+
       {/* quote */}
       <Quote />
       {/* Trustee Info */}

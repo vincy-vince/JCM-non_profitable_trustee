@@ -84,10 +84,7 @@ const MenuBar = () => {
           </div>
           <div>
             <a href="/">
-              <img
-                className="w-[70px] h-[70px]"
-                src="jcmLOGO-square.png"
-              />
+              <img className="w-[70px] h-[70px]" src="jcmLOGO-square.png" />
             </a>
           </div>
 
@@ -136,14 +133,14 @@ const MenuBar = () => {
                 </div>
               </div>
             </div>
-            <HashLink to={"/#lghome"}>
+            {/* <HashLink to={"/#lghome"}>
               <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg font-bold hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 md:hidden lg:block lg:text-lg xl:text-xl">
                 Donate
               </button>
             </HashLink>
             <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg font-bold hover:bg-blue-900 transition-colors hidden shadow-md shadow-blue-950 md:inline-block lg:hidden">
               <HashLink to={"/#home"}>Donate</HashLink>
-            </button>
+            </button> */}
           </ul>
         </div>
 
@@ -175,10 +172,7 @@ const MenuBar = () => {
             </div>
             <div>
               <a href="/">
-                <img
-                  className="w-[60px] h-[60px]"
-                  src="jcmLOGO-square.png"
-                />
+                <img className="w-[60px] h-[60px]" src="jcmLOGO-square.png" />
               </a>
             </div>
           </div>
@@ -245,9 +239,9 @@ const MenuBar = () => {
                 </div>
               </div>
 
-              <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors">
+              {/* <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors">
                 <HashLink to={"/#home"}>Donate</HashLink>
-              </button>
+              </button> */}
             </div>
           </ul>
         </div>

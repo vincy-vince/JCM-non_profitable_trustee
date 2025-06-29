@@ -12,17 +12,17 @@ const CBS = () => {
 
       <div
         id="cbs"
-        className=" bg-[url(CBSpic.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px] xl:h-[630px]"
+        className=" bg-[url(/images/CBSpic.png)]  h-[400px]  p-10  w-auto  bg-cover  bg-no-repeat  mt-24  mx-4 md:h-[500px] lg:h-[600px] xl:h-[630px]"
       >
         <h1 className="text-white text-2xl md:text-3xl lg:text-5xl font-extrabold">
           Children Bible School
         </h1>
-        <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors lg:hidden">
+        {/* <button className="w-max px-3 py-2 bg-blue-950 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-900 transition-colors lg:hidden">
           <HashLink to={"/#home"}>Donate</HashLink>
         </button>
         <button className="w-max px-3 py-2 bg-blue-900 text-white border-none rounded-lg text-lg mt-10 hover:bg-blue-800 transition-colors font-bold hidden  md:hidden lg:block xl:py-3 xl:px-4 lg:text-lg xl:text-xl">
           <HashLink to={"/#lghome"}>Donate</HashLink>
-        </button>
+        </button> */}
       </div>
 
       <div className="mx-10 text-Justify mt-15 xl:mx-45 lg:text-lg xl:text-xl">
