@@ -282,4 +282,4 @@ The site highlights various ministries, provides information about events, and e
 
 ## 🚀 Live Demo
 
-🔗 View the JCM website (Replace with live URL once deployed)
+🔗 [View the JCM website] (https://judea-christ-ministries-50025573061.development.catalystappsail.in)
